@@ -262,4 +262,5 @@ def serve_audio(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=False, port=5500)
+    port = int(os.environ.get("PORT", 5500))
+    app.run(debug=False, host="0.0.0.0", port=port)
