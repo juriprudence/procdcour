@@ -1,0 +1,31 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5500
+Press CTRL+C to quit
+127.0.0.1 - - [06/Jun/2026 00:44:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:44:38] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [06/Jun/2026 00:44:39] "GET /api/lesson HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:44:39] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:44:39] "GET /audio/lesson_0_0.mp3 HTTP/1.1" 206 -
+127.0.0.1 - - [06/Jun/2026 00:44:41] "GET /api/check-server HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:44:44] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [06/Jun/2026 00:45:23] "POST /api/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:16] "POST /api/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:16] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:21] "POST /api/navigate HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:22] "GET /api/lesson HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:22] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:22] "GET /audio/lesson_0_1.mp3 HTTP/1.1" 206 -
+127.0.0.1 - - [06/Jun/2026 00:46:24] "POST /api/navigate HTTP/1.1" 403 -
+127.0.0.1 - - [06/Jun/2026 00:46:29] "POST /api/navigate HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:29] "GET /api/lesson HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:29] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:59] "GET /api/lesson HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:59] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:46:59] "GET /audio/lesson_0_1.mp3 HTTP/1.1" 206 -
+127.0.0.1 - - [06/Jun/2026 00:47:01] "GET /api/check-server HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:47:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:47:16] "GET /api/lesson HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:47:17] "GET /api/sub-lessons HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 00:47:17] "GET /audio/lesson_0_1.mp3 HTTP/1.1" 206 -
+127.0.0.1 - - [06/Jun/2026 00:47:19] "GET /api/check-server HTTP/1.1" 200 -

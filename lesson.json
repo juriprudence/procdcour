@@ -1,0 +1,474 @@
+[
+  {
+    "title": "Leçon 1 — Les principes du procès pénal",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 1.1 — Le droit à un procès équitable et l'accès au juge",
+        "text": "Cours de procédure pénale d'après l'ouvrage d'Édouard Verny (6e éd., Dalloz).\n\nL'article préliminaire du Code de procédure pénale, introduit par la loi du 15 juin 2000, énonce les principes directeurs : la procédure pénale doit être équitable et contradictoire et préserver l'équilibre des droits des parties.\n\nLe droit à un procès équitable est affirmé par des sources diverses. Parmi les sources internes, l'article préliminaire du CPP pose l'exigence d'équité. Le Conseil constitutionnel affirme que le principe du respect des droits de la défense implique l'existence d'une procédure juste et équitable garantissant l'équilibre des droits des parties. Parmi les sources internationales, l'article 6 de la Convention européenne des droits de l'homme est la pierre angulaire. Il garantit le droit à un tribunal indépendant et impartial, le délai raisonnable, et les droits de la défense. L'article 14 du Pacte international relatif aux droits civils et politiques de 1966 est également important car il est auto-exécutoire en droit national et contrôlé par le Comité des droits de l'homme de l'ONU. La Cour européenne des droits de l'homme interprète ces textes de façon parfois audacieuse.\n\nLe droit d'accès au juge est fondamental. Le Conseil constitutionnel l'a reconnu sur le fondement de l'article 16 de la Déclaration des droits de l'homme et du citoyen de 1789. La jurisprudence de la CEDH a conduit à des modifications législatives importantes. Par exemple, la déchéance du pourvoi en cassation qui frappait le condamné n'ayant pas respecté l'obligation de mise en état a été jugée disproportionnée par la Cour européenne dans l'arrêt Khalfaoui c/ France du 14 décembre 1999. La loi du 15 juin 2000 a en conséquence abrogé cette disposition.",
+        "questions": [
+          {
+            "q": "Quels sont les deux textes fondamentaux garantissant le droit à un procès équitable ?",
+            "hint": "article préliminaire du CPP, article 6 de la CEDH"
+          },
+          {
+            "q": "Quelle a été la conséquence de l'arrêt Khalfaoui c/ France sur la procédure pénale française ?",
+            "hint": "abrogation de la déchéance du pourvoi en cassation pour défaut de mise en état, loi du 15 juin 2000"
+          },
+          {
+            "q": "Qu'est-ce que le principe du contradictoire dans le procès pénal ?",
+            "hint": "équilibre des droits des parties, droit de répondre aux arguments, article préliminaire CPP"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 1.2 — La qualité de la justice pénale",
+        "text": "La qualité de la justice pénale répond à des exigences constitutionnelles, légales et conventionnelles. La portée de la jurisprudence de la Cour européenne des droits de l'homme est considérable.\n\nPremièrement, le tribunal doit être indépendant et impartial. De l'article 16 de la Déclaration des droits de l'homme et du citoyen de 1789 se déduit le principe d'indépendance des juridictions, dont découle le principe du secret du délibéré. Ce secret s'applique non seulement aux magistrats professionnels mais aussi à tous ceux qui y concourent, comme un juré d'assises. Le tribunal doit être établi par la loi dans son existence, sa compétence et sa composition. L'impartialité doit être appréciée subjectivement (conduite personnelle du juge) et objectivement (situation du juge). La loi organique du 8 août 2016 impose aux magistrats de veiller à prévenir ou faire cesser immédiatement les situations de conflit d'intérêts.\n\nDeuxièmement, la publicité des débats est un principe fondamental. Les débats sont publics sauf décision contraire dans l'intérêt de l'ordre public ou lorsque la publicité serait dangereuse. Pour les mineurs, la publicité est restreinte afin de protéger leur personnalité. Le délai raisonnable est également garanti par l'article 6 de la CEDH : toute personne a droit à ce que sa cause soit entendue dans un délai raisonnable. Le dépassement de ce délai peut entraîner la nullité de la procédure ou une indemnisation.\n\nTroisièmement, les droits de la défense et l'égalité des armes sont essentiels. Ils impliquent le respect du contradictoire, le droit à l'assistance d'un avocat, et l'égalité dans l'accès aux pièces du dossier. La CEDH impose que la procédure soit contradictoire dans son ensemble, permettant à chaque partie de connaître et discuter les observations présentées.",
+        "questions": [
+          {
+            "q": "Quels sont les deux aspects de l'impartialité du juge ?",
+            "hint": "impartialité subjective (conduite personnelle) et objective (situation du juge)"
+          },
+          {
+            "q": "À qui s'applique le secret du délibéré ?",
+            "hint": "magistrats professionnels et non-professionnels comme les jurés d'assises, article 304 CPP"
+          },
+          {
+            "q": "Que garantit le principe de l'égalité des armes ?",
+            "hint": "accès égal aux pièces du dossier, possibilité de discuter les observations, contradictoire"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 1.3 — La preuve en matière pénale",
+        "text": "La preuve en matière pénale est régie par des principes fondamentaux.\n\nConcernant la charge de la preuve, la présomption d'innocence bénéficie à toute personne suspectée ou poursuivie. Elle est rappelée par l'article préliminaire du Code de procédure pénale. La charge de la preuve incombe à l'accusation, c'est-à-dire au ministère public qui doit renverser cette présomption. Le doute doit toujours profiter à l'accusé, c'est le principe in dubio pro reo. Des tempéraments existent : certaines présomptions de culpabilité sont prévues par la loi, notamment en matière d'infractions douanières ou de circulation routière, mais elles doivent être réfragables et proportionnées au regard des exigences constitutionnelles et conventionnelles.\n\nQuant aux modes de preuve, l'article 427 du Code de procédure pénale pose le principe de la liberté de la preuve : hors les cas où la loi en dispose autrement, les infractions peuvent être établies par tout mode de preuve et le juge décide d'après son intime conviction. Le juge ne peut fonder sa décision que sur des preuves qui lui sont apportées au cours des débats et contradictoirement discutées devant lui. Ce principe n'est pas absolu : certains modes de preuve sont interdits comme la provocation policière à l'infraction. La loyauté de la preuve est exigée des autorités publiques. La jurisprudence tolère la simple provocation à la preuve à condition qu'elle ne constitue pas un stratagème actif poussant l'individu à s'auto-incriminer.",
+        "questions": [
+          {
+            "q": "Sur qui pèse la charge de la preuve en matière pénale ?",
+            "hint": "ministère public, partie poursuivante, doit renverser la présomption d'innocence"
+          },
+          {
+            "q": "Qu'est-ce que le principe de l'intime conviction (article 427 CPP) ?",
+            "hint": "tout mode de preuve, juge décide librement, preuves débattues contradictoirement"
+          },
+          {
+            "q": "Qu'est-ce que le principe in dubio pro reo ?",
+            "hint": "le doute profite à l'accusé, principe fondamental du procès pénal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 2 — La police judiciaire et l'enquête",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 2.1 — Composition et autorités de la police judiciaire",
+        "text": "La police judiciaire est chargée de constater les infractions, d'en rassembler les preuves et d'en chercher les auteurs. Elle agit sous la direction du procureur de la République et le contrôle de la chambre de l'instruction.\n\nLes officiers de police judiciaire, ou OPJ, ont des pouvoirs étendus. Ils peuvent décider d'une garde à vue, mener des perquisitions et requérir des examens médicaux. Ils sont nommés par arrêté du ministre de la Justice après avis d'une commission. Les agents de police judiciaire, ou APJ, secondent les OPJ et constatent les crimes, délits et contraventions. Ils rédigent des procès-verbaux et peuvent procéder à des auditions. Les APJ adjoints, comme les gardes champêtres et les policiers municipaux, ont des pouvoirs plus limités. Enfin, certains fonctionnaires spécialisés comme les agents des douanes, des eaux et forêts ou de l'inspection du travail exercent des missions de police judiciaire dans leur domaine de compétence.\n\nLe procureur de la République dirige l'activité de la police judiciaire. Il décide des poursuites et contrôle les mesures de contrainte. Il peut requérir le concours de la force publique. Le juge d'instruction dirige les investigations dans le cadre d'une instruction préparatoire. Historiquement, le préfet avait des pouvoirs de police judiciaire, mais ils ont été transférés au procureur de la République.",
+        "questions": [
+          {
+            "q": "Quelle est la différence entre un OPJ et un APJ ?",
+            "hint": "OPJ nommé par arrêté, pouvoirs coercitifs étendus ; APJ seconde et constate"
+          },
+          {
+            "q": "Qui dirige l'activité de la police judiciaire ?",
+            "hint": "procureur de la République, sous le contrôle de la chambre de l'instruction"
+          },
+          {
+            "q": "Quels sont les pouvoirs des APJ adjoints ?",
+            "hint": "gardes champêtres, policiers municipaux, pouvoirs limités"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 2.2 — Les formes d'enquête de police",
+        "text": "Il existe différentes formes d'enquête de police judiciaire.\n\nL'enquête sur infraction flagrante s'applique aux crimes et délits qui se commettent ou viennent de se commettre. Selon l'article 53 du Code de procédure pénale, la qualification de flagrance est retenue lorsque l'infraction se commet actuellement, ou lorsque l'auteur est poursuivi par la clameur publique ou trouvé en possession d'objets ou de traces permettant de penser qu'il a participé à l'infraction. En raison de l'urgence, la police dispose de pouvoirs coercitifs importants comme les perquisitions sans assentiment. La durée de l'enquête de flagrance est de 8 jours, renouvelable une fois pour les mêmes motifs.\n\nL'enquête préliminaire intervient en l'absence de flagrance. Elle est en principe non coercitive : les perquisitions nécessitent l'assentiment exprès de la personne, sauf autorisation spéciale du Juge des libertés et de la détention pour les infractions les plus graves. L'enquête préliminaire n'a pas de durée légale maximale mais la jurisprudence impose qu'elle se déroule dans un délai raisonnable.\n\nD'autres enquêtes existent : l'enquête de mort suspecte lorsqu'une mort semble suspecte même sans crime apparent, l'enquête de recherche d'une personne disparue, et l'enquête de recherche d'une personne en fuite. Les contrôles d'identité sont régis par l'article 78-1 du CPP, la vérification d'identité par l'article 78-2, et les visites des véhicules par l'article 78-2-2.",
+        "questions": [
+          {
+            "q": "Qu'est-ce qui caractérise l'enquête de flagrance ?",
+            "hint": "infraction en cours ou qui vient de se commettre, article 53 CPP, pouvoirs coercitifs importants"
+          },
+          {
+            "q": "Quelle est la durée de l'enquête de flagrance ?",
+            "hint": "8 jours renouvelable une fois"
+          },
+          {
+            "q": "En quoi l'enquête préliminaire est-elle différente de l'enquête de flagrance ?",
+            "hint": "absence de flagrance, non coercitive en principe, assentiment requis pour perquisition"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 2.3 — La garde à vue et les droits du suspect",
+        "text": "La garde à vue est une mesure de contrainte décidée par un officier de police judiciaire. Réformée en profondeur par la loi du 14 avril 2011 à la suite de condamnations de la France par la Cour européenne des droits de l'homme, elle suppose des raisons plausibles de soupçonner qu'une personne a commis ou tenté de commettre un crime ou un délit puni d'une peine d'emprisonnement.\n\nLa durée initiale de la garde à vue est de 24 heures. Elle est renouvelable sous le contrôle du procureur de la République. La durée maximale est de 96 heures en droit commun, c'est-à-dire 24 heures initiales plus une première prolongation de 24 heures autorisée par le procureur, puis deux prolongations supplémentaires de 24 heures chacune autorisées par le JLD. Pour le terrorisme et la criminalité organisée, la durée maximale peut atteindre 144 heures, soit 6 jours.\n\nDès le début de la mesure, le suspect bénéficie de droits fondamentaux. Le droit au silence : la personne doit être informée qu'elle a le droit de se taire et de ne pas s'auto-incriminer. Le droit à l'assistance d'un avocat : depuis la loi du 3 juin 2016, l'avocat peut assister son client dès la première heure de garde à vue, pendant les auditions et les confrontations. Le droit de faire prévenir un proche. Le droit à un examen médical. Le droit d'être assisté d'un interprète si nécessaire. Ces droits doivent être notifiés dès le placement en garde à vue et figurent dans un procès-verbal.",
+        "questions": [
+          {
+            "q": "Quels sont les droits notifiés dès le placement en garde à vue ?",
+            "hint": "droit au silence, assistance d'un avocat dès la 1ère heure, examen médical, prévenir un proche"
+          },
+          {
+            "q": "Quelle est la durée maximale de la garde à vue en droit commun ?",
+            "hint": "24h initial, renouvelable, jusqu'à 96h maximum"
+          },
+          {
+            "q": "Qu'a réformé la loi du 14 avril 2011 concernant la garde à vue ?",
+            "hint": "présence de l'avocat dès la première heure, droit au silence, suite aux condamnations de la CEDH"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 3 — Les juridictions répressives",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 3.1 — Les juridictions d'instruction",
+        "text": "Les juridictions d'instruction comprennent le juge d'instruction et la chambre de l'instruction.\n\nLe juge d'instruction est un magistrat du siège, nommé par décret du Président de la République. Il est indépendant et instruit à charge et à décharge conformément à l'article 81 du Code de procédure pénale afin de manifester la vérité. Il est saisi in rem, ce qui signifie qu'il ne peut enquêter que sur les faits visés par le réquisitoire du procureur ou la plainte de la victime. S'il découvre des faits nouveaux, il a besoin d'un réquisitoire supplétif. La loi du 5 mars 2007, adoptée après l'affaire d'Outreau, lui a retiré le pouvoir de placer en détention provisoire, désormais confié au Juge des libertés et de la détention. Depuis la loi du 3 juin 2016, des pôles de l'instruction peuvent être constitués sous forme de collèges de trois juges. Le juge d'instruction est saisi soit par réquisitoire introductif du procureur en application de l'article 80 du CPP, soit par constitution de partie civile de la victime en application de l'article 85 du CPP.\n\nLa chambre de l'instruction est une juridiction du second degré composée d'un président et de deux conseillers. Elle exerce un contrôle sur le déroulement de l'instruction. Elle statue sur l'appel des ordonnances du juge d'instruction, peut annuler des actes irréguliers sur le fondement de l'article 206 du CPP, se prononce sur les demandes de mise en liberté, et examine les requêtes en nullité.",
+        "questions": [
+          {
+            "q": "Que signifie la saisine in rem du juge d'instruction ?",
+            "hint": "le juge ne peut instruire que sur les faits visés, réquisitoire supplétif pour faits nouveaux"
+          },
+          {
+            "q": "Quelles sont les voies de saisine du juge d'instruction ?",
+            "hint": "réquisitoire du procureur (art. 80 CPP), constitution de partie civile (art. 85 CPP)"
+          },
+          {
+            "q": "Quel est le rôle de la chambre de l'instruction ?",
+            "hint": "contrôle de l'instruction, appel des ordonnances, nullités, demandes de mise en liberté"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 3.2 — Les juridictions de jugement de droit commun",
+        "text": "Les juridictions répressives de jugement de droit commun sont organisées selon la gravité des infractions.\n\nLe tribunal de police est compétent pour les contraventions des cinq classes. Il statue à juge unique selon une procédure simplifiée. L'ordonnance pénale est une procédure sans audience possible pour les contraventions. Les décisions du tribunal de police sont susceptibles d'appel devant la chambre des appels correctionnels.\n\nLe tribunal correctionnel est compétent pour tous les délits, c'est-à-dire les infractions punies d'une peine d'emprisonnement ou d'une amende supérieure à 1500 euros. Il siège en formation collégiale de trois magistrats ou à juge unique depuis la loi du 10 août 2007 pour certaines affaires. Plusieurs modes de saisine existent : citation directe, comparution volontaire, comparution immédiate, convocation par procès-verbal, ou renvoi par le juge d'instruction. La procédure de comparution sur reconnaissance préalable de culpabilité, dite CRPC ou plaider-coupable, permet au prévenu qui reconnaît les faits d'accepter une peine proposée par le procureur, sous réserve d'homologation par le juge du siège.\n\nLa Cour d'assises juge les crimes. Elle est composée de trois magistrats professionnels et d'un jury populaire de six citoyens en premier ressort et neuf en appel. Depuis la loi du 10 août 2011, les arrêts d'assises doivent être motivés. L'arrêt est rendu à la majorité des voix, conformément à l'article 359 du CPP. Une expérimentation prévue par la loi de programmation 2018-2022 a créé les Cours criminelles départementales pour juger les crimes punis de 15 à 20 ans de réclusion sans jury populaire.",
+        "questions": [
+          {
+            "q": "Quelle est la compétence du tribunal de police ?",
+            "hint": "contraventions des 5 classes, juge unique, procédure simplifiée"
+          },
+          {
+            "q": "Quelle est la composition de la Cour d'assises en premier ressort ?",
+            "hint": "3 magistrats professionnels, jury de 6 citoyens (art. 296 CPP)"
+          },
+          {
+            "q": "Qu'est-ce que la Cour criminelle départementale ?",
+            "hint": "expérimentation, crimes punis de 15 à 20 ans, sans jury populaire"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 3.3 — Les juridictions d'exception",
+        "text": "Plusieurs juridictions d'exception existent en procédure pénale.\n\nConcernant les mineurs, le juge des enfants instruit et juge les délits mineurs dans une approche éducative. Le tribunal pour enfants, composé du juge des enfants et d'assesseurs, juge les délits graves commis par des mineurs. La Cour d'assises des mineurs juge les crimes commis par les mineurs de 16 à 18 ans, avec une composition spécifique et l'application de l'excuse de minorité. Les procédures applicables aux mineurs tiennent compte de leur personnalité et privilégient les mesures éducatives, la détention provisoire étant une mesure exceptionnelle.\n\nPour les responsables politiques, la Haute Cour est compétente pour juger le Président de la République en cas de manquement à ses devoirs, conformément aux articles 67 et 68 de la Constitution. La Cour de justice de la République est compétente pour juger les ministres pour les crimes et délits commis dans l'exercice de leurs fonctions. Sa composition et son fonctionnement ont été réformés par la loi constitutionnelle du 27 juillet 1993 et par la loi du 16 décembre 2013.\n\nEn matière militaire, le tribunal aux armées de Paris est compétent depuis 2012 pour juger les infractions commises par les militaires en temps de paix. En temps de guerre ou lors d'opérations extérieures, les tribunaux militaires aux armées peuvent être constitués.",
+        "questions": [
+          {
+            "q": "Quelle est la spécificité de la Cour d'assises des mineurs ?",
+            "hint": "composition spécifique, excuse de minorité, crime des 16-18 ans"
+          },
+          {
+            "q": "Quelle est la compétence de la Cour de justice de la République ?",
+            "hint": "juger les ministres pour crimes et délits dans l'exercice de leurs fonctions"
+          },
+          {
+            "q": "Qui peut être jugé par la Haute Cour ?",
+            "hint": "le Président de la République pour manquement à ses devoirs (art. 67-68 Const.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 4 — Les actions nées de l'infraction",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 4.1 — L'action publique et ses obstacles",
+        "text": "Toute infraction donne naissance à deux actions : l'action publique et l'action civile. L'action publique vise à l'application d'une peine pour réparer le trouble à l'ordre social causé par l'infraction. Elle est exercée par le ministère public, le parquet, qui est un corps de magistrats soumis à une hiérarchie.\n\nL'action publique peut se heurter à des obstacles temporaires. Certaines infractions nécessitent une plainte préalable de la victime pour pouvoir être poursuivies, comme certaines violences conjugales ou le viol sur mineur. D'autres nécessitent une autorisation administrative préalable, notamment pour certains agents publics.\n\nL'immunité peut également faire obstacle à l'action publique. L'immunité politique concerne le Président de la République qui bénéficie d'une irresponsabilité pendant son mandat, et les parlementaires qui bénéficient de l'irresponsabilité pour les actes accomplis dans l'exercice de leurs fonctions et d'une inviolabilité limitée. L'immunité judiciaire protège les magistrats et les avocats pour leurs actes professionnels. L'immunité familiale est prévue par l'article 311-12 du Code pénal pour les soustractions familiales.\n\nL'action publique peut s'éteindre par plusieurs causes générales : le décès du mis en cause, l'amnistie, l'abrogation de la loi pénale, la chose jugée, ou la prescription. La loi du 27 février 2017 a profondément réformé les délais de prescription en les allongeant.",
+        "questions": [
+          {
+            "q": "Quelles sont les finalités respectives de l'action publique et de l'action civile ?",
+            "hint": "action publique : peine pour trouble social ; action civile : réparation du préjudice"
+          },
+          {
+            "q": "Quelles sont les immunités pouvant faire obstacle à l'action publique ?",
+            "hint": "immunité politique, judiciaire, familiale"
+          },
+          {
+            "q": "Quelles sont les causes d'extinction de l'action publique ?",
+            "hint": "décès, amnistie, abrogation de la loi, chose jugée, prescription"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 4.2 — La prescription de l'action publique",
+        "text": "La prescription de l'action publique a été profondément réformée par la loi du 27 février 2017. Les délais de droit commun sont désormais d'un an pour les contraventions, six ans pour les délits, et vingt ans pour les crimes. Des délais plus longs existent pour certaines infractions particulièrement graves comme le terrorisme et les crimes sexuels sur mineurs.\n\nLe point de départ du délai de prescription est en principe le jour de la commission de l'infraction. Cependant, la loi de 2017 a consacré la jurisprudence antérieure concernant les infractions occultes et dissimulées. Une infraction occulte est celle qui ne peut être connue de la victime ou de l'autorité judiciaire en raison de ses éléments constitutifs mêmes, comme certains abus de biens sociaux. Une infraction dissimulée est celle que l'auteur a délibérément cachée par des manœuvres destinées à empêcher sa découverte.\n\nPour ces infractions, le délai de prescription ne court qu'à compter du jour où l'infraction a pu être constatée dans des conditions permettant l'exercice de l'action publique. Cependant, la loi a fixé un délai butoir maximum : l'action publique ne peut plus être engagée au-delà de douze ans pour les délits et de trente ans pour les crimes à compter de la commission des faits, quel que soit le moment de leur découverte. Ce mécanisme concilie la protection des victimes avec le principe de sécurité juridique.\n\nLe ministère public est un acteur clé de l'action publique. Il est organisé hiérarchiquement, soumis au ministre de la Justice, et applique le principe d'opportunité des poursuites : il peut décider de poursuivre ou de classer sans suite. Le procureur est irrécusable en application de l'article 669 du CPP. La mise en mouvement de l'action publique peut être faite par le ministère public, par certaines administrations, par le Défenseur des droits, ou par la partie civile.",
+        "questions": [
+          {
+            "q": "Quels sont les délais de prescription de l'action publique depuis la loi de 2017 ?",
+            "hint": "1 an contraventions, 6 ans délits, 20 ans crimes"
+          },
+          {
+            "q": "Comment fonctionne la prescription pour une infraction occulte ou dissimulée ?",
+            "hint": "point de départ reporté à la découverte, délai butoir 12 ans délits, 30 ans crimes"
+          },
+          {
+            "q": "Qu'est-ce que le principe d'opportunité des poursuites ?",
+            "hint": "le procureur choisit de poursuivre ou classer sans suite, pas d'obligation de poursuivre"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 4.3 — L'action civile",
+        "text": "L'action civile vise la réparation du préjudice privé causé par l'infraction. Elle est exercée par la victime et tend à l'obtention de dommages-intérêts.\n\nLe demandeur à l'action civile doit justifier d'un préjudice personnel, direct et certain, en lien de causalité avec l'infraction. Il peut s'agir d'une personne physique ou morale. Les personnes morales peuvent agir pour la défense de leurs intérêts collectifs : les syndicats pour la défense des intérêts professionnels, les associations de lutte contre le racisme, les associations de protection de l'environnement, etc. Le défendeur peut être l'auteur de l'infraction, ses héritiers, la personne civilement responsable comme l'employeur pour son préposé ou l'assureur, ou encore l'Administration.\n\nLa victime a le choix entre deux voies. La voie civile pure consiste à saisir directement le juge civil pour obtenir réparation, ce qui emporte renonciation à la voie pénale en application de l'article 5 du CPP. La voie pénale peut être empruntée de deux manières : par intervention, c'est-à-dire en se constituant partie civile au cours du procès pénal déjà engagé par le ministère public ; ou par action, en se constituant partie civile directement devant le juge d'instruction ou en citant directement le prévenu devant la juridiction de jugement. La constitution de partie civile devant le juge d'instruction permet à la victime de déclencher l'action publique et d'obtenir une réparation.",
+        "questions": [
+          {
+            "q": "Quelles sont les conditions du préjudice pour exercer l'action civile ?",
+            "hint": "préjudice personnel, direct et certain, en lien de causalité avec l'infraction"
+          },
+          {
+            "q": "Qui peut être défendeur à l'action civile ?",
+            "hint": "auteur, héritiers, civilement responsable, assureur, Administration"
+          },
+          {
+            "q": "Quelle est la différence entre la voie civile par intervention et par action ?",
+            "hint": "intervention : se joindre au procès pénal ; action : saisir directement le juge d'instruction"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 5 — Le déclenchement de l'action publique",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 5.1 — Le classement sans suite et les alternatives aux poursuites",
+        "text": "Le procureur de la République peut décider de ne pas déclencher l'action publique. Le classement sans suite simple peut être motivé par des impératifs juridiques comme une infraction insuffisamment caractérisée, la prescription de l'action publique, ou un auteur inconnu. Il peut aussi reposer sur des considérations d'opportunité lorsque les faits sont peu graves ou n'ont pas causé de trouble à l'ordre public. Le classement sans suite est révisable tant que la prescription n'est pas acquise.\n\nLes alternatives aux poursuites ont été développées pour offrir des réponses pénales sans passer par un procès. L'article 41-1 du Code de procédure pénale prévoit plusieurs mesures : le rappel à la loi adressé à l'auteur des faits, l'orientation vers une structure sanitaire ou sociale, la régularisation de la situation, ou la médiation pénale entre l'auteur et la victime. La composition pénale, introduite par la loi du 23 juin 1999, permet au procureur de proposer à la personne qui reconnaît les faits une ou plusieurs mesures comme le paiement d'une amende, un travail non rémunéré, un stage de citoyenneté, ou l'interdiction de fréquenter certains lieux. Cette composition doit être homologuée par le juge du siège.\n\nLa convention judiciaire d'intérêt public, dite CJIP, a été créée par la loi du 9 décembre 2016 pour les personnes morales. Elle permet au procureur de proposer à une personne morale une transaction comportant le paiement d'une amende et la mise en conformité de ses pratiques sous le contrôle de l'Agence française anticorruption. La transaction par OPJ existe pour certaines contraventions avec paiement d'une amende forfaitaire.",
+        "questions": [
+          {
+            "q": "Qu'est-ce que le classement sans suite ?",
+            "hint": "décision du procureur de ne pas poursuivre, motifs juridiques ou d'opportunité"
+          },
+          {
+            "q": "Quelles sont les alternatives aux poursuites prévues par l'article 41-1 CPP ?",
+            "hint": "rappel à la loi, orientation sanitaire, médiation pénale, régularisation"
+          },
+          {
+            "q": "Qu'est-ce que la CJIP ?",
+            "hint": "convention judiciaire d'intérêt public, transaction pour personnes morales, loi du 9 décembre 2016"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 5.2 — La saisine du juge d'instruction",
+        "text": "Le juge d'instruction peut être saisi de deux manières principales.\n\nLa saisine par réquisitoire introductif du procureur de la République est le mode de saisine le plus courant. En vertu de l'article 80 du CPP, le procureur adresse au juge d'instruction un réquisitoire qui doit viser précisément les faits reprochés et la qualification juridique retenue. Si le juge découvre des faits nouveaux non visés par le réquisitoire initial, il doit solliciter un réquisitoire supplétif du procureur pour étendre sa saisine. Ce mécanisme garantit le respect du principe de la séparation des fonctions.\n\nLa saisine par constitution de partie civile est ouverte à la victime en application de l'article 85 du CPP. Toute personne qui se prétend victime d'une infraction peut se constituer partie civile devant le juge d'instruction. Cette plainte avec constitution de partie civile peut être déposée même si le procureur a classé l'affaire sans suite. Le juge d'instruction transmet la plainte au procureur qui doit prendre un réquisitoire. Si le procureur estime que les faits ne justifient pas une instruction, il peut requérir le classement mais le juge d'instruction peut passer outre et informer quand même.\n\nL'étendue de la saisine est limitée par le principe in rem : le juge ne connaît que des faits visés dans le réquisitoire ou la plainte. Il ne peut instruire sur d'autres faits sans un nouvel acte de saisine. Toutefois, la jurisprudence admet que le juge peut étendre sa saisine par des actes interruptifs qui révèlent des faits nouveaux en lien avec ceux déjà visés.",
+        "questions": [
+          {
+            "q": "Quelle est la différence entre le réquisitoire introductif et le réquisitoire supplétif ?",
+            "hint": "introductif : saisit le juge d'instruction ; supplétif : étend la saisine à des faits nouveaux"
+          },
+          {
+            "q": "Comment la victime peut-elle saisir le juge d'instruction ?",
+            "hint": "constitution de partie civile (art. 85 CPP), même après classement sans suite"
+          },
+          {
+            "q": "Que signifie le principe in rem dans la saisine du juge d'instruction ?",
+            "hint": "le juge ne connaît que des faits visés, ne peut instruire sur d'autres faits sans nouvel acte"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 5.3 — La saisine directe des juridictions de jugement",
+        "text": "Le procureur peut saisir directement une juridiction de jugement sans passer par une instruction préparatoire.\n\nLa citation directe est l'acte par lequel le procureur fait citer le prévenu devant le tribunal correctionnel ou de police par exploit d'huissier. Elle est régie par l'article 550 du Code de procédure pénale. La comparution volontaire permet au prévenu de se présenter spontanément devant le tribunal.\n\nLes procédures rapides sont nombreuses. La comparution immédiate s'applique aux délits punis d'une peine d'emprisonnement d'au moins deux ans, ou six mois en cas de flagrance. Le prévenu est jugé le jour même sans mise en état préalable, avec possibilité de détention provisoire dans l'attente du jugement. La convocation par procès-verbal est délivrée par l'OPJ à la personne qui vient d'être entendue.\n\nLa comparution sur reconnaissance préalable de culpabilité, ou CRPC, est une procédure de plaider-coupable introduite par la loi du 9 mars 2004. Le procureur propose une peine au prévenu qui reconnaît les faits. Si celui-ci accepte, la proposition est soumise à l'homologation du juge du siège lors d'une audience publique. Si le juge refuse d'homologuer, le procureur peut engager d'autres poursuites.\n\nL'ordonnance pénale est une procédure sans audience pour les contraventions et certains délits. Le juge statue sur pièces et fixe une amende. Le prévenu peut former opposition pour obtenir un jugement contradictoire. L'amende forfaitaire s'applique aux contraventions au Code de la route.",
+        "questions": [
+          {
+            "q": "Comment se déroule la procédure de CRPC ?",
+            "hint": "proposition du procureur, accord du prévenu, homologation par le juge du siège"
+          },
+          {
+            "q": "Qu'est-ce que la comparution immédiate ?",
+            "hint": "procédure rapide, délits punis d'au moins 2 ans ou 6 mois en flagrance"
+          },
+          {
+            "q": "Qu'est-ce que l'ordonnance pénale ?",
+            "hint": "procédure sans audience, amende fixée par le juge, opposition possible"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 6 — L'instruction préparatoire et les mesures de sûreté",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 6.1 — La conduite de l'instruction (actes et mis en examen)",
+        "text": "L'instruction préparatoire est obligatoire en matière criminelle et facultative pour les délits. Elle est menée par le juge d'instruction qui dispose de pouvoirs d'investigation étendus.\n\nLe juge d'instruction procède aux actes d'information nécessaires à la manifestation de la vérité. Il peut entendre les personnes sous différents statuts. Le simple témoin est entendu sous serment. Le témoin assisté est un statut intermédiaire créé par la loi du 15 juin 2000 pour les personnes à l'égard desquelles il existe de simples indices vraisemblables de participation aux faits. La mise en examen nécessite des indices graves ou concordants rendant vraisemblable que la personne ait participé à la commission de l'infraction, conformément à l'article 80-1 du CPP. Le premier interrogatoire doit respecter des formalités substantielles : notification des faits, notification des droits, présence de l'avocat, information du droit de se taire.\n\nLe juge peut procéder à des confrontations entre les personnes mises en cause et les témoins. Il peut ordonner des expertises techniques, des examens médicaux, des autopsies. Il peut délivrer des commissions rogatoires pour confier des actes d'instruction à d'autres magistrats ou aux officiers de police judiciaire.\n\nPour les investigations intrusives, les perquisitions sont en principe effectuées de jour, c'est-à-dire entre six heures et vingt-et-une heures, sauf exceptions pour la criminalité organisée ou la flagrance. La géolocalisation est régie par la loi du 28 mars 2014. Les sonorisations et fixations d'images sont possibles dans le cadre de la criminalité organisée. La captation de données informatiques et l'utilisation d'IMSI-catchers sont également autorisées dans certaines limites.",
+        "questions": [
+          {
+            "q": "Quelle est la condition pour mettre une personne en examen (art. 80-1 CPP) ?",
+            "hint": "indices graves ou concordants rendant vraisemblable la participation aux faits"
+          },
+          {
+            "q": "Quelle est la différence entre le témoin assisté et le mis en examen ?",
+            "hint": "témoin assisté : simples indices vraisemblables ; mis en examen : indices graves ou concordants"
+          },
+          {
+            "q": "Quelles sont les heures légales des perquisitions ?",
+            "hint": "6h à 21h, sauf exceptions pour criminalité organisée ou flagrance"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 6.2 — Les décisions relatives à la liberté",
+        "text": "La liberté est le principe, la détention l'exception. Le juge d'instruction peut délivrer plusieurs types de mandats : le mandat de comparution qui enjoint à la personne de se présenter, le mandat d'amener qui permet de contraindre la personne à comparaître, le mandat de dépôt qui ordonne l'incarcération immédiate, et le mandat d'arrêt qui est décerné contre une personne en fuite.\n\nLe contrôle judiciaire est une mesure alternative à la détention. Il impose à la personne mise en examen de respecter certaines obligations comme ne pas quitter le territoire, ne pas fréquenter certains lieux ou certaines personnes, remettre son passeport, constituer un cautionnement. La violation de ces obligations peut entraîner le placement en détention provisoire.\n\nL'assignation à résidence sous surveillance électronique, ou ARSE, a été introduite par la loi du 21 juillet 2009. Elle permet à la personne d'être assignée à son domicile avec un dispositif de surveillance électronique, comme alternative au contrôle judiciaire ou à la détention provisoire.\n\nLa détention provisoire est la mesure la plus grave. Depuis la loi du 5 mars 2007, elle ne peut être décidée que par le Juge des libertés et de la détention, le JLD, sur saisine du juge d'instruction ou du procureur. Elle suppose que le contrôle judiciaire ou l'ARSE soient insuffisants. Les motifs légaux sont énumérés par l'article 144 du CPP : risque de fuite, protection des preuves, prévention du renouvellement de l'infraction, trouble à l'ordre public, ou nécessité de mettre fin à des pressions sur les témoins. La détention provisoire est limitée dans le temps et doit être régulièrement réexaminée.",
+        "questions": [
+          {
+            "q": "Quels sont les différents types de mandats délivrés par le juge d'instruction ?",
+            "hint": "comparution, amener, dépôt, arrêt (art. 122 CPP)"
+          },
+          {
+            "q": "Quel magistrat décide de la détention provisoire depuis 2000 ?",
+            "hint": "JLD, juge des libertés et de la détention, sur saisine du juge d'instruction"
+          },
+          {
+            "q": "Quels sont les motifs légaux de la détention provisoire (art. 144 CPP) ?",
+            "hint": "risque de fuite, protection des preuves, trouble à l'ordre public, prévention du renouvellement"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 6.3 — Le règlement et le contrôle de l'instruction",
+        "text": "À la fin de ses investigations, le juge d'instruction rend une ordonnance de règlement qui met fin à l'instruction.\n\nL'ordonnance de non-lieu est rendue lorsque les charges sont insuffisantes contre la personne mise en examen. L'article 177 du CPP prévoit que le juge déclare qu'il n'y a pas lieu à suivre. Le non-lieu peut être total ou partiel. L'ordonnance d'irresponsabilité pénale pour cause de trouble mental est rendue lorsque la personne était atteinte au moment des faits d'un trouble psychique ayant aboli son discernement.\n\nL'ordonnance de renvoi est rendue lorsque les charges sont suffisantes pour un délit. Elle renvoie le prévenu devant le tribunal correctionnel. L'ordonnance de mise en accusation est rendue pour les crimes et renvoie l'accusé devant la Cour d'assises. Ces ordonnances doivent être motivées.\n\nLe contrôle des actes d'instruction s'exerce par la voie des nullités. Les nullités textuelles sont prévues par un texte exprès. Les nullités substantielles sanctionnent les atteintes aux droits de la défense et à l'équité de la procédure en application de l'article 802 du CPP. Le principe du grief, posé par l'article 171 du CPP, exige que la partie qui invoque la nullité démontre une atteinte à ses intérêts. La chambre de l'instruction est compétente pour connaître des nullités.\n\nLe contrôle des actes de juridiction s'exerce par l'appel des ordonnances du juge d'instruction devant la chambre de l'instruction dans un délai de 10 jours, puis par le pourvoi en cassation devant la chambre criminelle.",
+        "questions": [
+          {
+            "q": "Quels sont les types d'ordonnances de règlement possibles ?",
+            "hint": "non-lieu, irresponsabilité pénale, renvoi (correctionnel), mise en accusation (cour d'assises)"
+          },
+          {
+            "q": "Qu'est-ce que le principe du grief en matière de nullités ?",
+            "hint": "nullité nécessite une atteinte aux intérêts de la partie (art. 802 CPP)"
+          },
+          {
+            "q": "Devant quelle juridiction les nullités sont-elles portées ?",
+            "hint": "chambre de l'instruction, saisie par appel des ordonnances ou requête directe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 7 — L'audience et la décision des juridictions de jugement",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 7.1 — La Cour d'assises",
+        "text": "La Cour d'assises est la juridiction compétente pour juger les crimes. Elle est composée de trois magistrats professionnels et d'un jury populaire de six citoyens en premier ressort, neuf en appel. Le jury est tiré au sort sur les listes électorales.\n\nLa procédure précédant les débats comprend la préparation de la session d'assises par le président, la constitution du jury, et la vérification des nullités éventuelles. Les débats sont oraux et publics. Le président de la Cour d'assises dispose d'un pouvoir discrétionnaire pour la conduite des débats. L'accusé est interrogé, les témoins sont entendus, les experts présentent leurs conclusions. Le ministère public prend ses réquisitions, puis la défense plaide. L'accusé a droit à la parole en dernier.\n\nLa délibération se déroule dans le secret absolu. Les questions posées au jury portent sur la culpabilité et les circonstances aggravantes. La décision est prise à la majorité. Depuis la loi du 10 août 2011, les arrêts d'assises doivent être motivés conformément à l'article 365-1 du CPP. L'arrêt peut être de condamnation ou d'acquittement. En cas de condamnation, la peine est déterminée.\n\nLa procédure par défaut criminel a remplacé l'ancienne contumace. Lorsque l'accusé ne se présente pas sans excuse valable, il est jugé par défaut. Le jugement par défaut peut faire l'objet d'une opposition qui anéantit la première décision et fait rejuger l'affaire. Les Cours criminelles départementales, créées à titre expérimental par la loi de programmation 2018-2022, jugent les crimes punis de 15 à 20 ans de réclusion sans jury populaire.",
+        "questions": [
+          {
+            "q": "Quelle est la composition de la Cour d'assises en premier ressort et en appel ?",
+            "hint": "1er ressort : 3 magistrats + 6 jurés ; appel : 3 magistrats + 9 jurés"
+          },
+          {
+            "q": "Depuis quand les arrêts de Cour d'assises doivent-ils être motivés ?",
+            "hint": "depuis 2012, loi du 10 août 2011, article 365-1 CPP"
+          },
+          {
+            "q": "Qu'est-ce que le pouvoir discrétionnaire du président de la Cour d'assises ?",
+            "hint": "pouvoir de conduite des débats, prendre toutes mesures utiles à la manifestation de la vérité"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 7.2 — Le tribunal correctionnel et ses procédures rapides",
+        "text": "Le tribunal correctionnel juge les délits. Il siège en formation collégiale de trois magistrats ou à juge unique depuis la loi du 10 août 2007.\n\nLes débats sont publics, sauf décision motivée de huis clos dans l'intérêt de l'ordre public ou lorsque la publicité serait dangereuse. Le président mène l'interrogatoire du prévenu. Les témoins sont entendus sous serment. Le ministère public prend ses réquisitions. La partie civile expose ses demandes. La défense présente ses observations. Le prévenu a toujours le dernier mot en application de l'article 346 du CPP. Le jugement est rendu après délibéré et doit être motivé.\n\nLes procédures rapides permettent de juger rapidement certaines affaires. La comparution immédiate concerne les délits punis d'au moins deux ans d'emprisonnement, ou six mois en cas de flagrance. Le prévenu est présenté le jour même au tribunal après avoir été informé de ses droits. Il peut demander un délai pour préparer sa défense. La détention provisoire peut être ordonnée en attendant le jugement.\n\nLa comparution sur reconnaissance préalable de culpabilité, ou CRPC, dite plaider-coupable, permet au procureur de proposer une peine au prévenu qui reconnaît les faits. L'accord est soumis à l'homologation du juge du siège lors d'une audience publique. Si le juge refuse d'homologuer, le procureur peut engager d'autres poursuites. La CRPC ne s'applique pas aux mineurs ni à certains délits comme les crimes ou les délits d'atteintes volontaires à la vie.\n\nL'ordonnance pénale est une procédure sans audience pour les contraventions et certains délits. Le juge statue sur le seul vu de la procédure écrite et fixe une amende. Le prévenu peut former opposition.",
+        "questions": [
+          {
+            "q": "Qu'est-ce que le « dernier mot » au prévenu ?",
+            "hint": "droit de s'exprimer en dernier avant le jugement (art. 346 CPP)"
+          },
+          {
+            "q": "Comment se déroule la CRPC ?",
+            "hint": "proposition du procureur, accord du prévenu, homologation par le juge du siège"
+          },
+          {
+            "q": "À quels délits la CRPC ne s'applique-t-elle pas ?",
+            "hint": "mineurs, crimes, délits d'atteintes volontaires à la vie"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 7.3 — Le tribunal de police",
+        "text": "Le tribunal de police est compétent pour juger les contraventions des cinq classes. Il statue à juge unique et applique une procédure simplifiée.\n\nLa procédure ordinaire devant le tribunal de police est régie par les articles 523 et suivants du Code de procédure pénale. L'audience est publique. Le prévenu comparaît, assisté le cas échéant de son avocat. Les témoins sont entendus si nécessaire. La décision est rendue sous forme de jugement. Le ministère public est représenté par le procureur de la République ou un officier du ministère public.\n\nL'ordonnance pénale est une procédure sans audience applicable aux contraventions des quatre premières classes. Le juge statue sur le seul vu de la procédure écrite et fixe une amende. Si le juge estime qu'une peine autre qu'une amende est nécessaire ou que la contravention est de la 5e classe, il transmet le dossier au ministère public pour citation. L'ordonnance pénale est notifiée au prévenu qui peut former opposition dans un délai de trente jours. L'opposition fait rejuger l'affaire lors d'une audience publique contradictoire.\n\nL'amende forfaitaire s'applique à certaines contraventions, notamment au Code de la route. Elle permet de payer une amende d'un montant fixe sans intervention du juge. Le contrevenant peut contester l'amende forfaitaire dans un délai déterminé, ce qui déclenche alors une procédure classique.\n\nLes décisions du tribunal de police sont susceptibles d'appel devant la chambre des appels correctionnels de la cour d'appel. L'appel est suspensif et permet un réexamen complet de l'affaire.",
+        "questions": [
+          {
+            "q": "Quelle est la compétence du tribunal de police ?",
+            "hint": "contraventions des 5 classes, juge unique, procédure simplifiée"
+          },
+          {
+            "q": "Qu'est-ce que l'ordonnance pénale devant le tribunal de police ?",
+            "hint": "procédure sans audience, amende fixée par ordonnance, opposition possible dans les 30 jours"
+          },
+          {
+            "q": "Qu'est-ce que l'amende forfaitaire ?",
+            "hint": "amende fixe sans intervention du juge, notamment Code de la route, contestation possible"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Leçon 8 — Les voies de recours et l'autorité de la chose jugée",
+    "sub_lessons": [
+      {
+        "title": "Sous-leçon 8.1 — L'opposition et l'appel",
+        "text": "Les voies de recours ordinaires comprennent l'opposition et l'appel.\n\nL'opposition est une voie de rétractation ouverte à la personne jugée par défaut, c'est-à-dire sans avoir été informée de la date de l'audience ou sans avoir comparu sans excuse valable. Le condamné par défaut demande au même tribunal de rejuger l'affaire. Le délai d'opposition est de dix jours à compter de la signification du jugement. L'opposition a pour effet d'anéantir le jugement par défaut et de faire rejuger l'affaire sur le fond. Le tribunal peut alors confirmer, infirmer ou modifier sa précédente décision.\n\nL'appel est une voie de réformation qui soumet l'affaire à une juridiction supérieure. Le délai d'appel est de dix jours pour les parties et d'un mois pour le procureur général. L'appel a un effet suspensif, ce qui signifie que la décision n'est pas exécutée pendant le délai d'appel. Il a aussi un effet dévolutif, c'est-à-dire qu'il transfère l'affaire à la juridiction d'appel qui rejuge entièrement l'affaire. Le principe de la prohibition de la reformatio in pejus interdit d'aggraver le sort de l'appelant s'il est seul à faire appel : la peine ne peut pas être alourdie.\n\nEn matière correctionnelle, l'appel est porté devant la chambre des appels correctionnels de la cour d'appel. En matière criminelle, l'appel est porté devant une Cour d'assises d'appel composée de trois magistrats professionnels et de neuf jurés. En matière de police, l'appel est également porté devant la chambre des appels correctionnels.",
+        "questions": [
+          {
+            "q": "Quelle est la différence entre l'opposition et l'appel ?",
+            "hint": "opposition : rétractation par le même tribunal ; appel : réformation par une juridiction supérieure"
+          },
+          {
+            "q": "Qu'est-ce que la prohibition de la reformatio in pejus ?",
+            "hint": "interdiction d'aggraver la peine de l'appelant seul"
+          },
+          {
+            "q": "Quels sont les effets de l'appel ?",
+            "hint": "effet suspensif (pas d'exécution) et dévolutif (transfert à la juridiction d'appel)"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 8.2 — Le pourvoi en cassation et la révision",
+        "text": "Les voies de recours extraordinaires comprennent le pourvoi en cassation et les demandes en révision et réexamen.\n\nLe pourvoi en cassation est jugé par la chambre criminelle de la Cour de cassation. La Cour de cassation est juge du droit et non du fait : elle ne rejuge pas l'affaire mais contrôle l'exacte application de la loi par les juges du fond. Le délai de pourvoi est de cinq jours francs pour les parties et d'un mois pour le procureur général. Le pourvoi n'a pas d'effet suspensif, sauf exceptions. Si la Cour de cassation casse la décision, elle renvoie l'affaire devant une juridiction de même nature mais différemment composée. Le pourvoi dans l'intérêt de la loi est une procédure particulière qui permet au procureur général près la Cour de cassation de déférer un arrêt contraire à la loi, même si le délai de pourvoi est expiré, sans remettre en cause la situation des parties.\n\nLes demandes en révision et en réexamen ont été réformées par la loi du 20 juin 2014. La révision permet de demander un nouveau jugement lorsqu'après une condamnation pénale définitive, un fait nouveau ou un élément inconnu au jour du procès est de nature à faire naître un doute sur la culpabilité du condamné. La demande est portée devant la Cour de révision et de réexamen au sein de la Cour de cassation. Le réexamen est ouvert lorsqu'une condamnation est intervenue en violation de la Convention européenne des droits de l'homme et que la CEDH a constaté cette violation.",
+        "questions": [
+          {
+            "q": "Le pourvoi en cassation constitue-t-il un troisième degré de juridiction ?",
+            "hint": "non, juge du droit et non du fait, contrôle l'application de la loi sans rejuger les faits"
+          },
+          {
+            "q": "Qu'est-ce que la révision d'une condamnation pénale ?",
+            "hint": "fait nouveau ou élément inconnu créant un doute sur la culpabilité, Cour de révision et de réexamen"
+          },
+          {
+            "q": "Qu'est-ce que le pourvoi dans l'intérêt de la loi ?",
+            "hint": "procédure du procureur général pour faire constater une violation de la loi sans remettre en cause les parties"
+          }
+        ]
+      },
+      {
+        "title": "Sous-leçon 8.3 — L'autorité de la chose jugée",
+        "text": "L'autorité de la chose jugée est un principe fondamental qui interdit de remettre en cause une décision de justice devenue définitive.\n\nL'autorité de la chose jugée au criminel sur le criminel repose sur le principe non bis in idem : nul ne peut être jugé deux fois pour les mêmes faits. L'article 368 du Code de procédure pénale prévoit qu'aucune personne acquittée légalement ne peut plus être reprise ou accusée à raison des mêmes faits, même sous une qualification différente. La jurisprudence étend ce principe au-delà de la matière criminelle : un même fait ne peut donner lieu contre le même prévenu à deux actions pénales distinctes, selon un arrêt de la Chambre criminelle du 19 janvier 2005. La Cour européenne des droits de l'homme impose une conception exigeante dans l'arrêt Zolotoukhine c/ Russie : l'article 4 du Protocole no 7 doit être compris comme interdisant de poursuivre ou de juger une personne pour une seconde infraction pour autant que celle-ci a pour origine des faits identiques ou des faits qui sont en substance les mêmes. Les conditions de l'autorité sont l'identité d'objet, l'identité de parties et l'identité de faits.\n\nL'autorité de la chose jugée au criminel sur le civil est un principe admis par la jurisprudence depuis le XIXe siècle. Les constatations opérées par le juge répressif de façon certaine et qui représentent le soutien nécessaire de la décision pénale ont au civil l'autorité de la chose jugée. Cette autorité s'impose à tous, y compris à ceux qui n'avaient pas participé au procès pénal. Après une condamnation pénale, le juge civil ne peut nier l'existence des faits délictueux ou la culpabilité du condamné. Après une relaxe pour inexistence des faits, le juge civil ne peut condamner à réparation.",
+        "questions": [
+          {
+            "q": "Que signifie le principe non bis in idem ?",
+            "hint": "nul ne peut être jugé deux fois pour les mêmes faits"
+          },
+          {
+            "q": "Quelles sont les trois conditions de l'autorité de la chose jugée au criminel ?",
+            "hint": "identité d'objet, de parties, de faits"
+          },
+          {
+            "q": "Quelle est la portée de l'autorité de la chose jugée au criminel sur le civil ?",
+            "hint": "portée erga omnes, le juge civil ne peut contredire les constatations pénales certaines et nécessaires"
+          }
+        ]
+      }
+    ]
+  }
+]

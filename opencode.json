@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "remote-llama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server remote",
+      "options": {
+        "baseURL": "https://unstaffed-rendering-wielder.ngrok-free.dev/"
+      },
+      "models": {
+        "qwen-coder": {
+          "name": "Qwen Coder Remote",
+          "limit": {
+            "context": 8192,
+            "output": 2048
+          }
+        }
+      }
+    }
+  }
+}

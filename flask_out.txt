@@ -1,0 +1,28 @@
+[AUDIO] Generation de 24 sous-lecons...
+  [OK] [1/24] Sous-leçon 1.1 — Le droit à un procès équitable et l'accès au juge
+  [OK] [2/24] Sous-leçon 1.2 — La qualité de la justice pénale
+  [OK] [3/24] Sous-leçon 1.3 — La preuve en matière pénale
+  [OK] [4/24] Sous-leçon 2.1 — Composition et autorités de la police judiciaire
+  [OK] [5/24] Sous-leçon 2.2 — Les formes d'enquête de police
+  [OK] [6/24] Sous-leçon 2.3 — La garde à vue et les droits du suspect
+  [OK] [7/24] Sous-leçon 3.1 — Les juridictions d'instruction
+  [OK] [8/24] Sous-leçon 3.2 — Les juridictions de jugement de droit commun
+  [OK] [9/24] Sous-leçon 3.3 — Les juridictions d'exception
+  [OK] [10/24] Sous-leçon 4.1 — L'action publique et ses obstacles
+  [OK] [11/24] Sous-leçon 4.2 — La prescription de l'action publique
+  [OK] [12/24] Sous-leçon 4.3 — L'action civile
+  [OK] [13/24] Sous-leçon 5.1 — Le classement sans suite et les alternatives aux poursuites
+  [OK] [14/24] Sous-leçon 5.2 — La saisine du juge d'instruction
+  [OK] [15/24] Sous-leçon 5.3 — La saisine directe des juridictions de jugement
+  [OK] [16/24] Sous-leçon 6.1 — La conduite de l'instruction (actes et mis en examen)
+  [OK] [17/24] Sous-leçon 6.2 — Les décisions relatives à la liberté
+  [OK] [18/24] Sous-leçon 6.3 — Le règlement et le contrôle de l'instruction
+  [OK] [19/24] Sous-leçon 7.1 — La Cour d'assises
+  [OK] [20/24] Sous-leçon 7.2 — Le tribunal correctionnel et ses procédures rapides
+  [OK] [21/24] Sous-leçon 7.3 — Le tribunal de police
+  [OK] [22/24] Sous-leçon 8.1 — L'opposition et l'appel
+  [OK] [23/24] Sous-leçon 8.2 — Le pourvoi en cassation et la révision
+  [OK] [24/24] Sous-leçon 8.3 — L'autorité de la chose jugée
+[AUDIO] Tous les fichiers audio sont prets!
+ * Serving Flask app 'app'
+ * Debug mode: off
