@@ -53,17 +53,18 @@ def _search_lesson(question, lesson_context):
     words = [w.lower() for w in re.findall(r"\w{4,}", question)]
     if not words:
         return "Posez une question plus précise sur la leçon."
-    sentences = re.split(r"(?<=[.!?])\s+", lesson_context)
+    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", lesson_context) if p.strip()]
     scored = []
-    for s in sentences:
-        s_lower = s.lower()
-        hits = sum(1 for w in words if w in s_lower)
+    for p in paragraphs:
+        p_lower = p.lower()
+        hits = sum(1 for w in words if w in p_lower)
         if hits > 0:
-            scored.append((hits, len(s), s))
+            scored.append((hits, len(p), p))
     scored.sort(key=lambda x: (-x[0], x[1]))
-    best = [s for _, _, s in scored[:3]]
+    best = [p for _, _, p in scored[:3]]
     if best:
-        return "Extrait de la leçon :\n\n" + "\n\n".join(best)
+        text = "\n\n".join(best)
+        return f"Extrait de la leçon :\n\n{text}" if len(text) > 20 else "Le serveur IA n'est pas disponible. Réessayez plus tard."
     return "Le serveur IA n'est pas disponible. Réessayez plus tard."
 
 
@@ -75,23 +76,21 @@ def ask_question(question, lesson_context, server_url=None):
         return _search_lesson(question, lesson_context)
 
     prompt = (
-        "Tu es un professeur de droit. La leçon actuelle sert de point de départ "
-        "pour répondre aux questions des étudiants. Tu peux répondre à toute question "
-        "qui a un rapport avec le thème de la leçon, même si la réponse ne se trouve "
-        "pas textuellement dans le contenu fourni. Tu dois t'appuyer sur tes "
-        "connaissances juridiques pour développer et expliquer.\n"
-        "Si la question est totalement hors-sujet (pas liée au droit), réponds :\n"
+        "Tu es un professeur de droit. Tu réponds TOUJOURS en 2 à 4 phrases complètes (environ 100 mots).\n"
+        "Utilise le contenu de la leçon ci-dessous pour répondre à la question de l'étudiant.\n"
+        "Ne donne JAMAIS une note, un score ou un nombre. Réponds uniquement en texte explicatif.\n"
+        "Si la question est hors-sujet (pas liée au droit), réponds :\n"
         "'Cette question ne fait pas partie de la leçon actuelle.'\n\n"
-        f"Thème de la leçon actuelle :\n{lesson_context}\n\n"
-        f"Question de l'étudiant : {question}\n"
+        f"--- Leçon actuelle ---\n{lesson_context}\n\n"
+        f"Question : {question}\n"
         "Réponse :"
     )
 
     payload = {
         "prompt": prompt,
-        "n_predict": 300,
-        "temperature": 0.3,
-        "stop": ["\n\n", "Question :"],
+        "n_predict": 500,
+        "temperature": 0.5,
+        "stop": ["Question :"],
     }
 
     try:
