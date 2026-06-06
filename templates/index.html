@@ -446,6 +446,11 @@ sendBtn.onclick = async () => {
 chatInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendBtn.click(); }
 });
+chatInput.addEventListener('paste', (e) => {
+  e.preventDefault();
+  const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+  chatInput.setRangeText(text, chatInput.selectionStart, chatInput.selectionEnd, 'end');
+});
 
 function escapeHtml(str) {
   const d = document.createElement('div');

@@ -83,7 +83,9 @@ def ask_question(question, lesson_context, server_url=None):
             return f"Erreur serveur : HTTP {resp.status_code}"
         body = resp.json()
         answer = body.get("choices", [{}])[0].get("text", "").strip()
-        return answer if answer else "Le serveur n'a pas fourni de réponse."
+        if not answer or "does not support image" in answer.lower() or "error" in answer.lower():
+            return _keyword_fallback(question, lesson_context[:50], reason="réponse non valide")[1]
+        return answer
     except Exception as e:
         return _keyword_fallback(question, lesson_context[:50], reason=str(e))[1]
 
