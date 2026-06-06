@@ -94,10 +94,15 @@ def _is_next_blocked(li, si):
 
 @app.route("/")
 def index():
-    session.setdefault("lesson_idx", 0)
-    session.setdefault("sub_idx", 0)
-    session.setdefault("passed", [])
     return render_template("index.html")
+
+@app.route("/api/restore", methods=["POST"])
+def api_restore():
+    data = request.json
+    session["lesson_idx"] = data.get("lesson_idx", 0)
+    session["sub_idx"] = data.get("sub_idx", 0)
+    session["passed"] = data.get("passed", [])
+    return jsonify({"status": "ok"})
 
 
 @app.route("/api/lesson")
@@ -231,15 +236,18 @@ def api_check_server():
 
 @app.route("/api/restart", methods=["POST"])
 def api_restart():
-    session["lesson_idx"] = 0
-    session["sub_idx"] = 0
-    session["passed"] = []
+    session.clear()
     return jsonify({"status": "ok"})
 
 
 @app.route("/api/sub-lessons")
 def api_sub_lessons():
     passed = _get_passed()
+    if request.args.get("passed"):
+        try:
+            passed = set(tuple(x) for x in json.loads(request.args["passed"]))
+        except Exception:
+            pass
     result = []
     for li, lesson in enumerate(lessons):
         for si, sub in enumerate(lesson["sub_lessons"]):

@@ -146,6 +146,40 @@
   .passed-badge { color: #2e7d32; font-size: 11px; margin-left: 4px; }
   .hidden { display: none !important; }
 
+  .register-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+    display: flex; justify-content: center; align-items: center; z-index: 2000;
+  }
+  .register-overlay.hidden { display: none !important; }
+  .register-card {
+    background: #1e1e2e; border: 1px solid #45475a; border-radius: 16px;
+    padding: 36px 32px; max-width: 420px; width: 90%; text-align: center;
+  }
+  .register-card h2 { color: #89b4fa; font-size: 22px; margin-bottom: 8px; }
+  .register-card p { color: #a6adc8; font-size: 13px; margin-bottom: 20px; }
+  .register-card label { display: block; text-align: left; color: #a6adc8; font-size: 12px; margin-bottom: 4px; margin-top: 12px; }
+  .register-card input {
+    width: 100%; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid #45475a; background: #313244; color: #cdd6f4;
+    font-size: 15px; outline: none; font-family: inherit;
+  }
+  .register-card input:focus { border-color: #89b4fa; }
+  .register-card .btn { margin-top: 20px; width: 100%; padding: 12px; font-size: 15px; }
+
+  @media print {
+    body { background: #fff !important; color: #000 !important; }
+    .sidebar, .sidebar-overlay, .header, hr, .player, .quiz-section,
+    #chat-section, .status-bar, .menu-btn { display: none !important; }
+    .main { overflow: visible !important; height: auto !important; }
+    .container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+    .modal-overlay { position: static !important; background: none !important; display: block !important; }
+    .modal { border: none !important; box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 40px !important; }
+    .certificate h2 { color: #1a1a2e !important; }
+    .certificate p { color: #333 !important; }
+    .certificate .student-name { color: #000 !important; font-size: 18px; }
+    .btn-row { display: none !important; }
+  }
+
   .menu-btn {
     display: none; background: none; border: none; color: #cdd6f4;
     font-size: 24px; cursor: pointer; padding: 4px 8px;
@@ -231,8 +265,73 @@
   <div class="modal" id="modal-content"></div>
 </div>
 
+<div class="register-overlay" id="register-overlay">
+  <div class="register-card">
+    <h2>Inscription</h2>
+    <p>Veuillez entrer votre nom et prenom avant de commencer la lecon.</p>
+    <label>Nom</label>
+    <input type="text" id="reg-name" placeholder="Votre nom" autocomplete="family-name">
+    <label>Prenom</label>
+    <input type="text" id="reg-prename" placeholder="Votre prenom" autocomplete="given-name">
+    <button class="btn" id="reg-submit">Commencer la lecon</button>
+  </div>
+</div>
+
 <script>
+// ---- localStorage helpers ----
+const LS_KEY = 'flask_lesson_state';
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch (e) { /* ignore */ }
+  return null;
+}
+
+function saveState(state) {
+  localStorage.setItem(LS_KEY, JSON.stringify(state));
+}
+
+function clearState() {
+  localStorage.removeItem(LS_KEY);
+}
+
+function getStudentName() {
+  const s = loadState();
+  return s ? `${s.prename || ''} ${s.name || ''}`.trim() : '';
+}
+
+async function restoreSessionToServer(state) {
+  await fetch('/api/restore', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      lesson_idx: state.lesson_idx,
+      sub_idx: state.sub_idx,
+      passed: state.passed,
+    })
+  });
+}
+
+// ---- DOM refs ----
 const audio = document.getElementById('audio-player');
+
+// ---- auto-restore session before API calls ----
+async function ensureSession() {
+  const s = loadState();
+  if (s) {
+    await fetch('/api/restore', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        lesson_idx: s.lesson_idx,
+        sub_idx: s.sub_idx,
+        passed: s.passed,
+      })
+    });
+  }
+}
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const quizSection = document.getElementById('quiz-section');
@@ -244,11 +343,48 @@ const chatInput = document.getElementById('chat-input');
 const sendBtn = document.getElementById('send-btn');
 const modalOverlay = document.getElementById('modal-overlay');
 const modalContent = document.getElementById('modal-content');
+const registerOverlay = document.getElementById('register-overlay');
+const regName = document.getElementById('reg-name');
+const regPrename = document.getElementById('reg-prename');
+const regSubmit = document.getElementById('reg-submit');
 
 let currentLesson = null;
 let quizPassed = false;
 
+// ---- initialisation ----
+async function init() {
+  const saved = loadState();
+  if (saved && saved.name && saved.prename) {
+    await restoreSessionToServer(saved);
+    registerOverlay.classList.add('hidden');
+    loadLesson();
+  } else {
+    registerOverlay.classList.remove('hidden');
+  }
+}
+
+regSubmit.onclick = async () => {
+  const name = regName.value.trim();
+  const prename = regPrename.value.trim();
+  if (!name || !prename) { alert('Veuillez entrer votre nom et prenom.'); return; }
+  regSubmit.disabled = true;
+  regSubmit.textContent = 'Enregistrement...';
+  const state = { lesson_idx: 0, sub_idx: 0, passed: [], name, prename };
+  saveState(state);
+  await restoreSessionToServer(state);
+  regSubmit.disabled = false;
+  regSubmit.textContent = 'Commencer la lecon';
+  registerOverlay.classList.add('hidden');
+  loadLesson();
+};
+
+regPrename.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') regSubmit.click();
+});
+
+// ---- lesson loading ----
 async function loadLesson() {
+  await ensureSession();
   const res = await fetch('/api/lesson');
   const data = await res.json();
   currentLesson = data;
@@ -289,8 +425,11 @@ audio.onloadedmetadata = () => {
   document.getElementById('status-text').textContent = 'Lecture disponible';
 };
 
+// ---- sidebar ----
 async function renderSidebar() {
-  const res = await fetch('/api/sub-lessons');
+  const s = loadState();
+  const passedParam = s && s.passed ? `?passed=${encodeURIComponent(JSON.stringify(s.passed))}` : '';
+  const res = await fetch(`/api/sub-lessons${passedParam}`);
   const list = await res.json();
   const el = document.getElementById('sidebar-list');
   el.innerHTML = list.map((item, i) => `
@@ -309,6 +448,8 @@ async function navigateTo(li, si) {
     body: JSON.stringify({direction: 'goto', lesson_idx: li, sub_idx: si})
   });
   if (!res.ok) return alert('Vous devez reussir le quiz avant.');
+  const data = await res.json();
+  persistNavPosition(data);
   await loadLesson();
 }
 
@@ -320,6 +461,7 @@ prevBtn.onclick = async () => {
   });
   if (!res.ok) return;
   const data = await res.json();
+  persistNavPosition(data);
   await loadLesson();
 };
 
@@ -336,9 +478,20 @@ nextBtn.onclick = async () => {
   }
   const data = await res.json();
   if (data.done) { showCertificate(); return; }
+  persistNavPosition(data);
   await loadLesson();
 };
 
+function persistNavPosition(data) {
+  const s = loadState();
+  if (s) {
+    s.lesson_idx = data.lesson_idx;
+    s.sub_idx = data.sub_idx;
+    saveState(s);
+  }
+}
+
+// ---- quiz ----
 submitBtn.onclick = async () => {
   const answer = answerInput.value.trim();
   if (!answer) return alert('Ecrivez une reponse.');
@@ -377,7 +530,16 @@ function showResult(data) {
   modalOverlay.classList.add('show');
   document.getElementById('status-text').textContent = data.passed ? 'Reussi !' : 'A reessayer';
   quizSection.style.display = 'none';
-  if (data.passed) renderSidebar();
+  if (data.passed) {
+    const s = loadState();
+    if (s) {
+      const entry = [currentLesson.lesson_idx, currentLesson.sub_idx];
+      const exists = s.passed.some(p => p[0] === entry[0] && p[1] === entry[1]);
+      if (!exists) s.passed.push(entry);
+      saveState(s);
+    }
+    renderSidebar();
+  }
 }
 
 window.closeModal = () => { modalOverlay.classList.remove('show'); };
@@ -394,33 +556,14 @@ window.closeModalAndNext = async () => {
   await loadLesson();
 };
 
-function showCertificate() {
-  modalContent.innerHTML = `
-    <div class="certificate">
-      <h2>FELICITATIONS !</h2>
-      <p>Vous avez reussi l'integralite du manuel :</p>
-      <p style="font-weight:700;color:#cdd6f4;margin:8px 0">
-        Procedure penale - Edouard Verny (6e ed., Dalloz)
-      </p>
-      <p>Toutes les sous-lecons sont reussies !</p>
-      <p style="margin-top:16px;color:#cdd6f4">
-        Ce certificat atteste que vous avez parcouru et reussi<br>
-        l'ensemble du programme.
-      </p>
-    </div>
-    <div class="btn-row" style="justify-content:center;margin-top:16px">
-      <button class="btn" onclick="restartApp()">Recommencer</button>
-    </div>
-  `;
-  modalOverlay.classList.add('show');
-}
-
 async function restartApp() {
   modalOverlay.classList.remove('show');
+  clearState();
   await fetch('/api/restart', {method: 'POST'});
-  await loadLesson();
+  registerOverlay.classList.remove('hidden');
 }
 
+// ---- chat ----
 sendBtn.onclick = async () => {
   const question = chatInput.value.trim();
   if (!question) return;
@@ -458,6 +601,34 @@ function escapeHtml(str) {
   return d.innerHTML;
 }
 
+// ---- certificate ----
+function showCertificate() {
+  const fullName = getStudentName();
+  modalContent.innerHTML = `
+    <div class="certificate">
+      <h2>FELICITATIONS !</h2>
+      <p style="font-weight:700;color:#cdd6f4;margin:8px 0;font-size:16px" class="student-name">
+        ${escapeHtml(fullName)}
+      </p>
+      <p>Vous avez reussi l'integralite du manuel :</p>
+      <p style="font-weight:700;color:#cdd6f4;margin:8px 0">
+        Procedure penale - Edouard Verny (6e ed., Dalloz)
+      </p>
+      <p>Toutes les sous-lecons sont reussies !</p>
+      <p style="margin-top:16px;color:#cdd6f4">
+        Ce certificat atteste que vous avez parcouru et reussi<br>
+        l'ensemble du programme.
+      </p>
+    </div>
+    <div class="btn-row" style="justify-content:center;margin-top:16px">
+      <button class="btn" onclick="window.print()">Imprimer en PDF</button>
+      <button class="btn btn-secondary" onclick="restartApp()">Recommencer</button>
+    </div>
+  `;
+  modalOverlay.classList.add('show');
+}
+
+// ---- misc ----
 async function checkServer() {
   try {
     const res = await fetch('/api/check-server');
@@ -495,7 +666,7 @@ const closeSidebar = () => {
 document.getElementById('sidebar-close').onclick = closeSidebar;
 sidebarOverlay.onclick = closeSidebar;
 
-loadLesson();
+init();
 </script>
 </body>
 </html>
