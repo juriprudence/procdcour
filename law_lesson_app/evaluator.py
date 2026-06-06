@@ -96,6 +96,16 @@ def evaluate(question, answer, hint, server_url=None):
         return _keyword_fallback(answer, hint, reason="serveur indisponible")
 
     prompt = (
+        "Question: quelle est la capitale de la France?\n"
+        "Etudiant: Berlin\n"
+        "Attendu: Paris\n"
+        "Note: 0\n"
+        "\n"
+        "Question: role du juge?\n"
+        "Etudiant: il applique la loi\n"
+        "Attendu: appliquer la loi, rendre la justice\n"
+        "Note: 7\n"
+        "\n"
         "Question: role du juge?\n"
         "Etudiant: il dirige les enquetes\n"
         "Attendu: diriger les enquetes\n"
@@ -109,8 +119,8 @@ def evaluate(question, answer, hint, server_url=None):
 
     payload = {
         "prompt": prompt,
-        "n_predict": 5,
-        "temperature": 0.1,
+        "n_predict": 10,
+        "temperature": 0.3,
         "stop": ["\n"],
     }
 
