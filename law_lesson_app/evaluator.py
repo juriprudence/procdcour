@@ -17,7 +17,7 @@ def check_server(server_url=None):
         server_url = get_server_url()
     url = server_url.rstrip("/")
     headers = {"ngrok-skip-browser-warning": "true"} if "ngrok" in server_url else {}
-    for endpoint in ("/health", "/v1/models", "/"):
+    for endpoint in ("/health", "/v1/models", "/api/tags", "/"):
         try:
             r = requests.get(f"{url}{endpoint}", headers=headers, timeout=5)
             if r.status_code < 500:
@@ -72,25 +72,18 @@ def ask_question(question, lesson_context, server_url=None):
     if server_url is None:
         server_url = get_server_url()
 
-    if not check_server(server_url):
-        return _search_lesson(question, lesson_context)
-
     prompt = (
-        "Tu es un professeur de droit. Tu réponds TOUJOURS en 2 à 4 phrases complètes (environ 100 mots).\n"
-        "Utilise le contenu de la leçon ci-dessous pour répondre à la question de l'étudiant.\n"
-        "Ne donne JAMAIS une note, un score ou un nombre. Réponds uniquement en texte explicatif.\n"
-        "Si la question est hors-sujet (pas liée au droit), réponds :\n"
-        "'Cette question ne fait pas partie de la leçon actuelle.'\n\n"
-        f"--- Leçon actuelle ---\n{lesson_context}\n\n"
-        f"Question : {question}\n"
-        "Réponse :"
+        f"Contexte de la leçon :\n{lesson_context}\n\n"
+        f"Question de l'étudiant : {question}\n"
+        "En tant que professeur de droit, réponds à la question en utilisant tes connaissances générales. "
+        "Le contexte ci-dessus est un support supplémentaire. "
+        "Réponds en français en 2-4 phrases claires et complètes."
     )
 
     payload = {
         "prompt": prompt,
         "n_predict": 500,
-        "temperature": 0.5,
-        "stop": ["Question :"],
+        "temperature": 0.7,
     }
 
     try:
@@ -101,7 +94,7 @@ def ask_question(question, lesson_context, server_url=None):
             return _search_lesson(question, lesson_context)
         body = resp.json()
         answer = body.get("choices", [{}])[0].get("text", "").strip()
-        if not answer or "does not support image" in answer.lower() or "error" in answer.lower():
+        if not answer:
             return _search_lesson(question, lesson_context)
         return answer
     except Exception as e:
