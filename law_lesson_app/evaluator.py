@@ -48,12 +48,31 @@ def _keyword_fallback(answer, hint, reason=""):
     return score, f"{label}mots-clés : {hits}/{total})"
 
 
+def _search_lesson(question, lesson_context):
+    import re
+    words = [w.lower() for w in re.findall(r"\w{4,}", question)]
+    if not words:
+        return "Posez une question plus précise sur la leçon."
+    sentences = re.split(r"(?<=[.!?])\s+", lesson_context)
+    scored = []
+    for s in sentences:
+        s_lower = s.lower()
+        hits = sum(1 for w in words if w in s_lower)
+        if hits > 0:
+            scored.append((hits, len(s), s))
+    scored.sort(key=lambda x: (-x[0], x[1]))
+    best = [s for _, _, s in scored[:3]]
+    if best:
+        return "Extrait de la leçon :\n\n" + "\n\n".join(best)
+    return "Le serveur IA n'est pas disponible. Réessayez plus tard."
+
+
 def ask_question(question, lesson_context, server_url=None):
     if server_url is None:
         server_url = get_server_url()
 
     if not check_server(server_url):
-        return _keyword_fallback(question, lesson_context[:50], reason="serveur indisponible")[1]
+        return _search_lesson(question, lesson_context)
 
     prompt = (
         "Tu es un professeur de droit. La leçon actuelle sert de point de départ "
@@ -80,14 +99,14 @@ def ask_question(question, lesson_context, server_url=None):
         headers = {"ngrok-skip-browser-warning": "true"} if "ngrok" in server_url else {}
         resp = requests.post(endpoint, json=payload, headers=headers, timeout=60)
         if resp.status_code != 200:
-            return f"Erreur serveur : HTTP {resp.status_code}"
+            return _search_lesson(question, lesson_context)
         body = resp.json()
         answer = body.get("choices", [{}])[0].get("text", "").strip()
         if not answer or "does not support image" in answer.lower() or "error" in answer.lower():
-            return _keyword_fallback(question, lesson_context[:50], reason="réponse non valide")[1]
+            return _search_lesson(question, lesson_context)
         return answer
     except Exception as e:
-        return _keyword_fallback(question, lesson_context[:50], reason=str(e))[1]
+        return _search_lesson(question, lesson_context)
 
 
 def evaluate(question, answer, hint, server_url=None):
