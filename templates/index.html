@@ -870,7 +870,12 @@ async function submitAnswer() {
   } catch(e) {
     btn.disabled = false;
     btn.innerHTML = '\uD83D\uDCE4 Soumettre à l\'évaluation IA';
-    alert('Erreur: ' + e.message);
+    document.getElementById('quizError')?.remove();
+    const errDiv = document.createElement('div');
+    errDiv.id = 'quizError';
+    errDiv.style.cssText = 'color:var(--crimson);font-size:11px;text-align:center;margin-top:8px;padding:8px;background:rgba(198,40,40,.12);border-radius:6px';
+    errDiv.textContent = '\u26A0\uFE0F ' + (e.message || 'Erreur de connexion au serveur');
+    document.getElementById('submitBtn').parentNode.insertBefore(errDiv, document.getElementById('submitBtn').nextSibling);
   }
 }
 
