@@ -1,15 +1,33 @@
-import os
-import sys
-import random
-import json
-import threading
-import asyncio
+import os, random, json, threading, asyncio, time, hashlib, re
+from datetime import datetime
 
 import edge_tts
+import requests
 from flask import Flask, jsonify, render_template, request, session, send_file
 
 from law_lesson_app.lessons import load_lessons
 from law_lesson_app.evaluator import evaluate, ask_question, check_server, get_server_url
+import firebase_helper
+
+
+def _load_env(env_path="android_app/env.txt"):
+    if not os.path.exists(env_path):
+        env_path = "env.txt"
+    if not os.path.exists(env_path):
+        return
+    with open(env_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            m = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)=(.*)$", line)
+            if m:
+                key, val = m.group(1), m.group(2).strip("\"'")
+                os.environ.setdefault(key, val)
+
+_load_env()
+
+firebase_helper.init_firebase()
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24).hex()
@@ -17,214 +35,373 @@ app.secret_key = os.urandom(24).hex()
 AUDIO_DIR = os.path.abspath("static/audio")
 os.makedirs(AUDIO_DIR, exist_ok=True)
 PASS_SCORE = 6
-_VOICE = "fr-FR-HenriNeural"
+LISTEN_SECONDS = 30
 
-lessons = load_lessons()
-_audio_cache = {}
-
-
-def _generate_all_audio():
-    total = sum(len(l["sub_lessons"]) for l in lessons)
-    done = 0
-    sys.stdout.reconfigure(encoding='utf-8')
-    print(f"[AUDIO] Generation de {total} sous-lecons...")
-    for li, lesson in enumerate(lessons):
-        for si, sub in enumerate(lesson["sub_lessons"]):
-            filename = f"lesson_{li}_{si}.mp3"
-            filepath = os.path.join(AUDIO_DIR, filename)
-            if not os.path.exists(filepath) or os.path.getsize(filepath) < 1000:
-                try:
-                    loop = asyncio.new_event_loop()
-                    asyncio.set_event_loop(loop)
-                    loop.run_until_complete(
-                        edge_tts.Communicate(sub["text"], _VOICE).save(filepath)
-                    )
-                    loop.close()
-                except Exception as e:
-                    print(f"  [ERR] {sub['title']}: {e}")
-            done += 1
-            print(f"  [OK] [{done}/{total}] {sub['title']}")
-    print("[AUDIO] Tous les fichiers audio sont prets!")
+LESSONS = load_lessons()
 
 
-_generate_all_audio()
+def _get_user_id():
+    if "user_id" not in session:
+        session["user_id"] = firebase_helper.generate_guest_uid()
+    return session["user_id"]
 
 
-def _total_sub_count():
-    return sum(len(l["sub_lessons"]) for l in lessons)
+def _get_user():
+    uid = _get_user_id()
+    try:
+        user_data = firebase_helper._admin_read(f"users/{uid}")
+        if user_data:
+            return user_data
+    except Exception:
+        pass
+    return {"name": "Étudiant", "email": "", "guest": True}
 
 
-def _running_sub_total(lesson_idx, sub_idx):
-    return sum(len(l["sub_lessons"]) for l in lessons[:lesson_idx]) + sub_idx + 1
+def _save_user(info):
+    uid = _get_user_id()
+    firebase_helper._admin_write(f"users/{uid}", info)
 
 
-def _get_lesson_data(lesson_idx, sub_idx):
-    lesson = lessons[lesson_idx]
-    sub = lesson["sub_lessons"][sub_idx]
-    return {
-        "lesson_idx": lesson_idx,
-        "sub_idx": sub_idx,
-        "lesson_title": lesson["title"],
-        "lesson_num": lesson_idx + 1,
-        "total_lessons": len(lessons),
-        "sub_title": sub["title"],
-        "sub_num": sub_idx + 1,
-        "sub_count": len(lesson["sub_lessons"]),
-        "running_total": _running_sub_total(lesson_idx, sub_idx),
-        "total_sub": _total_sub_count(),
-        "text": sub["text"],
-        "question_count": len(sub["questions"]),
-    }
+def _get_sessions():
+    uid = _get_user_id()
+    try:
+        progressions = firebase_helper.get_progression(uid)
+        return progressions
+    except Exception:
+        return []
 
 
-def _get_passed():
-    return set(tuple(x) for x in session.get("passed", []))
+def _add_session(session_data):
+    uid = _get_user_id()
+    now_ms = int(time.time() * 1000)
+    session_data["userId"] = uid
+    session_data["id"] = now_ms
+    session_data["studyDate"] = now_ms
+    try:
+        firebase_helper.save_progression(uid, session_data)
+        _update_leaderboard(uid)
+    except Exception as e:
+        print(f"Firebase save error: {e}")
 
 
-def _set_passed(li, si):
-    passed = set(tuple(x) for x in session.get("passed", []))
-    passed.add((li, si))
-    session["passed"] = [list(p) for p in passed]
+def _clear_sessions():
+    uid = _get_user_id()
+    try:
+        # Delete user's progression node
+        for db_url in firebase_helper.DATABASE_URLS:
+            url = f"{db_url.rstrip('/')}/progression/{uid}.json"
+            try:
+                requests.delete(url, timeout=10)
+            except Exception:
+                pass
+        # Delete leaderboard entry
+        for db_url in firebase_helper.DATABASE_URLS:
+            url = f"{db_url.rstrip('/')}/leaderboard/{uid}.json"
+            try:
+                requests.delete(url, timeout=10)
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"Firebase clear error: {e}")
 
 
-def _is_next_blocked(li, si):
-    passed = _get_passed()
-    return (li, si) not in passed
+def _update_leaderboard(uid):
+    try:
+        user_sessions = firebase_helper.get_progression(uid)
+        if not user_sessions:
+            return
+        user_info = _get_user()
+        successful = set()
+        best_scores = {}
+        for s in user_sessions:
+            if s.get("isSuccess"):
+                successful.add(s["lessonId"])
+            lid = s["lessonId"]
+            best_scores[lid] = max(best_scores.get(lid, 0), s.get("aiScore", 0))
+        success_points = len(successful) * 100
+        achievement_points = sum(best_scores.values()) * 10
+        interaction_points = min(len(user_sessions) * 5, 150)
+        total_score = success_points + achievement_points + interaction_points
+        completed_count = len({s["lessonId"] for s in user_sessions if s.get("isSuccess")})
+        display_name = user_info.get("name", "Étudiant")
+        if user_info.get("guest"):
+            display_name = f"Invité #{firebase_helper.get_unique_guest_number(uid)}"
+        firebase_helper.submit_global_score(uid, display_name, total_score, completed_count)
+    except Exception as e:
+        print(f"Leaderboard update error: {e}")
+
+
+def _calculate_global_score(user_sessions):
+    if not user_sessions:
+        return 0, 0
+    successful = set()
+    best_scores = {}
+    for s in user_sessions:
+        if s.get("isSuccess"):
+            successful.add(s["lessonId"])
+        lid = s["lessonId"]
+        best_scores[lid] = max(best_scores.get(lid, 0), s.get("aiScore", 0))
+    success_points = len(successful) * 100
+    achievement_points = sum(best_scores.values()) * 10
+    interaction_points = min(len(user_sessions) * 5, 150)
+    return success_points + achievement_points + interaction_points, len(successful)
 
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route("/api/restore", methods=["POST"])
-def api_restore():
-    data = request.json
-    session["lesson_idx"] = data.get("lesson_idx", 0)
-    session["sub_idx"] = data.get("sub_idx", 0)
-    session["passed"] = data.get("passed", [])
-    return jsonify({"status": "ok"})
+
+@app.route("/api/lessons")
+def api_lessons():
+    cat = request.args.get("category")
+    if cat:
+        return jsonify([l for l in LESSONS if l.get("category", "").lower() == cat.lower()])
+    return jsonify(LESSONS)
 
 
-@app.route("/api/lesson")
-def api_lesson():
-    li = session.get("lesson_idx", 0)
-    si = session.get("sub_idx", 0)
-    li = max(0, min(li, len(lessons) - 1))
-    si = max(0, min(si, len(lessons[li]["sub_lessons"]) - 1))
-    session["lesson_idx"] = li
-    session["sub_idx"] = si
-    data = _get_lesson_data(li, si)
-    data["question"] = _pick_question(li, si)
-    data["is_passed"] = (li, si) in _get_passed()
-    return jsonify(data)
+@app.route("/api/lesson/<lesson_id>")
+def api_lesson(lesson_id):
+    lesson = next((l for l in LESSONS if l["id"] == lesson_id), None)
+    if not lesson:
+        return jsonify({"error": "not found"}), 404
+    return jsonify(lesson)
 
 
-def _pick_question(lesson_idx, sub_idx):
-    sub = lessons[lesson_idx]["sub_lessons"][sub_idx]
-    q = random.choice(sub["questions"])
-    session["question_idx"] = sub["questions"].index(q)
-    return {"q": q["q"], "hint": q["hint"]}
+@app.route("/api/categories")
+def api_categories():
+    cats = list(dict.fromkeys(l.get("category", "Autre") for l in LESSONS))
+    counts = {}
+    for c in cats:
+        counts[c] = len([l for l in LESSONS if l.get("category", "").lower() == c.lower()])
+    return jsonify([{"name": c, "count": counts[c]} for c in cats])
 
 
-@app.route("/api/navigate", methods=["POST"])
-def api_navigate():
-    direction = request.json.get("direction", "next")
-    li = session.get("lesson_idx", 0)
-    si = session.get("sub_idx", 0)
-
-    blocked = _is_next_blocked(li, si)
-
-    if direction == "next":
-        if blocked:
-            return jsonify({"blocked": True, "reason": "Vous devez réussir le quiz avant de passer à la suite."}), 403
-        if si < len(lessons[li]["sub_lessons"]) - 1:
-            si += 1
-        elif li < len(lessons) - 1:
-            li += 1
-            si = 0
-        else:
-            return jsonify({"done": True})
-    elif direction == "prev":
-        if si > 0:
-            si -= 1
-        elif li > 0:
-            li -= 1
-            si = len(lessons[li]["sub_lessons"]) - 1
-    elif direction == "goto":
-        tli = request.json.get("lesson_idx", li)
-        tsi = request.json.get("sub_idx", si)
-        if (tli, tsi) != (li, si) and (tli, tsi) not in _get_passed():
-            if tli > li or (tli == li and tsi > si):
-                return jsonify({"blocked": True, "reason": "Vous devez réussir le quiz précédent."}), 403
-        li, si = tli, tsi
-
-    li = max(0, min(li, len(lessons) - 1))
-    si = max(0, min(si, len(lessons[li]["sub_lessons"]) - 1))
-    session["lesson_idx"] = li
-    session["sub_idx"] = si
-
-    data = _get_lesson_data(li, si)
-    data["question"] = _pick_question(li, si)
-    data["is_passed"] = (li, si) in _get_passed()
-    return jsonify(data)
+@app.route("/api/quiz/<lesson_id>")
+def api_quiz(lesson_id):
+    lesson = next((l for l in LESSONS if l["id"] == lesson_id), None)
+    if not lesson:
+        return jsonify({"error": "not found"}), 404
+    quizzes = lesson.get("quizzes", [])
+    if not quizzes:
+        q = {
+            "id": f"{lesson_id}_Q1",
+            "questionFr": lesson.get("quizQuestionFr", ""),
+            "questionAr": lesson.get("quizQuestionAr", ""),
+            "placeholderFr": lesson.get("quizPlaceholderFr", ""),
+            "keywords": lesson.get("keywords", []),
+            "correctAnswerFr": lesson.get("correctAnswerFr", ""),
+            "correctAnswerAr": lesson.get("correctAnswerAr", ""),
+        }
+        return jsonify(q)
+    return jsonify(random.choice(quizzes))
 
 
-@app.route("/api/generate-audio", methods=["POST"])
-def api_generate_audio():
-    li = session.get("lesson_idx", 0)
-    si = session.get("sub_idx", 0)
-    filename = f"lesson_{li}_{si}.mp3"
+@app.route("/api/generate-audio/<lesson_id>", methods=["POST"])
+def api_generate_audio(lesson_id):
+    data = request.get_json(silent=True) or {}
+    lang = data.get("language", "FR")
+    lesson = next((l for l in LESSONS if l["id"] == lesson_id), None)
+    if not lesson:
+        return jsonify({"error": "not found"}), 404
+    text = lesson.get("audioTextFr") if lang == "FR" else lesson.get("audioTextAr", lesson.get("audioTextFr"))
+    filename = f"{lesson_id}_{lang}.mp3"
+    filepath = os.path.join(AUDIO_DIR, filename)
+    if not os.path.exists(filepath):
+        try:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            loop.run_until_complete(
+                edge_tts.Communicate(text, "fr-FR-HenriNeural" if lang == "FR" else "ar-SA-HamedNeural").save(filepath)
+            )
+            loop.close()
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
     return jsonify({"audio_url": f"/audio/{filename}"})
 
 
 @app.route("/api/evaluate", methods=["POST"])
 def api_evaluate():
-    data = request.json
+    data = request.get_json(silent=True) or {}
     answer = data.get("answer", "")
-    li = session.get("lesson_idx", 0)
-    si = session.get("sub_idx", 0)
-    sub = lessons[li]["sub_lessons"][si]
-    qi = session.get("question_idx", 0)
-    q = sub["questions"][qi]
+    lesson_id = data.get("lessonId", "")
+    quiz_data = data.get("quiz", {})
+
+    lesson = next((l for l in LESSONS if l["id"] == lesson_id), None)
+    if not lesson:
+        return jsonify({"error": "lesson not found"}), 404
+
+    normalized = answer.lower()
+    keywords = quiz_data.get("keywords", lesson.get("keywords", []))
+    matched = [kw for kw in keywords if kw.lower() in normalized]
+
+    keyword_score = min(len(matched) / max(len(keywords), 1) * 5, 5)
+    question_fr = quiz_data.get("questionFr", lesson.get("quizQuestionFr", ""))
+    hint = ", ".join(keywords)
 
     try:
-        score, feedback = evaluate(q["q"], answer, q["hint"])
-    except Exception as e:
-        score, feedback = 0, f"Erreur: {e}"
+        ai_result, feedback = evaluate(question_fr, answer, hint)
+    except Exception:
+        ai_result, feedback = 3, "Évaluation automatique effectuée."
 
-    is_last_sub = si >= len(lessons[li]["sub_lessons"]) - 1
-    is_last_lesson = li >= len(lessons) - 1
-    is_last = is_last_sub and is_last_lesson
+    ai_score = min(ai_result, 5)
+    final_score = round(keyword_score + ai_score)
+    final_score = max(0, min(final_score, 10))
 
-    passed = score >= PASS_SCORE
-    if passed:
-        _set_passed(li, si)
+    passed = final_score >= PASS_SCORE
+
+    session_entry = {
+        "lessonId": lesson_id,
+        "lessonTitleFr": lesson.get("titleFr", ""),
+        "lessonTitleAr": lesson.get("titleAr", ""),
+        "audioDurationSeconds": data.get("elapsed", 30),
+        "audioLanguage": data.get("language", "FR"),
+        "userAnswer": answer,
+        "aiScore": final_score,
+        "aiEvaluation": feedback,
+        "isSuccess": passed,
+        "matchedKeywords": matched,
+    }
+    _add_session(session_entry)
 
     return jsonify({
-        "score": score,
+        "score": final_score,
         "feedback": feedback,
         "passed": passed,
-        "is_last": is_last,
-        "is_last_sub": is_last_sub,
-        "is_last_lesson": is_last_lesson,
+        "keywordsMatched": matched,
+        "keywordsTotal": keywords,
+        "correctAnswerFr": quiz_data.get("correctAnswerFr", lesson.get("correctAnswerFr", "")),
+        "correctAnswerAr": quiz_data.get("correctAnswerAr", lesson.get("correctAnswerAr", "")),
     })
 
 
 @app.route("/api/ask", methods=["POST"])
 def api_ask():
-    data = request.json
+    data = request.get_json(silent=True) or {}
     question = data.get("question", "")
-    li = session.get("lesson_idx", 0)
-    si = session.get("sub_idx", 0)
-    sub = lessons[li]["sub_lessons"][si]
-    lesson_context = f"{sub['title']}\n\n{sub['text']}"
-
+    lesson_id = data.get("lessonId", "")
+    lesson = next((l for l in LESSONS if l["id"] == lesson_id), None) if lesson_id else None
+    context = ""
+    if lesson:
+        context = f"{lesson.get('titleFr', '')}\n\n{lesson.get('audioTextFr', '')}"
     try:
-        response = ask_question(question, lesson_context)
+        response = ask_question(question, context)
     except Exception as e:
         response = f"Erreur: {e}"
-
     return jsonify({"response": response})
+
+
+@app.route("/api/sessions")
+def api_sessions():
+    sessions = _get_sessions()
+    return jsonify(sorted(sessions, key=lambda s: s.get("studyDate", 0), reverse=True))
+
+
+@app.route("/api/sessions/clear", methods=["POST"])
+def api_clear_sessions():
+    _clear_sessions()
+    return jsonify({"status": "ok"})
+
+
+@app.route("/api/user/register", methods=["POST"])
+def api_register():
+    data = request.get_json(silent=True) or {}
+    email = data.get("email", "")
+    password = data.get("password", "")
+    name = data.get("name", email.split("@")[0] if "@" in email else "Étudiant")
+    try:
+        result = firebase_helper.create_user_auth(email, password, name)
+        uid = result.get("localId", result.get("uid", ""))
+        if not uid:
+            return jsonify({"error": "Échec de création du compte"}), 400
+        firebase_helper._admin_write(f"users/{uid}", {
+            "name": name, "email": email, "guest": False,
+        })
+        session["user_id"] = uid
+        return jsonify({"status": "ok", "user": {"name": name, "email": email}})
+    except requests.HTTPError as e:
+        error_msg = str(e)
+        if "EMAIL_EXISTS" in error_msg:
+            return jsonify({"error": "Cet email est déjà utilisé"}), 400
+        return jsonify({"error": f"Erreur d'inscription: {error_msg}"}), 400
+    except Exception as e:
+        return jsonify({"error": f"Erreur: {str(e)}"}), 500
+
+
+@app.route("/api/user/login", methods=["POST"])
+def api_login():
+    data = request.get_json(silent=True) or {}
+    email = data.get("email", "")
+    password = data.get("password", "")
+    try:
+        result = firebase_helper.sign_in_with_email(email, password)
+        uid = result.get("localId", "")
+        session["user_id"] = uid
+        user_data = firebase_helper._admin_read(f"users/{uid}")
+        name = user_data.get("name", email.split("@")[0] if "@" in email else "Étudiant")
+        firebase_helper._admin_write(f"users/{uid}", {
+            "name": name, "email": email, "guest": False,
+        })
+        return jsonify({"status": "ok", "user": {"name": name, "email": email}})
+    except requests.HTTPError:
+        return jsonify({"error": "Email ou mot de passe incorrect"}), 401
+    except Exception as e:
+        return jsonify({"error": f"Erreur: {str(e)}"}), 500
+
+
+@app.route("/api/user/logout", methods=["POST"])
+def api_logout():
+    session.pop("user_id", None)
+    return jsonify({"status": "ok"})
+
+
+@app.route("/api/user/status")
+def api_user_status():
+    uid = _get_user_id()
+    info = _get_user()
+    sessions = _get_sessions()
+    total_score, completed = _calculate_global_score(sessions)
+    return jsonify({
+        "id": uid,
+        "name": info.get("name", "Étudiant"),
+        "email": info.get("email", ""),
+        "guest": info.get("guest", True),
+        "totalScore": total_score,
+        "completedCount": completed,
+    })
+
+
+@app.route("/api/leaderboard")
+def api_leaderboard():
+    try:
+        lb = firebase_helper.get_top_scores(10)
+        return jsonify(lb)
+    except Exception:
+        return jsonify([])
+
+
+@app.route("/api/stats")
+def api_stats():
+    sessions = _get_sessions()
+    total = len(sessions)
+    success = [s for s in sessions if s.get("isSuccess")]
+    success_rate = round(len(success) * 100 / max(total, 1))
+    avg_score = round(sum(s.get("aiScore", 0) for s in sessions) / max(total, 1), 1) if total > 0 else 0
+
+    cat_stats = {}
+    for cat_name in list(dict.fromkeys(l.get("category", "Autre") for l in LESSONS)):
+        cat_lessons = [l for l in LESSONS if l.get("category") == cat_name]
+        completed_ids = {s["lessonId"] for s in success}
+        completed = sum(1 for l in cat_lessons if l["id"] in completed_ids)
+        cat_stats[cat_name] = {"total": len(cat_lessons), "completed": completed}
+
+    return jsonify({
+        "total": total,
+        "successCount": len(success),
+        "successRate": success_rate,
+        "averageScore": avg_score,
+        "categories": cat_stats,
+    })
 
 
 @app.route("/api/check-server")
@@ -236,29 +413,8 @@ def api_check_server():
 
 @app.route("/api/restart", methods=["POST"])
 def api_restart():
-    session.clear()
+    _clear_sessions()
     return jsonify({"status": "ok"})
-
-
-@app.route("/api/sub-lessons")
-def api_sub_lessons():
-    passed = _get_passed()
-    if request.args.get("passed"):
-        try:
-            passed = set(tuple(x) for x in json.loads(request.args["passed"]))
-        except Exception:
-            pass
-    result = []
-    for li, lesson in enumerate(lessons):
-        for si, sub in enumerate(lesson["sub_lessons"]):
-            result.append({
-                "lesson_idx": li,
-                "sub_idx": si,
-                "lesson_title": lesson["title"],
-                "sub_title": sub["title"],
-                "passed": (li, si) in passed,
-            })
-    return jsonify(result)
 
 
 @app.route("/audio/<path:filename>")
@@ -269,6 +425,51 @@ def serve_audio(filename):
     return send_file(filepath, mimetype="audio/mpeg")
 
 
+def generate_all_audio():
+    print("Generating audio files on startup...")
+    for lesson in LESSONS:
+        lid = lesson["id"]
+        for lang, key in [("FR", "audioTextFr"), ("AR", "audioTextAr")]:
+            text = lesson.get(key)
+            if not text:
+                continue
+            filename = f"{lid}_{lang}.mp3"
+            filepath = os.path.join(AUDIO_DIR, filename)
+            if os.path.exists(filepath):
+                print(f"  [SKIP] {filename}")
+                continue
+            print(f"  [GEN]  {filename}...")
+            try:
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                voice = "fr-FR-HenriNeural" if lang == "FR" else "ar-SA-HamedNeural"
+                loop.run_until_complete(edge_tts.Communicate(text, voice).save(filepath))
+                loop.close()
+                print(f"  [DONE] {filename}")
+            except Exception as e:
+                print(f"  [FAIL] {filename}: {e}")
+    print("Audio generation complete.")
+
+
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
+
+
+_audio_generated = False
+
+
+def ensure_audio_generated():
+    global _audio_generated
+    if not _audio_generated:
+        generate_all_audio()
+        _audio_generated = True
+
+
+@app.before_request
+def before_request():
+    ensure_audio_generated()
+
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5500))
-    app.run(debug=False, host="0.0.0.0", port=port)
+    app.run(debug=True, port=5000)
