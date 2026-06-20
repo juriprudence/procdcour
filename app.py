@@ -30,7 +30,7 @@ _load_env()
 firebase_helper.init_firebase()
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24).hex()
+app.secret_key = os.environ.get("FLASK_SECRET_KEY", os.urandom(24).hex())
 
 AUDIO_DIR = os.path.abspath("static/audio")
 os.makedirs(AUDIO_DIR, exist_ok=True)
@@ -38,6 +38,53 @@ PASS_SCORE = 6
 LISTEN_SECONDS = 30
 
 LESSONS = load_lessons()
+
+
+def generate_all_audio():
+    print("Generating audio files on startup...")
+    for lesson in LESSONS:
+        lid = lesson["id"]
+        for lang, key in [("FR", "audioTextFr"), ("AR", "audioTextAr")]:
+            text = lesson.get(key)
+            if not text:
+                continue
+            filename = f"{lid}_{lang}.mp3"
+            filepath = os.path.join(AUDIO_DIR, filename)
+            if os.path.exists(filepath):
+                print(f"  [SKIP] {filename}")
+                continue
+            print(f"  [GEN]  {filename}...")
+            try:
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                voice = "fr-FR-HenriNeural" if lang == "FR" else "ar-SA-HamedNeural"
+                loop.run_until_complete(edge_tts.Communicate(text, voice).save(filepath))
+                loop.close()
+                print(f"  [DONE] {filename}")
+            except Exception as e:
+                print(f"  [FAIL] {filename}: {e}")
+    print("Audio generation complete.")
+
+
+AUDIO_DONE_LOCK = os.path.join(AUDIO_DIR, ".done")
+
+
+def ensure_audio_generated():
+    if os.environ.get("GENERATE_AUDIO", "1") != "1":
+        return
+    if os.path.exists(AUDIO_DONE_LOCK):
+        return
+    generate_all_audio()
+    try:
+        with open(AUDIO_DONE_LOCK, "w") as f:
+            f.write("done")
+    except Exception:
+        pass
+
+
+@app.before_request
+def before_request():
+    ensure_audio_generated()
 
 
 def _get_user_id():
@@ -425,51 +472,11 @@ def serve_audio(filename):
     return send_file(filepath, mimetype="audio/mpeg")
 
 
-def generate_all_audio():
-    print("Generating audio files on startup...")
-    for lesson in LESSONS:
-        lid = lesson["id"]
-        for lang, key in [("FR", "audioTextFr"), ("AR", "audioTextAr")]:
-            text = lesson.get(key)
-            if not text:
-                continue
-            filename = f"{lid}_{lang}.mp3"
-            filepath = os.path.join(AUDIO_DIR, filename)
-            if os.path.exists(filepath):
-                print(f"  [SKIP] {filename}")
-                continue
-            print(f"  [GEN]  {filename}...")
-            try:
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                voice = "fr-FR-HenriNeural" if lang == "FR" else "ar-SA-HamedNeural"
-                loop.run_until_complete(edge_tts.Communicate(text, voice).save(filepath))
-                loop.close()
-                print(f"  [DONE] {filename}")
-            except Exception as e:
-                print(f"  [FAIL] {filename}: {e}")
-    print("Audio generation complete.")
-
-
 @app.route("/favicon.ico")
 def favicon():
     return "", 204
 
 
-_audio_generated = False
-
-
-def ensure_audio_generated():
-    global _audio_generated
-    if not _audio_generated:
-        generate_all_audio()
-        _audio_generated = True
-
-
-@app.before_request
-def before_request():
-    ensure_audio_generated()
-
-
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, port=port)
