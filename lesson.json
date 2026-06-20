@@ -1,473 +1,553 @@
 [
   {
-    "title": "Leçon 1 — Les principes du procès pénal",
-    "sub_lessons": [
+    "id": "L1",
+    "titleFr": "La Hiérarchie des Normes",
+    "titleAr": "هرمية القوانين والقواعد",
+    "category": "Droit Civil",
+    "descriptionFr": "Comprendre la structure pyramidale des sources juridiques selon Hans Kelsen et le rôle suprême de la Constitution.",
+    "descriptionAr": "فهم الهيكل الهرمي للقواعد القانونية وفقاً للمذهب الدستوري لهانز كلسن والدور الأسمى للدستور.",
+    "audioTextFr": "La hiérarchie des normes est un principe fondamental du droit français théorisé par le théoricien Hans Kelsen. Ce principe organise l'ordonnancement juridique sous la forme d'une pyramide. Chaque règle de droit, pour être valide, doit respecter la norme qui lui est supérieure. Au sommet absolu de cette pyramide se trouve la Constitution du quatre octobre mille neuf cent cinquante-huit. Juste en dessous de la Constitution, nous trouvons les traités internationaux régulièrement ratifiés. Ensuite vient la loi, élaborée par le Parlement. Au bas de la pyramide se situent les règlements, composés des décrets du Premier ministre et des arrêtés ministériels ou préfectoraux. Le respect de cette hiérarchie garantit la cohérence de l'État de droit.",
+    "audioTextAr": "تعد هرمية القوانين مبدأً أساسياً في القانون، حيث يتم تنظيم القواعد القانونية على شكل هرم قانوني وضعه الفقيه هانز كلسن. بموجب هذا المبدأ، يجب على كل قاعدة قانونية أدنى احترام القاعدة الأعلى منها لكي تكون صحيحة ونافذة سريان المفعول. في القمة المطلقة لهذا الهرم يقع الدستور، يليه المعاهدات والاتفاقيات الدولية الموقعة، ثم تأتي القوانين الصادرة عن السلطة التشريعية أو البرلمان، وأخيرًا المراسيم والقرارات واللوائح التنفيذية الصادرة عن السلطة التنفيذية.",
+    "quizQuestionFr": "Expliquez brièvement le principe de la hiérarchie des normes théorisé par Hans Kelsen et citez la norme suprême du droit français.",
+    "quizQuestionAr": "اشرح باختصار مبدأ هرمية القوانين لهانز كلسن واذكر القاعدة القانونية الأسمى في فرنسا.",
+    "quizPlaceholderFr": "Saisissez votre réponse ici... (ex: Le principe stipule que chaque norme doit respecter la norme supérieure. Au sommet se trouve la Constitution...)",
+    "keywords": ["Kelsen", "hiérarchie", "normes", "Constitution", "supérieur", "inférieur", "sommet", "loi"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "La hiérarchie des normes est une pyramide où chaque règle doit respecter la règle supérieure. Selon Hans Kelsen, la norme suprême du droit français est la Constitution du 4 octobre 1958.",
+    "correctAnswerAr": "هرمية القوانين عبارة عن مبدأ تندرج فيه القواعد في هرم بحيث يجب على كل قاعدة أن تحترم القاعدة الأسمى منها. والقاعدة الأسمى هي دستور 4 أكتوبر 1958.",
+    "quizzes": [
       {
-        "title": "Sous-leçon 1.1 — Le droit à un procès équitable et l'accès au juge",
-        "text": "Cours de procédure pénale d'après l'ouvrage d'Édouard Verny (6e éd., Dalloz).\n\nL'article préliminaire du Code de procédure pénale, introduit par la loi du 15 juin 2000, énonce les principes directeurs : la procédure pénale doit être équitable et contradictoire et préserver l'équilibre des droits des parties.\n\nLe droit à un procès équitable est affirmé par des sources diverses. Parmi les sources internes, l'article préliminaire du CPP pose l'exigence d'équité. Le Conseil constitutionnel affirme que le principe du respect des droits de la défense implique l'existence d'une procédure juste et équitable garantissant l'équilibre des droits des parties. Parmi les sources internationales, l'article 6 de la Convention européenne des droits de l'homme est la pierre angulaire. Il garantit le droit à un tribunal indépendant et impartial, le délai raisonnable, et les droits de la défense. L'article 14 du Pacte international relatif aux droits civils et politiques de 1966 est également important car il est auto-exécutoire en droit national et contrôlé par le Comité des droits de l'homme de l'ONU. La Cour européenne des droits de l'homme interprète ces textes de façon parfois audacieuse.\n\nLe droit d'accès au juge est fondamental. Le Conseil constitutionnel l'a reconnu sur le fondement de l'article 16 de la Déclaration des droits de l'homme et du citoyen de 1789. La jurisprudence de la CEDH a conduit à des modifications législatives importantes. Par exemple, la déchéance du pourvoi en cassation qui frappait le condamné n'ayant pas respecté l'obligation de mise en état a été jugée disproportionnée par la Cour européenne dans l'arrêt Khalfaoui c/ France du 14 décembre 1999. La loi du 15 juin 2000 a en conséquence abrogé cette disposition.",
-        "questions": [
-          {
-            "q": "Quels sont les deux textes fondamentaux garantissant le droit à un procès équitable ?",
-            "hint": "article préliminaire du CPP, article 6 de la CEDH"
-          },
-          {
-            "q": "Quelle a été la conséquence de l'arrêt Khalfaoui c/ France sur la procédure pénale française ?",
-            "hint": "abrogation de la déchéance du pourvoi en cassation pour défaut de mise en état, loi du 15 juin 2000"
-          },
-          {
-            "q": "Qu'est-ce que le principe du contradictoire dans le procès pénal ?",
-            "hint": "équilibre des droits des parties, droit de répondre aux arguments, article préliminaire CPP"
-          }
-        ]
+        "id": "L1_Q1",
+        "questionFr": "Expliquez brièvement le principe de la hiérarchie des normes théorisé par Hans Kelsen et citez la norme suprême du droit français.",
+        "questionAr": "اشرح باختصار مبدأ هرمية القوانين لهانز كلسن واذكر القاعدة القانونية الأسمى في فرنسا.",
+        "placeholderFr": "Saisissez votre réponse ici... (ex: Le principe stipule que chaque norme doit respecter la norme supérieure. Au sommet se trouve la Constitution...)",
+        "keywords": ["Kelsen", "hiérarchie", "normes", "Constitution", "supérieur", "inférieur", "sommet", "loi"],
+        "correctAnswerFr": "La hiérarchie des normes est une pyramide où chaque règle doit respecter la règle supérieure. Selon Hans Kelsen, la norme suprême du droit français est la Constitution du 4 octobre 1958.",
+        "correctAnswerAr": "هرمية القوانين عبارة عن مبدأ تندرج فيه القواعد في هرم بحيث يجب على كل قاعدة أن تحترم القاعدة الأسمى منها. والقاعدة الأسمى هي دستور 4 أكتوبر 1958."
       },
       {
-        "title": "Sous-leçon 1.2 — La qualité de la justice pénale",
-        "text": "La qualité de la justice pénale répond à des exigences constitutionnelles, légales et conventionnelles. La portée de la jurisprudence de la Cour européenne des droits de l'homme est considérable.\n\nPremièrement, le tribunal doit être indépendant et impartial. De l'article 16 de la Déclaration des droits de l'homme et du citoyen de 1789 se déduit le principe d'indépendance des juridictions, dont découle le principe du secret du délibéré. Ce secret s'applique non seulement aux magistrats professionnels mais aussi à tous ceux qui y concourent, comme un juré d'assises. Le tribunal doit être établi par la loi dans son existence, sa compétence et sa composition. L'impartialité doit être appréciée subjectivement (conduite personnelle du juge) et objectivement (situation du juge). La loi organique du 8 août 2016 impose aux magistrats de veiller à prévenir ou faire cesser immédiatement les situations de conflit d'intérêts.\n\nDeuxièmement, la publicité des débats est un principe fondamental. Les débats sont publics sauf décision contraire dans l'intérêt de l'ordre public ou lorsque la publicité serait dangereuse. Pour les mineurs, la publicité est restreinte afin de protéger leur personnalité. Le délai raisonnable est également garanti par l'article 6 de la CEDH : toute personne a droit à ce que sa cause soit entendue dans un délai raisonnable. Le dépassement de ce délai peut entraîner la nullité de la procédure ou une indemnisation.\n\nTroisièmement, les droits de la défense et l'égalité des armes sont essentiels. Ils impliquent le respect du contradictoire, le droit à l'assistance d'un avocat, et l'égalité dans l'accès aux pièces du dossier. La CEDH impose que la procédure soit contradictoire dans son ensemble, permettant à chaque partie de connaître et discuter les observations présentées.",
-        "questions": [
-          {
-            "q": "Quels sont les deux aspects de l'impartialité du juge ?",
-            "hint": "impartialité subjective (conduite personnelle) et objective (situation du juge)"
-          },
-          {
-            "q": "À qui s'applique le secret du délibéré ?",
-            "hint": "magistrats professionnels et non-professionnels comme les jurés d'assises, article 304 CPP"
-          },
-          {
-            "q": "Que garantit le principe de l'égalité des armes ?",
-            "hint": "accès égal aux pièces du dossier, possibilité de discuter les observations, contradictoire"
-          }
-        ]
+        "id": "L1_Q2",
+        "questionFr": "Quelle est la place des traités internationaux dans la hiérarchie des normes et quelle condition essentielle doivent-ils remplir ?",
+        "questionAr": "ما هي مرتبة المعاهدات الدولية في هرمية القوانين وما هو الشرط الأساسي الذي يجب أن تستوفيه؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les traités sont situés juste en dessous de la Constitution mais sont supérieurs aux lois...)",
+        "keywords": ["traités", "Constitution", "lois", "supérieurs", "Kelsen", "internationaux", "ratifiés"],
+        "correctAnswerFr": "Les traités internationaux régulièrement ratifiés se trouvent juste en dessous de la Constitution mais sont supérieurs aux lois ordinaires selon la pyramide de Kelsen.",
+        "correctAnswerAr": "المعاهدات الدولية المصدق عليها قانوناً تقع مباشرة تحت الدستور ولكنها تعلو على القوانين العادية في الهرم القانوني."
       },
       {
-        "title": "Sous-leçon 1.3 — La preuve en matière pénale",
-        "text": "La preuve en matière pénale est régie par des principes fondamentaux.\n\nConcernant la charge de la preuve, la présomption d'innocence bénéficie à toute personne suspectée ou poursuivie. Elle est rappelée par l'article préliminaire du Code de procédure pénale. La charge de la preuve incombe à l'accusation, c'est-à-dire au ministère public qui doit renverser cette présomption. Le doute doit toujours profiter à l'accusé, c'est le principe in dubio pro reo. Des tempéraments existent : certaines présomptions de culpabilité sont prévues par la loi, notamment en matière d'infractions douanières ou de circulation routière, mais elles doivent être réfragables et proportionnées au regard des exigences constitutionnelles et conventionnelles.\n\nQuant aux modes de preuve, l'article 427 du Code de procédure pénale pose le principe de la liberté de la preuve : hors les cas où la loi en dispose autrement, les infractions peuvent être établies par tout mode de preuve et le juge décide d'après son intime conviction. Le juge ne peut fonder sa décision que sur des preuves qui lui sont apportées au cours des débats et contradictoirement discutées devant lui. Ce principe n'est pas absolu : certains modes de preuve sont interdits comme la provocation policière à l'infraction. La loyauté de la preuve est exigée des autorités publiques. La jurisprudence tolère la simple provocation à la preuve à condition qu'elle ne constitue pas un stratagème actif poussant l'individu à s'auto-incriminer.",
-        "questions": [
-          {
-            "q": "Sur qui pèse la charge de la preuve en matière pénale ?",
-            "hint": "ministère public, partie poursuivante, doit renverser la présomption d'innocence"
-          },
-          {
-            "q": "Qu'est-ce que le principe de l'intime conviction (article 427 CPP) ?",
-            "hint": "tout mode de preuve, juge décide librement, preuves débattues contradictoirement"
-          },
-          {
-            "q": "Qu'est-ce que le principe in dubio pro reo ?",
-            "hint": "le doute profite à l'accusé, principe fondamental du procès pénal"
-          }
-        ]
+        "id": "L1_Q3",
+        "questionFr": "Quels sont les rôles des lois ordinaires et des règlements dans la pyramide des normes en droit français ?",
+        "questionAr": "ما هو دور القوانين العادية واللوائح التنظيمية في هرم القواعد والقوانين في فرنسا؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les lois sont créées par le Parlement, les règlements sont en bas de la pyramide...)",
+        "keywords": ["loi", "règlement", "décrets", "Parlement", "ministre", "arrêtés", "respecter"],
+        "correctAnswerFr": "Les lois ordinaires sont élaborées par le Parlement et les règlements (décrets et arrêtés du gouvernement) se situent au bas de la pyramide et doivent respecter les échelons supérieurs.",
+        "correctAnswerAr": "تصدر القوانين العادية عن البرلمان، بينما تقع اللوائح (المراسيم والقرارات) في قاعدة الهرم ويجب عليها احترام القوانين."
       }
     ]
   },
   {
-    "title": "Leçon 2 — La police judiciaire et l'enquête",
-    "sub_lessons": [
+    "id": "L2",
+    "titleFr": "La Théorie Générale du Contrat",
+    "titleAr": "النظرية العامة للعقود والالتزامات",
+    "category": "Droit Civil",
+    "descriptionFr": "Analyse des règles de formation, de validité (consentement, capacité, contenu) et des effets juridiques du contrat.",
+    "descriptionAr": "تحليل قواعد تكوين العقود وشروط صحتها كالتراضي والأهلية والمحل، والآثار القانونية المترتبة عليها.",
+    "audioTextFr": "Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations. En droit civil français, le principe fondamental est celui de l'autonomie de la volonté et de la liberté contractuelle. Cependant, pour qu'un contrat soit légalement valide, l'article onze cent vingt-huit du Code civil exige la réunion de trois conditions essentielles. Premièrement, le consentement libre et éclairé des parties, exempt de vices tels que l'erreur, le dol ou la violence. Deuxièmement, la capacité des parties de contracter. Troisièmement, un contenu licite et certain. Une fois formé, le contrat a force obligatoire pour les parties, ce qui signifie qu'il tient lieu de loi à ceux qui l'ont fait.",
+    "audioTextAr": "العقد هو اتفاق بين إرادتين أو أكثر على إحداث أثر قانوني معين، سواء كان إنشاء التزام أو تعديله أو نقله أو إنهاءه. في القانون المدني، المبدأ العام هو سلطان الإرادة والحرية التعاقدية. ومع ذلك، لكي يكون العقد صحيحاً ومنتجاً لآثاره القانونية، يشترط القانون توفر ثلاثة شروط أساسية: أولاً، رضا الأطراف الخالي من العيوب كالغلط والتدليس والإكراه. ثانياً، أهلية التعاقد لدى الأطراف. وثالثاً، محل وسبب مشروع للعقد. وعند تكوين العقد بشكل صحيح، يصبح القوة الملزمة للعقد، أي أن العقد شريعة المتعاقدين.",
+    "quizQuestionFr": "Quelles sont les trois conditions essentielles de validité d'un contrat prévues par le Code civil français et quel est son effet principal ?",
+    "quizQuestionAr": "ما هي الشروط الثلاثة الأساسية لصحة العقد وفقاً للقانون المدني وما هو أثر العقد الرئيسي entre أطرافه؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: Les trois conditions sont le consentement, la capacité et un contenu licite. L'effet principal est la force obligatoire : le contrat tient lieu de loi...)",
+    "keywords": ["contrat", "consentement", "capacité", "contenu", "licite", "obligatoire", "volonté", "dol", "erreur", "code civil", "1128"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Les trois conditions essentielles de validité d'un contrat sont le consentement libre et éclairé, la capacité des parties de contracter et un contenu licite et certain. L'effet principal est la force obligatoire du contrat (il tient lieu de loi à ceux qui l'ont fait).",
+    "correctAnswerAr": "الشروط الثلاثة الأساسية هي الرضا، الأهلية، ومحتوى مشروع وأكيد. والأثر الرئيسي هو القوة الملزمة للعقد (العقد شريعة المتعاقدين).",
+    "quizzes": [
       {
-        "title": "Sous-leçon 2.1 — Composition et autorités de la police judiciaire",
-        "text": "La police judiciaire est chargée de constater les infractions, d'en rassembler les preuves et d'en chercher les auteurs. Elle agit sous la direction du procureur de la République et le contrôle de la chambre de l'instruction.\n\nLes officiers de police judiciaire, ou OPJ, ont des pouvoirs étendus. Ils peuvent décider d'une garde à vue, mener des perquisitions et requérir des examens médicaux. Ils sont nommés par arrêté du ministre de la Justice après avis d'une commission. Les agents de police judiciaire, ou APJ, secondent les OPJ et constatent les crimes, délits et contraventions. Ils rédigent des procès-verbaux et peuvent procéder à des auditions. Les APJ adjoints, comme les gardes champêtres et les policiers municipaux, ont des pouvoirs plus limités. Enfin, certains fonctionnaires spécialisés comme les agents des douanes, des eaux et forêts ou de l'inspection du travail exercent des missions de police judiciaire dans leur domaine de compétence.\n\nLe procureur de la République dirige l'activité de la police judiciaire. Il décide des poursuites et contrôle les mesures de contrainte. Il peut requérir le concours de la force publique. Le juge d'instruction dirige les investigations dans le cadre d'une instruction préparatoire. Historiquement, le préfet avait des pouvoirs de police judiciaire, mais ils ont été transférés au procureur de la République.",
-        "questions": [
-          {
-            "q": "Quelle est la différence entre un OPJ et un APJ ?",
-            "hint": "OPJ nommé par arrêté, pouvoirs coercitifs étendus ; APJ seconde et constate"
-          },
-          {
-            "q": "Qui dirige l'activité de la police judiciaire ?",
-            "hint": "procureur de la République, sous le contrôle de la chambre de l'instruction"
-          },
-          {
-            "q": "Quels sont les pouvoirs des APJ adjoints ?",
-            "hint": "gardes champêtres, policiers municipaux, pouvoirs limités"
-          }
-        ]
+        "id": "L2_Q1",
+        "questionFr": "Quelles sont les trois conditions essentielles de validité d'un contrat prévues par le Code civil français et quel est son effet principal ?",
+        "questionAr": "ما هي الشروط الثلاثة الأساسية لصحة العقد وفقاً للقانون المدني وما هو أثر العقد الرئيسي entre أطرافه؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les trois conditions sont le consentement, la capacité et un contenu licite. L'effet principal est la force obligatoire : le contrat tient lieu de loi...)",
+        "keywords": ["contrat", "consentement", "capacité", "contenu", "licite", "obligatoire", "volonté", "dol", "erreur", "code civil", "1128"],
+        "correctAnswerFr": "Les trois conditions essentielles de validité d'un contrat sont le consentement libre et éclairé, la capacité des parties de contracter et un contenu licite et certain. L'effet principal est la force obligatoire du contrat (il tient lieu de loi à ceux qui l'ont fait).",
+        "correctAnswerAr": "الشروط الثلاثة الأساسية هي الرضا، الأهلية، ومحتوى مشروع وأكيد. والأثر الرئيسي هو القوة الملزمة للعقد (العقد شريعة المتعاقدين)."
       },
       {
-        "title": "Sous-leçon 2.2 — Les formes d'enquête de police",
-        "text": "Il existe différentes formes d'enquête de police judiciaire.\n\nL'enquête sur infraction flagrante s'applique aux crimes et délits qui se commettent ou viennent de se commettre. Selon l'article 53 du Code de procédure pénale, la qualification de flagrance est retenue lorsque l'infraction se commet actuellement, ou lorsque l'auteur est poursuivi par la clameur publique ou trouvé en possession d'objets ou de traces permettant de penser qu'il a participé à l'infraction. En raison de l'urgence, la police dispose de pouvoirs coercitifs importants comme les perquisitions sans assentiment. La durée de l'enquête de flagrance est de 8 jours, renouvelable une fois pour les mêmes motifs.\n\nL'enquête préliminaire intervient en l'absence de flagrance. Elle est en principe non coercitive : les perquisitions nécessitent l'assentiment exprès de la personne, sauf autorisation spéciale du Juge des libertés et de la détention pour les infractions les plus graves. L'enquête préliminaire n'a pas de durée légale maximale mais la jurisprudence impose qu'elle se déroule dans un délai raisonnable.\n\nD'autres enquêtes existent : l'enquête de mort suspecte lorsqu'une mort semble suspecte même sans crime apparent, l'enquête de recherche d'une personne disparue, et l'enquête de recherche d'une personne en fuite. Les contrôles d'identité sont régis par l'article 78-1 du CPP, la vérification d'identité par l'article 78-2, et les visites des véhicules par l'article 78-2-2.",
-        "questions": [
-          {
-            "q": "Qu'est-ce qui caractérise l'enquête de flagrance ?",
-            "hint": "infraction en cours ou qui vient de se commettre, article 53 CPP, pouvoirs coercitifs importants"
-          },
-          {
-            "q": "Quelle est la durée de l'enquête de flagrance ?",
-            "hint": "8 jours renouvelable une fois"
-          },
-          {
-            "q": "En quoi l'enquête préliminaire est-elle différente de l'enquête de flagrance ?",
-            "hint": "absence de flagrance, non coercitive en principe, assentiment requis pour perquisition"
-          }
-        ]
+        "id": "L2_Q2",
+        "questionFr": "Qu'est-ce que l'autonomie de la volonté et la liberté contractuelle en droit des contrats ?",
+        "questionAr": "ما هو مبدأ سلطان الإرادة والحرية التعاقدية في قانون العقود؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: C'est le principe de liberté de s'engager contractuellement...)",
+        "keywords": ["volonté", "liberté", "contractuelle", "engager", "obligatoire", "consentement"],
+        "correctAnswerFr": "L'autonomie de la volonté is le principe selon lequel les individus sont libres de s'engager ou non, et de déterminer le contenu du contrat tant qu'il respecte l'ordre public.",
+        "correctAnswerAr": "سلطان الإرادة هو المبدأ الذي يقضي بأن الأشخاص أحرار في التعاقد من عدمه وفي تحديد محتوى عقودهم بحدود النظام العام."
       },
       {
-        "title": "Sous-leçon 2.3 — La garde à vue et les droits du suspect",
-        "text": "La garde à vue est une mesure de contrainte décidée par un officier de police judiciaire. Réformée en profondeur par la loi du 14 avril 2011 à la suite de condamnations de la France par la Cour européenne des droits de l'homme, elle suppose des raisons plausibles de soupçonner qu'une personne a commis ou tenté de commettre un crime ou un délit puni d'une peine d'emprisonnement.\n\nLa durée initiale de la garde à vue est de 24 heures. Elle est renouvelable sous le contrôle du procureur de la République. La durée maximale est de 96 heures en droit commun, c'est-à-dire 24 heures initiales plus une première prolongation de 24 heures autorisée par le procureur, puis deux prolongations supplémentaires de 24 heures chacune autorisées par le JLD. Pour le terrorisme et la criminalité organisée, la durée maximale peut atteindre 144 heures, soit 6 jours.\n\nDès le début de la mesure, le suspect bénéficie de droits fondamentaux. Le droit au silence : la personne doit être informée qu'elle a le droit de se taire et de ne pas s'auto-incriminer. Le droit à l'assistance d'un avocat : depuis la loi du 3 juin 2016, l'avocat peut assister son client dès la première heure de garde à vue, pendant les auditions et les confrontations. Le droit de faire prévenir un proche. Le droit à un examen médical. Le droit d'être assisté d'un interprète si nécessaire. Ces droits doivent être notifiés dès le placement en garde à vue et figurent dans un procès-verbal.",
-        "questions": [
-          {
-            "q": "Quels sont les droits notifiés dès le placement en garde à vue ?",
-            "hint": "droit au silence, assistance d'un avocat dès la 1ère heure, examen médical, prévenir un proche"
-          },
-          {
-            "q": "Quelle est la durée maximale de la garde à vue en droit commun ?",
-            "hint": "24h initial, renouvelable, jusqu'à 96h maximum"
-          },
-          {
-            "q": "Qu'a réformé la loi du 14 avril 2011 concernant la garde à vue ?",
-            "hint": "présence de l'avocat dès la première heure, droit au silence, suite aux condamnations de la CEDH"
-          }
-        ]
+        "id": "L2_Q3",
+        "questionFr": "Quels sont les trois principaux vices du consentement qui peuvent entraîner la nullité d'un contrat ?",
+        "questionAr": "ما هي العيوب الثلاثة الرئيسية للرضا التي قد تؤدي لبطلان العقد؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'erreur, le dol et la violence sont les vices du consentement...)",
+        "keywords": ["vices", "consentement", "erreur", "dol", "violence", "nullité", "tromperie"],
+        "correctAnswerFr": "Les trois vices du consentement sont l'erreur (méprise), le dol (tromperie ou manœuvre frauduleuse) et la violence (pression physique ou morale). Ils entraînent la nullité du contrat.",
+        "correctAnswerAr": "عيوب الرضا الثلاثة هي الغلط، والتدليس (الخداع)، والإكراه (الضغط المادي أو المعنوي)، وتؤدي إلى بطلان العقد."
       }
     ]
   },
   {
-    "title": "Leçon 3 — Les juridictions répressives",
-    "sub_lessons": [
+    "id": "L3",
+    "titleFr": "La Responsabilité Civile Délictuelle",
+    "titleAr": "المسؤولية المدنية التقصيرية",
+    "category": "Droit Civil",
+    "descriptionFr": "Étude du triptyque indemnitaire : la faute, le dommage, et le lien de causalité (Article 1240 du Code civil).",
+    "descriptionAr": "دراسة أركان التعويض الثلاثة: الخطأ، والضرر، وعلاقة السببية المباشرة بينهما وفقاً للمادة 1240 من القانون المدني.",
+    "audioTextFr": "La responsabilité civile délictuelle vise à réparer le préjudice causé à autrui en dehors de tout cadre contractuel. Son texte fondateur est l'article douze cent quarante du Code civil français, qui dispose que tout fait quelconque de l'homme, qui cause à autrui un dommage, oblige celui par la faute duquel il est arrivé à le réparer. Pour engager cette responsabilité, trois conditions cumulatives doivent obligatoirement être réunies par la victime. D'abord, un fait générateur, qui est le plus souvent une faute volontaire ou une simple négligence. Ensuite, un dommage certain, direct et légitime, qui peut être corporel, matériel ou moral. Enfin, un lien de causalité direct et certain entre la faute commise et le préjudice subi par la victime. La réparation prend généralement la forme de dommages et intérêts.",
+    "audioTextAr": "تهدف المسؤولية المدنية التقصيرية إلى جبر الأضرار التي تلحق بالغير خارج نطاق العقود. والنص الأساسي الحاكم لها هو المادة ألف ومائتان وأربعون من القانون المدني الفرنسي، والتي تقضي بأن كل خطأ أياً كان يرتكبه الإنسان ويسبب ضرراً للغير، يلزم من ارتكبه بالتعويض. لقيام هذه المسؤولية، يجب توافر ثلاثة أركان متلازمة: أولاً الخطأ (سواء تعمد أو إهمال)، ثانياً الضرر (وهو الأذى المادي أو المعنوي أو الجسدي)، وثالثاً علاقة السببية المباشرة بين الخطأ والضرر. وتتمثل جبرها عادة في دفع تعويضات مالية.",
+    "quizQuestionFr": "Quels sont les trois éléments cumulatifs indispensables pour engager la responsabilité civile délictuelle selon l'article 1240 ?",
+    "quizQuestionAr": "ما هي الأركان الثلاثة المتلازمة والضرورية لقيام المسؤولية المدنية التقصيرية والمطالبة بالتعويض المالي؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: Les trois éléments sont une faute (fait générateur), un dommage subi, et un lien de causalité direct entre la faute et ce dommage...)",
+    "keywords": ["responsabilité", "faute", "dommage", "causalité", "1240", "réparer", "préjudice", "délictuelle", "civil", "indemnisation"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Selon l'article 1240 du Code civil, les trois éléments cumulatifs indispensables sont une faute (fait générateur), un dommage certain et un lien de causalité direct entre la faute et le dommage.",
+    "correctAnswerAr": "الأركان الثلاثة المتلازمة لقيام المسؤولية التقصيرية وفقا للمادة 1240 هي الخطأ، والضرر، وعلاقة السببية المباشرة بينهما.",
+    "quizzes": [
       {
-        "title": "Sous-leçon 3.1 — Les juridictions d'instruction",
-        "text": "Les juridictions d'instruction comprennent le juge d'instruction et la chambre de l'instruction.\n\nLe juge d'instruction est un magistrat du siège, nommé par décret du Président de la République. Il est indépendant et instruit à charge et à décharge conformément à l'article 81 du Code de procédure pénale afin de manifester la vérité. Il est saisi in rem, ce qui signifie qu'il ne peut enquêter que sur les faits visés par le réquisitoire du procureur ou la plainte de la victime. S'il découvre des faits nouveaux, il a besoin d'un réquisitoire supplétif. La loi du 5 mars 2007, adoptée après l'affaire d'Outreau, lui a retiré le pouvoir de placer en détention provisoire, désormais confié au Juge des libertés et de la détention. Depuis la loi du 3 juin 2016, des pôles de l'instruction peuvent être constitués sous forme de collèges de trois juges. Le juge d'instruction est saisi soit par réquisitoire introductif du procureur en application de l'article 80 du CPP, soit par constitution de partie civile de la victime en application de l'article 85 du CPP.\n\nLa chambre de l'instruction est une juridiction du second degré composée d'un président et de deux conseillers. Elle exerce un contrôle sur le déroulement de l'instruction. Elle statue sur l'appel des ordonnances du juge d'instruction, peut annuler des actes irréguliers sur le fondement de l'article 206 du CPP, se prononce sur les demandes de mise en liberté, et examine les requêtes en nullité.",
-        "questions": [
-          {
-            "q": "Que signifie la saisine in rem du juge d'instruction ?",
-            "hint": "le juge ne peut instruire que sur les faits visés, réquisitoire supplétif pour faits nouveaux"
-          },
-          {
-            "q": "Quelles sont les voies de saisine du juge d'instruction ?",
-            "hint": "réquisitoire du procureur (art. 80 CPP), constitution de partie civile (art. 85 CPP)"
-          },
-          {
-            "q": "Quel est le rôle de la chambre de l'instruction ?",
-            "hint": "contrôle de l'instruction, appel des ordonnances, nullités, demandes de mise en liberté"
-          }
-        ]
+        "id": "L3_Q1",
+        "questionFr": "Quels sont les trois éléments cumulatifs indispensables pour engager la responsabilité civile délictuelle selon l'article 1240 ?",
+        "questionAr": "ما هي الأركان الثلاثة المتلازمة والضرورية لقيام المسؤولية المدنية التقصيرية والمطالبة بالتعويض المالي؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les trois éléments sont une faute (fait générateur), un dommage subi, et un lien de causalité direct entre la faute et ce dommage...)",
+        "keywords": ["responsabilité", "faute", "dommage", "causalité", "1240", "réparer", "préjudice", "délictuelle", "civil", "indemnisation"],
+        "correctAnswerFr": "Selon l'article 1240 du Code civil, les trois éléments cumulatifs indispensables sont une faute (fait générateur), un dommage certain et un lien de causalité direct entre la faute et le dommage.",
+        "correctAnswerAr": "الأركان الثلاثة المتلازمة لقيام المسؤولية التقصيرية وفقا للمادة 1240 هي الخطأ، والضرر، وعلاقة السببية المباشرة بينهما."
       },
       {
-        "title": "Sous-leçon 3.2 — Les juridictions de jugement de droit commun",
-        "text": "Les juridictions répressives de jugement de droit commun sont organisées selon la gravité des infractions.\n\nLe tribunal de police est compétent pour les contraventions des cinq classes. Il statue à juge unique selon une procédure simplifiée. L'ordonnance pénale est une procédure sans audience possible pour les contraventions. Les décisions du tribunal de police sont susceptibles d'appel devant la chambre des appels correctionnels.\n\nLe tribunal correctionnel est compétent pour tous les délits, c'est-à-dire les infractions punies d'une peine d'emprisonnement ou d'une amende supérieure à 1500 euros. Il siège en formation collégiale de trois magistrats ou à juge unique depuis la loi du 10 août 2007 pour certaines affaires. Plusieurs modes de saisine existent : citation directe, comparution volontaire, comparution immédiate, convocation par procès-verbal, ou renvoi par le juge d'instruction. La procédure de comparution sur reconnaissance préalable de culpabilité, dite CRPC ou plaider-coupable, permet au prévenu qui reconnaît les faits d'accepter une peine proposée par le procureur, sous réserve d'homologation par le juge du siège.\n\nLa Cour d'assises juge les crimes. Elle est composée de trois magistrats professionnels et d'un jury populaire de six citoyens en premier ressort et neuf en appel. Depuis la loi du 10 août 2011, les arrêts d'assises doivent être motivés. L'arrêt est rendu à la majorité des voix, conformément à l'article 359 du CPP. Une expérimentation prévue par la loi de programmation 2018-2022 a créé les Cours criminelles départementales pour juger les crimes punis de 15 à 20 ans de réclusion sans jury populaire.",
-        "questions": [
-          {
-            "q": "Quelle est la compétence du tribunal de police ?",
-            "hint": "contraventions des 5 classes, juge unique, procédure simplifiée"
-          },
-          {
-            "q": "Quelle est la composition de la Cour d'assises en premier ressort ?",
-            "hint": "3 magistrats professionnels, jury de 6 citoyens (art. 296 CPP)"
-          },
-          {
-            "q": "Qu'est-ce que la Cour criminelle départementale ?",
-            "hint": "expérimentation, crimes punis de 15 à 20 ans, sans jury populaire"
-          }
-        ]
+        "id": "L3_Q2",
+        "questionFr": "Quelle est la différence fondamentale entre la responsabilité délictuelle et la responsabilité contractuelle ?",
+        "questionAr": "ما هو الفرق الجوهري entre المسؤولية المدنية التقصيرية والمسؤولية التعاقدية؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: La responsabilité contractuelle découle de l'inexécution d'un contrat...)",
+        "keywords": ["contrat", "délictuelle", "obligation", "préjudice", "contractuelle", "faute"],
+        "correctAnswerFr": "La responsabilité contractuelle naît de l'inexécution d'un contrat, alors que la responsabilité délictuelle naît d'un fait dommageable en dehors d'un cadre contractuel.",
+        "correctAnswerAr": "تنشأ المسؤولية التعاقدية عن عدم تنفيذ العقد، بينما تنشأ المسؤولية التقصيرية عن فعل ضار خارج أي إطار عقدي."
       },
       {
-        "title": "Sous-leçon 3.3 — Les juridictions d'exception",
-        "text": "Plusieurs juridictions d'exception existent en procédure pénale.\n\nConcernant les mineurs, le juge des enfants instruit et juge les délits mineurs dans une approche éducative. Le tribunal pour enfants, composé du juge des enfants et d'assesseurs, juge les délits graves commis par des mineurs. La Cour d'assises des mineurs juge les crimes commis par les mineurs de 16 à 18 ans, avec une composition spécifique et l'application de l'excuse de minorité. Les procédures applicables aux mineurs tiennent compte de leur personnalité et privilégient les mesures éducatives, la détention provisoire étant une mesure exceptionnelle.\n\nPour les responsables politiques, la Haute Cour est compétente pour juger le Président de la République en cas de manquement à ses devoirs, conformément aux articles 67 et 68 de la Constitution. La Cour de justice de la République est compétente pour juger les ministres pour les crimes et délits commis dans l'exercice de leurs fonctions. Sa composition et son fonctionnement ont été réformés par la loi constitutionnelle du 27 juillet 1993 et par la loi du 16 décembre 2013.\n\nEn matière militaire, le tribunal aux armées de Paris est compétent depuis 2012 pour juger les infractions commises par les militaires en temps de paix. En temps de guerre ou lors d'opérations extérieures, les tribunaux militaires aux armées peuvent être constitués.",
-        "questions": [
-          {
-            "q": "Quelle est la spécificité de la Cour d'assises des mineurs ?",
-            "hint": "composition spécifique, excuse de minorité, crime des 16-18 ans"
-          },
-          {
-            "q": "Quelle est la compétence de la Cour de justice de la République ?",
-            "hint": "juger les ministres pour crimes et délits dans l'exercice de leurs fonctions"
-          },
-          {
-            "q": "Qui peut être jugé par la Haute Cour ?",
-            "hint": "le Président de la République pour manquement à ses devoirs (art. 67-68 Const.)"
-          }
-        ]
+        "id": "L3_Q3",
+        "questionFr": "Qu'est-ce que le lien de causalité en responsabilité civile et comment doit-il être qualifié ?",
+        "questionAr": "ما هو الرابط السببي في المسؤولية المدنية وكيف يجب وصفه؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le lien de causalité exige une relation directe et certaine entre la faute et le dommage...)",
+        "keywords": ["causalité", "direct", "certain", "lien", "dommage", "faute", "relation"],
+        "correctAnswerFr": "Le lien de causalité exige une relation directe et certaine entre la faute commise et le dommage subi par la victime pour engager la responsabilité civile de l'auteur.",
+        "correctAnswerAr": "يشترط في علاقة السببية وجود رابطة مباشرة وأكيدة بين الخطأ المرتكب والضرر الذي لحق بالضحية لقيام المسؤولية المدنية."
       }
     ]
   },
   {
-    "title": "Leçon 4 — Les actions nées de l'infraction",
-    "sub_lessons": [
+    "id": "L4",
+    "titleFr": "La Distinction des Biens et la Propriété",
+    "titleAr": "تقسيم الأموال وحق الملكية",
+    "category": "Droit Civil",
+    "descriptionFr": "La classification fondamentale des biens immobiliers, mobiliers, et l'étendue absolue du droit de propriété.",
+    "descriptionAr": "التصنيف الأساسي للأموال إلى عقارات ومنقولات، والحدود القانونية المقررة لسلطات حق الملكية المطلق.",
+    "audioTextFr": "Le droit des biens régit les relations entre les personnes et les choses. Le droit français classe les biens en deux grandes catégories. Les immeubles, qui ne peuvent être déplacés comme les bâtiments ou terres, et les meubles, qui sont mobiles par nature comme un objet ou une créance. Au cœur de cette matière se trouve le droit de propriété, défini à l'article cinq cent quarante-quatre du Code civil comme le droit de jouir et disposer des choses de la manière la plus absolue, pourvu qu'on n'en fasse pas un usage prohibé par les lois ou par les règlements. Ce droit confère trois attributs majeurs à son titulaire : l'usus qui est le droit d'utiliser la chose, le fructus, droit d'en percevoir les fruits comme des loyers, et l'abusus, droit de vendre, donner ou détruire le bien.",
+    "audioTextAr": "يعنى قانون الأموال بتنظيم العلاقات السائدة بين الأشخاص والأشياء. ويقسم القانون المدني الأموال إلى فئتين رئيسيتين: العقارات (وهي الأشياء الثابتة المستقرة التي لا يمكن نقلها كالأراضي والمباني)، والمنقولات (وهي الأشياء القابلة للنقل من مكان لآخر دون تلف كالأجهزة والسيارات). ويأتي في قمة هذه المادة حق الملكية، وهو الحق الذي يمنح صاحبه سلطات مطلقة في استعمال الشيء (الاستعمال)، واستغلاله للحصول على ثماره كالإيجار (الاستغلال)، والتصرف فيه بالبيع أو الهبة (التصرف).",
+    "quizQuestionFr": "Citez la classification fondamentale des biens en droit civil et expliquez les trois attributs constitutifs du droit de propriété.",
+    "quizQuestionAr": "اذكر التقسيم الأساسي للأموال في القانون المدني واشرح السلطات الثلاث المكونة لحق الملكية الكامل.",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: Les biens sont divisés en meubles et immeubles. Le droit de propriété comprises l'usus (usage), le fructus (fruits/revenus) et l'abusus (disposition)...)",
+    "keywords": ["propriété", "meubles", "immeubles", "biens", "544", "usus", "fructus", "abusus", "jouir", "disposer", "attributs"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Les bien sont classés en meubles (mobiles) et immeubles (immobiles). Le droit de propriété comprend trois attributs fondamentaux : l'usus (utiliser la chose), le fructus (en percevoir les revenus ou fruits) et l'abusus (en disposer, vendre ou donner).",
+    "correctAnswerAr": "تُصنف الأموال إلى منقولات وعقارات. يتكون حق الملكية من ثلاث سلطات: الاستعمال (Usus)، والاستغلال (Fructus)، والتصرف (Abusus).",
+    "quizzes": [
       {
-        "title": "Sous-leçon 4.1 — L'action publique et ses obstacles",
-        "text": "Toute infraction donne naissance à deux actions : l'action publique et l'action civile. L'action publique vise à l'application d'une peine pour réparer le trouble à l'ordre social causé par l'infraction. Elle est exercée par le ministère public, le parquet, qui est un corps de magistrats soumis à une hiérarchie.\n\nL'action publique peut se heurter à des obstacles temporaires. Certaines infractions nécessitent une plainte préalable de la victime pour pouvoir être poursuivies, comme certaines violences conjugales ou le viol sur mineur. D'autres nécessitent une autorisation administrative préalable, notamment pour certains agents publics.\n\nL'immunité peut également faire obstacle à l'action publique. L'immunité politique concerne le Président de la République qui bénéficie d'une irresponsabilité pendant son mandat, et les parlementaires qui bénéficient de l'irresponsabilité pour les actes accomplis dans l'exercice de leurs fonctions et d'une inviolabilité limitée. L'immunité judiciaire protège les magistrats et les avocats pour leurs actes professionnels. L'immunité familiale est prévue par l'article 311-12 du Code pénal pour les soustractions familiales.\n\nL'action publique peut s'éteindre par plusieurs causes générales : le décès du mis en cause, l'amnistie, l'abrogation de la loi pénale, la chose jugée, ou la prescription. La loi du 27 février 2017 a profondément réformé les délais de prescription en les allongeant.",
-        "questions": [
-          {
-            "q": "Quelles sont les finalités respectives de l'action publique et de l'action civile ?",
-            "hint": "action publique : peine pour trouble social ; action civile : réparation du préjudice"
-          },
-          {
-            "q": "Quelles sont les immunités pouvant faire obstacle à l'action publique ?",
-            "hint": "immunité politique, judiciaire, familiale"
-          },
-          {
-            "q": "Quelles sont les causes d'extinction de l'action publique ?",
-            "hint": "décès, amnistie, abrogation de la loi, chose jugée, prescription"
-          }
-        ]
+        "id": "L4_Q1",
+        "questionFr": "Citez la classification fondamentale des biens en droit civil et expliquez les trois attributs constitutifs du droit de propriété.",
+        "questionAr": "اذكر التقسيم الأساسي للأموال في القانون المدني واشرح السلطات الثلاث المكونة لحق الملكية الكامل.",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les biens sont divisés en meubles et immeubles. Le droit de propriété comprises l'usus (usage), le fructus (fruits/revenus) et l'abusus (disposition)...)",
+        "keywords": ["propriété", "meubles", "immeubles", "biens", "544", "usus", "fructus", "abusus", "jouir", "disposer", "attributs"],
+        "correctAnswerFr": "Les bien sont classés en meubles (mobiles) et immeubles (immobiles). Le droit de propriété comprend trois attributs fondamentaux : l'usus (utiliser la chose), le fructus (en percevoir les revenus ou fruits) et l'abusus (en disposer, vendre ou donner).",
+        "correctAnswerAr": "تُصنف الأموال إلى منقولات وعقارات. يتكون حق الملكية من ثلاث سلطات: الاستعمال (Usus)، والاستغلال (Fructus)، والتصرف (Abusus)."
       },
       {
-        "title": "Sous-leçon 4.2 — La prescription de l'action publique",
-        "text": "La prescription de l'action publique a été profondément réformée par la loi du 27 février 2017. Les délais de droit commun sont désormais d'un an pour les contraventions, six ans pour les délits, et vingt ans pour les crimes. Des délais plus longs existent pour certaines infractions particulièrement graves comme le terrorisme et les crimes sexuels sur mineurs.\n\nLe point de départ du délai de prescription est en principe le jour de la commission de l'infraction. Cependant, la loi de 2017 a consacré la jurisprudence antérieure concernant les infractions occultes et dissimulées. Une infraction occulte est celle qui ne peut être connue de la victime ou de l'autorité judiciaire en raison de ses éléments constitutifs mêmes, comme certains abus de biens sociaux. Une infraction dissimulée est celle que l'auteur a délibérément cachée par des manœuvres destinées à empêcher sa découverte.\n\nPour ces infractions, le délai de prescription ne court qu'à compter du jour où l'infraction a pu être constatée dans des conditions permettant l'exercice de l'action publique. Cependant, la loi a fixé un délai butoir maximum : l'action publique ne peut plus être engagée au-delà de douze ans pour les délits et de trente ans pour les crimes à compter de la commission des faits, quel que soit le moment de leur découverte. Ce mécanisme concilie la protection des victimes avec le principe de sécurité juridique.\n\nLe ministère public est un acteur clé de l'action publique. Il est organisé hiérarchiquement, soumis au ministre de la Justice, et applique le principe d'opportunité des poursuites : il peut décider de poursuivre ou de classer sans suite. Le procureur est irrécusable en application de l'article 669 du CPP. La mise en mouvement de l'action publique peut être faite par le ministère public, par certaines administrations, par le Défenseur des droits, ou par la partie civile.",
-        "questions": [
-          {
-            "q": "Quels sont les délais de prescription de l'action publique depuis la loi de 2017 ?",
-            "hint": "1 an contraventions, 6 ans délits, 20 ans crimes"
-          },
-          {
-            "q": "Comment fonctionne la prescription pour une infraction occulte ou dissimulée ?",
-            "hint": "point de départ reporté à la découverte, délai butoir 12 ans délits, 30 ans crimes"
-          },
-          {
-            "q": "Qu'est-ce que le principe d'opportunité des poursuites ?",
-            "hint": "le procureur choisit de poursuivre ou classer sans suite, pas d'obligation de poursuivre"
-          }
-        ]
+        "id": "L4_Q2",
+        "questionFr": "Définissez les notions d'immeubles et de meubles en précisant leurs caractéristiques physiques.",
+        "questionAr": "عرّف كلا من العقارات والمنقولات مع توضيح خصائصهما المادية المتميزة.",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les immeubles sont fixes alors que les meubles sont mobiles...)",
+        "keywords": ["meubles", "immeubles", "fixe", "déplacer", "bâtiment", "sol", "nature"],
+        "correctAnswerFr": "Les immeubles sont des biens fixés au sol que l'on ne peut pas déplacer sans dommage, tandis que les meubles sont par nature déplaçables et mobiles.",
+        "correctAnswerAr": "العقارات هي أموال ثابتة مستقرة لا يمكن نقلها دون تلف بينما المنقولات قابلة للنقل بطبيعتها."
       },
       {
-        "title": "Sous-leçon 4.3 — L'action civile",
-        "text": "L'action civile vise la réparation du préjudice privé causé par l'infraction. Elle est exercée par la victime et tend à l'obtention de dommages-intérêts.\n\nLe demandeur à l'action civile doit justifier d'un préjudice personnel, direct et certain, en lien de causalité avec l'infraction. Il peut s'agir d'une personne physique ou morale. Les personnes morales peuvent agir pour la défense de leurs intérêts collectifs : les syndicats pour la défense des intérêts professionnels, les associations de lutte contre le racisme, les associations de protection de l'environnement, etc. Le défendeur peut être l'auteur de l'infraction, ses héritiers, la personne civilement responsable comme l'employeur pour son préposé ou l'assureur, ou encore l'Administration.\n\nLa victime a le choix entre deux voies. La voie civile pure consiste à saisir directement le juge civil pour obtenir réparation, ce qui emporte renonciation à la voie pénale en application de l'article 5 du CPP. La voie pénale peut être empruntée de deux manières : par intervention, c'est-à-dire en se constituant partie civile au cours du procès pénal déjà engagé par le ministère public ; ou par action, en se constituant partie civile directement devant le juge d'instruction ou en citant directement le prévenu devant la juridiction de jugement. La constitution de partie civile devant le juge d'instruction permet à la victime de déclencher l'action publique et d'obtenir une réparation.",
-        "questions": [
-          {
-            "q": "Quelles sont les conditions du préjudice pour exercer l'action civile ?",
-            "hint": "préjudice personnel, direct et certain, en lien de causalité avec l'infraction"
-          },
-          {
-            "q": "Qui peut être défendeur à l'action civile ?",
-            "hint": "auteur, héritiers, civilement responsable, assureur, Administration"
-          },
-          {
-            "q": "Quelle est la différence entre la voie civile par intervention et par action ?",
-            "hint": "intervention : se joindre au procès pénal ; action : saisir directement le juge d'instruction"
-          }
-        ]
+        "id": "L4_Q3",
+        "questionFr": "Qu'est-ce que l'abusus dans le droit de propriété ?",
+        "questionAr": "ما هو حق التصرف (Abusus) في ملكية الأشياء؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'abusus est le droit absolu de disposer de son bien, de le vendre ou donner...)",
+        "keywords": ["abusus", "disposer", "vendre", "donner", "détruire", "propriété"],
+        "correctAnswerFr": "L'abusus est le droit absolu de disposer de son bien, soit matériellement (le détruire, l'altérer), soit juridiquement (le vendre, le léguer, le donner).",
+        "correctAnswerAr": "حق التصرف (Abusus) هو سلطة المالك المطلقة في التصرف في الشيء المملوك مادياً (بالإتلاف أو التغيير) أو قانونياً (بالبيع أو الهبة)."
       }
     ]
   },
   {
-    "title": "Leçon 5 — Le déclenchement de l'action publique",
-    "sub_lessons": [
+    "id": "L5",
+    "titleFr": "Les Principes Directeurs du Procès",
+    "titleAr": "المبادئ الموجهة للمحاكمة العادلة",
+    "category": "Procédure",
+    "descriptionFr": "Étude du droit à un procès équitable, de la présomption d'innocence, de l'intime conviction et de la loyauté des preuves.",
+    "descriptionAr": "دراسة الحق في محاكمة عادلة، وقرينة البراءة، والاقتناع الشخصي للقاضي ومشروعية الأدلة الجنائية.",
+    "audioTextFr": "Cours de procédure pénale. Les principes du procès pénal et la preuve. Première partie : Le droit à un procès équitable. Consacré par l'article préliminaire du Code de procédure pénale et l'article six de la Convention européenne des droits de l'homme, le droit à un procès équitable irrigue l'ensemble de la matière. Il implique l'accès à un tribunal indépendant et impartial, le respect du délai raisonnable, et la garantie des droits de la défense. Deuxième partie : La charge de la preuve et la présomption d'innocence. La preuve incombe au ministère public, qui doit renverser la présomption d'innocence dont bénéficie toute personne suspectée ou poursuivie. Le doute doit toujours profiter à l'accusé. Des présomptions de culpabilité exceptionnelles existent, mais elles doivent rester réfragables et proportionnées. Troisième partie : Le principe de l'intime conviction et la liberté de la preuve. En vertu de l'article quatre cent vingt-sept du Code de procédure pénale, hors les cas où la loi en dispose autrement, les infractions peuvent être établies par tout mode de preuve et le juge décide d'après son intime conviction. Quatrième partie : La loyauté de la preuve. Les autorités publiques sont soumises à un devoir de loyauté. La provocation policière à l'infraction est strictement interdite car elle vicie la procédure. En revanche, les preuves apportées par des particuliers, même obtenues de façon illicite, sont recevables.",
+    "audioTextAr": "درس الإجراءات الجنائية. مبادئ المحاكمة الجنائية والإثبات. الجزء الأول: الحق في محاكمة عادلة. مكرس في المادة التمهيدية من قانون الإجراءات الجنائية والمادة السادسة من الاتفاقية الأوروبية لحقوق الإنسان، فإن الحق في محاكمة عادلة يوجه المادة الجنائية بأكملها. ويتضمن تيسير الوصول إلى محكمة مستقلة وغير متحيزة، واحترام المهلة العقولة، وضمان حقوق الدفاع. الجزء الثاني: عبء الإثبات وقرينة البراءة. يقع عبء الإثبات على عاتق النيابة العامة، والتي يجب عليها دحض قرينة البراءة التي يتمتع بها أي شخص مشتبه به أو ملاحق. ويجب أن يفسر الشك دائماً لصالح المتهم. الجزء الثالث: مبدأ الاقتناع الشخصي وحرية الإثبات. بموجب المادة أربعمائة وسبعة وعشرين من قانون الإجراءات الجنائية, يتم إثبات الجرائم بأي وسيلة من وسائل الإثبات ويقضي القاضي تبعا لاقتناعه الشخصي. الجزء الرابع: مشروعية الإثبات. تخضع السلطات العامة للتزام بالنزاهة والصدق. ويُحظر تماماً الاستدراج أو التحريض الشرطي على ارتكاب الجريمة لأنه يبطل الإجراءات. وبالمقابل، فإن الأدلة المقدمة من الأفراد، حتى لو تم الحصول عليها بطرق غير مشروعة، تكون مقبولة وتخضع للمناقشة.",
+    "quizQuestionFr": "Quels textes fondamentaux garantissent le droit à un procès équitable en droit français et quelle est la différence entre la provocation à l'infraction et à la preuve ?",
+    "quizQuestionAr": "ما هي النصوص الأساسية التي تضمن الحق في محاكمة عادلة وما الفرق بين التحريض على الجريمة والتحريض على الدليل؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: L'article préliminaire du CPP et l'article 6 de la CEDH garantissent ce droit, tandis que la provocation à l'infraction par la police est strictement interdite...)",
+    "keywords": ["équitable", "CEDH", "innocence", "doute", "conviction", "427", "loyauté", "provocation", "CPP", "contradictoire", "défense", "preuve"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Le procès équitable est garanti par l'article préliminaire du CPP et l'article 6 de la CEDH. La provocation à l'infraction par la police est interdite et annule la procédure, tandis que l'apport de preuves par des particuliers est recevable.",
+    "correctAnswerAr": "يُضمن الحق في محاكمة عادلة بموجب المادة التمهيدية من قانون الإجراءات الجنائية والمادة 6 من الاتفاقية الأوروبية لحقوق الإنسان. والتحريض على الجريمة باطل، بينما تقديم الإثبات من الأفراد مقبول ومناقش.",
+    "quizzes": [
       {
-        "title": "Sous-leçon 5.1 — Le classement sans suite et les alternatives aux poursuites",
-        "text": "Le procureur de la République peut décider de ne pas déclencher l'action publique. Le classement sans suite simple peut être motivé par des impératifs juridiques comme une infraction insuffisamment caractérisée, la prescription de l'action publique, ou un auteur inconnu. Il peut aussi reposer sur des considérations d'opportunité lorsque les faits sont peu graves ou n'ont pas causé de trouble à l'ordre public. Le classement sans suite est révisable tant que la prescription n'est pas acquise.\n\nLes alternatives aux poursuites ont été développées pour offrir des réponses pénales sans passer par un procès. L'article 41-1 du Code de procédure pénale prévoit plusieurs mesures : le rappel à la loi adressé à l'auteur des faits, l'orientation vers une structure sanitaire ou sociale, la régularisation de la situation, ou la médiation pénale entre l'auteur et la victime. La composition pénale, introduite par la loi du 23 juin 1999, permet au procureur de proposer à la personne qui reconnaît les faits une ou plusieurs mesures comme le paiement d'une amende, un travail non rémunéré, un stage de citoyenneté, ou l'interdiction de fréquenter certains lieux. Cette composition doit être homologuée par le juge du siège.\n\nLa convention judiciaire d'intérêt public, dite CJIP, a été créée par la loi du 9 décembre 2016 pour les personnes morales. Elle permet au procureur de proposer à une personne morale une transaction comportant le paiement d'une amende et la mise en conformité de ses pratiques sous le contrôle de l'Agence française anticorruption. La transaction par OPJ existe pour certaines contraventions avec paiement d'une amende forfaitaire.",
-        "questions": [
-          {
-            "q": "Qu'est-ce que le classement sans suite ?",
-            "hint": "décision du procureur de ne pas poursuivre, motifs juridiques ou d'opportunité"
-          },
-          {
-            "q": "Quelles sont les alternatives aux poursuites prévues par l'article 41-1 CPP ?",
-            "hint": "rappel à la loi, orientation sanitaire, médiation pénale, régularisation"
-          },
-          {
-            "q": "Qu'est-ce que la CJIP ?",
-            "hint": "convention judiciaire d'intérêt public, transaction pour personnes morales, loi du 9 décembre 2016"
-          }
-        ]
+        "id": "L5_Q1",
+        "questionFr": "Quels textes fondamentaux garantissent le droit à un procès équitable en droit français et quelle est la différence entre la provocation à l'infraction et à la preuve ?",
+        "questionAr": "ما هي النصوص الأساسية التي تضمن الحق في محاكمة عادلة وما الفرق بين التحريض على الجريمة والتحريض على الدليل؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'article préliminaire du CPP et l'article 6 de la CEDH garantissent ce droit, tandis que la provocation à l'infraction par la police est strictement interdite...)",
+        "keywords": ["équitable", "CEDH", "innocence", "doute", "conviction", "427", "loyauté", "provocation", "CPP", "contradictoire", "défense", "preuve"],
+        "correctAnswerFr": "Le procès équitable est garanti par l'article préliminaire du CPP et l'article 6 de la CEDH. La provocation à l'infraction par la police est interdite et annule la procédure, tandis que l'apport de preuves par des particuliers is recevable.",
+        "correctAnswerAr": "يُضمن الحق في محاكمة عادلة بموجب المادة التمهيدية من قانون الإجراءات الجنائية والمادة 6 من الاتفاقية الأوروبية لحقوق الإنسان. والتحريض على الجريمة باطل، بينما تقديم الإثبات من الأفراد مقبول ومناقش."
       },
       {
-        "title": "Sous-leçon 5.2 — La saisine du juge d'instruction",
-        "text": "Le juge d'instruction peut être saisi de deux manières principales.\n\nLa saisine par réquisitoire introductif du procureur de la République est le mode de saisine le plus courant. En vertu de l'article 80 du CPP, le procureur adresse au juge d'instruction un réquisitoire qui doit viser précisément les faits reprochés et la qualification juridique retenue. Si le juge découvre des faits nouveaux non visés par le réquisitoire initial, il doit solliciter un réquisitoire supplétif du procureur pour étendre sa saisine. Ce mécanisme garantit le respect du principe de la séparation des fonctions.\n\nLa saisine par constitution de partie civile est ouverte à la victime en application de l'article 85 du CPP. Toute personne qui se prétend victime d'une infraction peut se constituer partie civile devant le juge d'instruction. Cette plainte avec constitution de partie civile peut être déposée même si le procureur a classé l'affaire sans suite. Le juge d'instruction transmet la plainte au procureur qui doit prendre un réquisitoire. Si le procureur estime que les faits ne justifient pas une instruction, il peut requérir le classement mais le juge d'instruction peut passer outre et informer quand même.\n\nL'étendue de la saisine est limitée par le principe in rem : le juge ne connaît que des faits visés dans le réquisitoire ou la plainte. Il ne peut instruire sur d'autres faits sans un nouvel acte de saisine. Toutefois, la jurisprudence admet que le juge peut étendre sa saisine par des actes interruptifs qui révèlent des faits nouveaux en lien avec ceux déjà visés.",
-        "questions": [
-          {
-            "q": "Quelle est la différence entre le réquisitoire introductif et le réquisitoire supplétif ?",
-            "hint": "introductif : saisit le juge d'instruction ; supplétif : étend la saisine à des faits nouveaux"
-          },
-          {
-            "q": "Comment la victime peut-elle saisir le juge d'instruction ?",
-            "hint": "constitution de partie civile (art. 85 CPP), même après classement sans suite"
-          },
-          {
-            "q": "Que signifie le principe in rem dans la saisine du juge d'instruction ?",
-            "hint": "le juge ne connaît que des faits visés, ne peut instruire sur d'autres faits sans nouvel acte"
-          }
-        ]
+        "id": "L5_Q2",
+        "questionFr": "Qu'est-ce que la présomption d'innocence et à qui incombe la charge d'apporter la preuve de la culpabilité ?",
+        "questionAr": "ما هي قرينة البراءة ومن الذي يقع على عاتقه عبء إثبات التهمة الجنائية؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Tout suspect est présumé innocent et la charge incombe au ministère public...)",
+        "keywords": ["présomption", "innocence", "charge", "preuve", "doute", "profite", "accusé", "parquet"],
+        "correctAnswerFr": "La présomption d'innocence signifie que tout suspect est considéré comme innocent jusqu'à preuve du contraire. La charge de la preuve incombe au ministère public (parquet).",
+        "correctAnswerAr": "قرينة البراءة تعني أن كل مشتبه به بريء حتى تثبت إدانته ويقع عبء الإثبات دائماً على عاتق النيابة العامة."
       },
       {
-        "title": "Sous-leçon 5.3 — La saisine directe des juridictions de jugement",
-        "text": "Le procureur peut saisir directement une juridiction de jugement sans passer par une instruction préparatoire.\n\nLa citation directe est l'acte par lequel le procureur fait citer le prévenu devant le tribunal correctionnel ou de police par exploit d'huissier. Elle est régie par l'article 550 du Code de procédure pénale. La comparution volontaire permet au prévenu de se présenter spontanément devant le tribunal.\n\nLes procédures rapides sont nombreuses. La comparution immédiate s'applique aux délits punis d'une peine d'emprisonnement d'au moins deux ans, ou six mois en cas de flagrance. Le prévenu est jugé le jour même sans mise en état préalable, avec possibilité de détention provisoire dans l'attente du jugement. La convocation par procès-verbal est délivrée par l'OPJ à la personne qui vient d'être entendue.\n\nLa comparution sur reconnaissance préalable de culpabilité, ou CRPC, est une procédure de plaider-coupable introduite par la loi du 9 mars 2004. Le procureur propose une peine au prévenu qui reconnaît les faits. Si celui-ci accepte, la proposition est soumise à l'homologation du juge du siège lors d'une audience publique. Si le juge refuse d'homologuer, le procureur peut engager d'autres poursuites.\n\nL'ordonnance pénale est une procédure sans audience pour les contraventions et certains délits. Le juge statue sur pièces et fixe une amende. Le prévenu peut former opposition pour obtenir un jugement contradictoire. L'amende forfaitaire s'applique aux contraventions au Code de la route.",
-        "questions": [
-          {
-            "q": "Comment se déroule la procédure de CRPC ?",
-            "hint": "proposition du procureur, accord du prévenu, homologation par le juge du siège"
-          },
-          {
-            "q": "Qu'est-ce que la comparution immédiate ?",
-            "hint": "procédure rapide, délits punis d'au moins 2 ans ou 6 mois en flagrance"
-          },
-          {
-            "q": "Qu'est-ce que l'ordonnance pénale ?",
-            "hint": "procédure sans audience, amende fixée par le juge, opposition possible"
-          }
-        ]
+        "id": "L5_Q3",
+        "questionFr": "Quelle est l'importance du principe du contradictoire lors d'un procès ?",
+        "questionAr": "ما هي أهمية مبدأ المواجهة الوجاهية والرد في سير المحاكمات؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le principe du contradictoire garantit que chaque partie a pu discuter les arguments de l'autre...)",
+        "keywords": ["contradictoire", "débat", "arguments", "preuves", "connaître", "défense"],
+        "correctAnswerFr": "Le principe du contradictoire garantit que chaque partie a été mise en mesure de connaître et de discuter les arguments et les preuves de son adversaire avant la décision du juge.",
+        "correctAnswerAr": "يضمن مبدأ المواجهة الوجاهية (الحق في الرد) تمكين كل طرف من الاطلاع ومناقشة ادعاءات وأدلة خصمه قبل إصدار الحكم."
       }
     ]
   },
   {
-    "title": "Leçon 6 — L'instruction préparatoire et les mesures de sûreté",
-    "sub_lessons": [
+    "id": "L6",
+    "titleFr": "La Police Judiciaire et la Garde à Vue",
+    "titleAr": "الشرطة القضائية والوضع تحت الحراسة",
+    "category": "Procédure",
+    "descriptionFr": "Les compétences des OPJ/APJ, l'enquête de flagrance et préliminaire, et le régime légal de la garde à vue.",
+    "descriptionAr": "صلاحيات ضباط الشرطة القضائية، التحقيق المتلبس والتحقيق الابتدائي، ونظام الحراسة النظرية وسلطاتها القانونية.",
+    "audioTextFr": "Cours de procédure pénale. Les acteurs de l'enquête et les mesures de contrainte. Première partie : Les organes de la police judiciaire. La police judiciaire est chargée de constater les infractions, d'en rassembler les preuves et d'en chercher les auteurs. Elle agit sous la direction du procureur de l'État. Il faut distinguer les Officiers de Police Judiciaire (OPJ), qui ont des pouvoirs étendus, des Agents de Police Judiciaire (APJ) qui les secondent. Deuxième partie : Les cadres d'enquête. L'enquête de flagrance s'applique aux crimes et délits qui se commettent ou viennent de se commettre. En raison de l'urgence, la police dispose de pouvoirs coercitifs importants. Elle dure huit jours. L'enquête préliminaire intervient en l'absence de flagrance. Elle est en principe non coercitive. Troisième partie : La garde à vue. Réformée en profondeur par la loi du quatorze avril deux mille onze, la garde à vue est une mesure de contrainte décidée par un OPJ. Sa durée initiale est de vingt-quatre heures. Dès le début de la mesure, le suspect bénéficie de droits fondamentaux : droit au silence, droit de faire prévenir un proche, examen médical, et surtout droit à l'assistance d'un avocat.",
+    "audioTextAr": "درس الإجراءات الجنائية. الجهات الفاعلة في التحقيق وتدابير الإكراه.  الجزء الأول: أجهزة الشرطة القضائية. تُكلف الشرطة القضائية بضبط الجرائم وجمع أدلتها والبحث عن مرتكبيها. ويجب التمييز بين ضباط الشرطة القضائية الذين يتمتعون صلاحيات واسعة، وبين أعوان الشرطة القضائية الذين يساعدونهم. الجزء الثاني: أطر وثيقة التحقيق. يطبق تحقيق التلبس على الجنايات والجنح التي ترتكب في الحال أو جرت في وقت قريب جداً. ونظراً لحالة الاستعجال، تتمتع الشرطة بسلطات إكراه قوية. ويستمر التحقيق ثمانية أيام. أما التحقيق الابتدائي فيجري في غير حالات التلبس، ويكون مبدئياً غير إكراهي. الجزء الثالث: الوضع تحت الحراسة النظرية. الحراسة النظرية هي تدبير إكراهي يقرره ضابط الشرطة القضائية عند وجود أسباب وجيهة تثير الشبهة. وتدوم مدتها أربعاً وعشرين ساعة الأصلية. ويستفيد المشتبه به فوراً من حقوق أساسية: الحق في الصمت، إخطار أحد أقاربه، فحص طبي، والاستعانة بمحام.",
+    "quizQuestionFr": "Quelle différence majeure existe-t-il entre un OPJ et un APJ, et quels sont les droits fondamentaux d'un suspect placé en garde à vue ?",
+    "quizQuestionAr": "ما الفرق الهام بين ضابط الشرطة القضائية (OPJ) والوكيل (APJ)، وما هي الحقوق الأساسية للمشتبه به تحت الحراسة؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: L'OPJ a des pouvoirs coercitifs comme décider de la garde à vue. Le suspect a le droit au silence, à un avocat et un médecin...)",
+    "keywords": ["OPJ", "APJ", "différence", "coercitif", "flagrance", "préliminaire", "silence", "avocat", "médecin", "proche", "droits", "garde à vue"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "L'OPJ dispose de pouvoirs coercitifs (comme ordonner la garde à vue) sous la direction du procureur, tandis que l'APJ seconde l'OPJ. En garde à vue, le suspect a le droit au silence, à un avocat, à un médecin, et à prévenir un proche.",
+    "correctAnswerAr": "يتميز ضابط الشرطة القضائية OPJ بسلطة إصدار تدابير الإكراه كالحراسة النظرية، بينما يساعده APJ. وتشمل حقوق المحبوس النظرية الصمت، والمحامي، والطبيب، وإعلام قريب.",
+    "quizzes": [
       {
-        "title": "Sous-leçon 6.1 — La conduite de l'instruction (actes et mis en examen)",
-        "text": "L'instruction préparatoire est obligatoire en matière criminelle et facultative pour les délits. Elle est menée par le juge d'instruction qui dispose de pouvoirs d'investigation étendus.\n\nLe juge d'instruction procède aux actes d'information nécessaires à la manifestation de la vérité. Il peut entendre les personnes sous différents statuts. Le simple témoin est entendu sous serment. Le témoin assisté est un statut intermédiaire créé par la loi du 15 juin 2000 pour les personnes à l'égard desquelles il existe de simples indices vraisemblables de participation aux faits. La mise en examen nécessite des indices graves ou concordants rendant vraisemblable que la personne ait participé à la commission de l'infraction, conformément à l'article 80-1 du CPP. Le premier interrogatoire doit respecter des formalités substantielles : notification des faits, notification des droits, présence de l'avocat, information du droit de se taire.\n\nLe juge peut procéder à des confrontations entre les personnes mises en cause et les témoins. Il peut ordonner des expertises techniques, des examens médicaux, des autopsies. Il peut délivrer des commissions rogatoires pour confier des actes d'instruction à d'autres magistrats ou aux officiers de police judiciaire.\n\nPour les investigations intrusives, les perquisitions sont en principe effectuées de jour, c'est-à-dire entre six heures et vingt-et-une heures, sauf exceptions pour la criminalité organisée ou la flagrance. La géolocalisation est régie par la loi du 28 mars 2014. Les sonorisations et fixations d'images sont possibles dans le cadre de la criminalité organisée. La captation de données informatiques et l'utilisation d'IMSI-catchers sont également autorisées dans certaines limites.",
-        "questions": [
-          {
-            "q": "Quelle est la condition pour mettre une personne en examen (art. 80-1 CPP) ?",
-            "hint": "indices graves ou concordants rendant vraisemblable la participation aux faits"
-          },
-          {
-            "q": "Quelle est la différence entre le témoin assisté et le mis en examen ?",
-            "hint": "témoin assisté : simples indices vraisemblables ; mis en examen : indices graves ou concordants"
-          },
-          {
-            "q": "Quelles sont les heures légales des perquisitions ?",
-            "hint": "6h à 21h, sauf exceptions pour criminalité organisée ou flagrance"
-          }
-        ]
+        "id": "L6_Q1",
+        "questionFr": "Quelle différence majeure existe-t-il entre un OPJ et un APJ, et quels sont les droits fondamentaux d'un suspect placé en garde à vue ?",
+        "questionAr": "ما الفرق الهام بين ضابط الشرطة القضائية (OPJ) والوكيل (APJ)، وما هي الحقوق الأساسية للمشتبه به تحت الحراسة؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'OPJ a des pouvoirs coercitifs comme décider de la garde à vue. Le suspect a le droit au silence, à un avocat et un médecin...)",
+        "keywords": ["OPJ", "APJ", "différence", "coercitif", "flagrance", "préliminaire", "silence", "avocat", "médecin", "proche", "droits", "garde à vue"],
+        "correctAnswerFr": "L'OPJ dispose de pouvoirs coercitifs (comme ordonner la garde à vue) sous la direction du procureur, tandis que l'APJ seconde l'OPJ. En garde à vue, le suspect a le droit au silence, à un avocat, à un médecin, et à prévenir un proche.",
+        "correctAnswerAr": "يتميز ضابط الشرطة القضائية OPJ بسلطة إصدار تدابير الإكراه كالحراسة النظرية، بينما يساعده APJ. وتشمل حقوق المحبوس النظرية الصمت، والمحامي، والطبيب, وإعلام قريب."
       },
       {
-        "title": "Sous-leçon 6.2 — Les décisions relatives à la liberté",
-        "text": "La liberté est le principe, la détention l'exception. Le juge d'instruction peut délivrer plusieurs types de mandats : le mandat de comparution qui enjoint à la personne de se présenter, le mandat d'amener qui permet de contraindre la personne à comparaître, le mandat de dépôt qui ordonne l'incarcération immédiate, et le mandat d'arrêt qui est décerné contre une personne en fuite.\n\nLe contrôle judiciaire est une mesure alternative à la détention. Il impose à la personne mise en examen de respecter certaines obligations comme ne pas quitter le territoire, ne pas fréquenter certains lieux ou certaines personnes, remettre son passeport, constituer un cautionnement. La violation de ces obligations peut entraîner le placement en détention provisoire.\n\nL'assignation à résidence sous surveillance électronique, ou ARSE, a été introduite par la loi du 21 juillet 2009. Elle permet à la personne d'être assignée à son domicile avec un dispositif de surveillance électronique, comme alternative au contrôle judiciaire ou à la détention provisoire.\n\nLa détention provisoire est la mesure la plus grave. Depuis la loi du 5 mars 2007, elle ne peut être décidée que par le Juge des libertés et de la détention, le JLD, sur saisine du juge d'instruction ou du procureur. Elle suppose que le contrôle judiciaire ou l'ARSE soient insuffisants. Les motifs légaux sont énumérés par l'article 144 du CPP : risque de fuite, protection des preuves, prévention du renouvellement de l'infraction, trouble à l'ordre public, ou nécessité de mettre fin à des pressions sur les témoins. La détention provisoire est limitée dans le temps et doit être régulièrement réexaminée.",
-        "questions": [
-          {
-            "q": "Quels sont les différents types de mandats délivrés par le juge d'instruction ?",
-            "hint": "comparution, amener, dépôt, arrêt (art. 122 CPP)"
-          },
-          {
-            "q": "Quel magistrat décide de la détention provisoire depuis 2000 ?",
-            "hint": "JLD, juge des libertés et de la détention, sur saisine du juge d'instruction"
-          },
-          {
-            "q": "Quels sont les motifs légaux de la détention provisoire (art. 144 CPP) ?",
-            "hint": "risque de fuite, protection des preuves, trouble à l'ordre public, prévention du renouvellement"
-          }
-        ]
+        "id": "L6_Q2",
+        "questionFr": "Définissez l'enquête de flagrance en précisant sa durée légale et ses conditions de déclenchement.",
+        "questionAr": "عريف تحقيق التلبس مع توضيح مدته القانونية وشروطه الأساسية.",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'enquête de flagrance s'applique en cas d'urgence pour crime ou délit actuel...)",
+        "keywords": ["flagrance", "crime", "délit", "actuel", "huit", "jours", "urgence"],
+        "correctAnswerFr": "L'enquête de flagrance se déclenche lorsqu'un crime ou délit est commis ou vient de l'être. Sa durée est de 8 jours maximum, accordant des grands pouvoirs de coercition à la police.",
+        "correctAnswerAr": "يبدأ تحقيق التلبس فور ارتكاب جناية أو جنحة أو بعد ارتكابها بوقت قريب جداً، ويدوم 8 أيام كأقصى حد مع منح صلاحيات إكراهية."
       },
       {
-        "title": "Sous-leçon 6.3 — Le règlement et le contrôle de l'instruction",
-        "text": "À la fin de ses investigations, le juge d'instruction rend une ordonnance de règlement qui met fin à l'instruction.\n\nL'ordonnance de non-lieu est rendue lorsque les charges sont insuffisantes contre la personne mise en examen. L'article 177 du CPP prévoit que le juge déclare qu'il n'y a pas lieu à suivre. Le non-lieu peut être total ou partiel. L'ordonnance d'irresponsabilité pénale pour cause de trouble mental est rendue lorsque la personne était atteinte au moment des faits d'un trouble psychique ayant aboli son discernement.\n\nL'ordonnance de renvoi est rendue lorsque les charges sont suffisantes pour un délit. Elle renvoie le prévenu devant le tribunal correctionnel. L'ordonnance de mise en accusation est rendue pour les crimes et renvoie l'accusé devant la Cour d'assises. Ces ordonnances doivent être motivées.\n\nLe contrôle des actes d'instruction s'exerce par la voie des nullités. Les nullités textuelles sont prévues par un texte exprès. Les nullités substantielles sanctionnent les atteintes aux droits de la défense et à l'équité de la procédure en application de l'article 802 du CPP. Le principe du grief, posé par l'article 171 du CPP, exige que la partie qui invoque la nullité démontre une atteinte à ses intérêts. La chambre de l'instruction est compétente pour connaître des nullités.\n\nLe contrôle des actes de juridiction s'exerce par l'appel des ordonnances du juge d'instruction devant la chambre de l'instruction dans un délai de 10 jours, puis par le pourvoi en cassation devant la chambre criminelle.",
-        "questions": [
-          {
-            "q": "Quels sont les types d'ordonnances de règlement possibles ?",
-            "hint": "non-lieu, irresponsabilité pénale, renvoi (correctionnel), mise en accusation (cour d'assises)"
-          },
-          {
-            "q": "Qu'est-ce que le principe du grief en matière de nullités ?",
-            "hint": "nullité nécessite une atteinte aux intérêts de la partie (art. 802 CPP)"
-          },
-          {
-            "q": "Devant quelle juridiction les nullités sont-elles portées ?",
-            "hint": "chambre de l'instruction, saisie par appel des ordonnances ou requête directe"
-          }
-        ]
+        "id": "L6_Q3",
+        "questionFr": "Quels sont les rôles respectifs de la police judiciaire et de la direction du procureur de la République ?",
+        "questionAr": "ما هي الأدوار المشتركة لكل من جهاز الشرطة القضائية والنيابة العامة بقيادة وكيل الجمهورية؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: La police constate et cherche les auteurs, sous la direction de procureur...)",
+        "keywords": ["police", "judiciaire", "direction", "procureur", "constater", "preuves", "auteurs"],
+        "correctAnswerFr": "La police judiciaire constate les infractions, rassemble les preuves et recherche les auteurs sous la direction et le contrôle direct du procureur de l'État.",
+        "correctAnswerAr": "تتولى الشرطة القضائية معاينة الجرائم، وجمع أدلتها، والبحث عن الجناة تحت إدارة وتوكيل النيابة العامة."
       }
     ]
   },
   {
-    "title": "Leçon 7 — L'audience et la décision des juridictions de jugement",
-    "sub_lessons": [
+    "id": "L7",
+    "titleFr": "L'Action Publique et l'Action Civile",
+    "titleAr": "الدعوى العمومية والدعوى المدنية",
+    "category": "Procédure",
+    "descriptionFr": "Les actions nées de l’infraction, les délais réformés de prescription, les infractions occultes et alternatives de poursuites.",
+    "descriptionAr": "الدعاوى القانونية الناشئة عن ارتكاب الجريمة، وآجال التقادم، والجرائم المستترية وبدائل الدعوى.",
+    "audioTextFr": "Cours de procédure pénale. Les actions nées de l'infraction. Première partie : L'action publique et l'action civile. Toute infraction donne naissance à deux actions. L'action publique vise à l'application d'une peine pour réparer le trouble à l'ordre social, exercée par le Ministère public. L'action civile vise la réparation du préjudice privé causé par l'infraction, exercée par la victime. Deuxième partie : L'extinction de l'action publique et la prescription. La loi du vingt-sept février deux mille dix-sept a profondément réformé les délais de prescription de l'action publique : un an pour les contraventions, six ans pour les délits, et vingt ans pour les crimes. Troisième partie : L'infraction occulte et dissimulée. Pour une infraction occulte ou dissimulée, le délai de prescription ne court qu'à partir du jour où l'infraction a pu être constatée, avec un délai butoir de douze ans pour les délits et trente ans pour les crimes.",
+    "audioTextAr": "درس الإجراءات الجنائية. الدعاوى الناشئة عن الجريمة. الجزء الأول: الدعوى العمومية والدعوى المدنية. كل جريمة ينشأ عنها دعويان. تهدف الدعوى العمومية إلى تطبيق العقوبة لجبر الاضطراب الاجتماعي، وتباشرها النيابة العامة. أما الدعوى المدنية فتهدف إلى تعويض الضرر الخاص، وتباشرها الضحية.  الجزء الثاني: انقضاء الدعوى والتقادم. عدل قانون السابع والعشرين من فبراير ألفين وسبعة عشر مدد التقادم بعمق، لتصبح: سنة واحدة للمخالفات، وست سنوات للجنح، وعشرين سنة للجنايات.  الجزء الثالث: الجريمة الخفية والمستترة. بالنسبة للجريمة المستترة أو الخفية، لا يبدأ سريان مهلة التقادم إلا من يوم إمكانية الكشف عنها، مع سقف زمني لا يتجاوز اثنتي عشرة سنة في الجنح وثلاثين سنة في الجنايات.",
+    "quizQuestionFr": "Quels sont les délais de prescription de l'action publique et comment fonctionne la prescription d'une infraction occulte ou dissimulée ?",
+    "quizQuestionAr": "ما هي مدد تقادم الدعوى العمومية وما هي القواعد الخاصة بتقادم الجريمة المستترة أو الخفية؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: 1 an pour les contraventions, 6 ans pour les délits et 20 ans pour les crimes. Pour l'infraction occulte, le point de départ est reporté au jour du constat...)",
+    "keywords": ["prescription", "délai", "contravention", "délit", "crime", "1", "6", "20", "occulte", "dissimulée", "constat", "butoir", "12", "30"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Les délais de prescription réformés sont de 1 an pour les contraventions, 6 ans pour les délits et 20 ans pour les crimes. Pour les infractions occultes, la prescription court du jour du constat (butoir de 12 ans pour les délits, 30 ans pour les crimes).",
+    "correctAnswerAr": "مدد تقادم الدعوى العمومية هي سنة للمخالفات، 6 سنوات للجنح، و20 سنة للجنايات. وفي الجرائم المستترة يبدأ سريان التقادم من يوم كشفها، بحد أقصى 12 سنة للجنح و30 سنة للجنايات.",
+    "quizzes": [
       {
-        "title": "Sous-leçon 7.1 — La Cour d'assises",
-        "text": "La Cour d'assises est la juridiction compétente pour juger les crimes. Elle est composée de trois magistrats professionnels et d'un jury populaire de six citoyens en premier ressort, neuf en appel. Le jury est tiré au sort sur les listes électorales.\n\nLa procédure précédant les débats comprend la préparation de la session d'assises par le président, la constitution du jury, et la vérification des nullités éventuelles. Les débats sont oraux et publics. Le président de la Cour d'assises dispose d'un pouvoir discrétionnaire pour la conduite des débats. L'accusé est interrogé, les témoins sont entendus, les experts présentent leurs conclusions. Le ministère public prend ses réquisitions, puis la défense plaide. L'accusé a droit à la parole en dernier.\n\nLa délibération se déroule dans le secret absolu. Les questions posées au jury portent sur la culpabilité et les circonstances aggravantes. La décision est prise à la majorité. Depuis la loi du 10 août 2011, les arrêts d'assises doivent être motivés conformément à l'article 365-1 du CPP. L'arrêt peut être de condamnation ou d'acquittement. En cas de condamnation, la peine est déterminée.\n\nLa procédure par défaut criminel a remplacé l'ancienne contumace. Lorsque l'accusé ne se présente pas sans excuse valable, il est jugé par défaut. Le jugement par défaut peut faire l'objet d'une opposition qui anéantit la première décision et fait rejuger l'affaire. Les Cours criminelles départementales, créées à titre expérimental par la loi de programmation 2018-2022, jugent les crimes punis de 15 à 20 ans de réclusion sans jury populaire.",
-        "questions": [
-          {
-            "q": "Quelle est la composition de la Cour d'assises en premier ressort et en appel ?",
-            "hint": "1er ressort : 3 magistrats + 6 jurés ; appel : 3 magistrats + 9 jurés"
-          },
-          {
-            "q": "Depuis quand les arrêts de Cour d'assises doivent-ils être motivés ?",
-            "hint": "depuis 2012, loi du 10 août 2011, article 365-1 CPP"
-          },
-          {
-            "q": "Qu'est-ce que le pouvoir discrétionnaire du président de la Cour d'assises ?",
-            "hint": "pouvoir de conduite des débats, prendre toutes mesures utiles à la manifestation de la vérité"
-          }
-        ]
+        "id": "L7_Q1",
+        "questionFr": "Quels sont les délais de prescription de l'action publique et comment fonctionne la prescription d'une infraction occulte ou dissimulée ?",
+        "questionAr": "ما هي مدد تقادم الدعوى العمومية وما هي القواعد الخاصة بتقادم الجريمة المستترة أو الخفية؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: 1 an pour les contraventions, 6 ans pour les délits et 20 ans pour les crimes. Pour l'infraction occulte, le point de départ est reporté au jour du constat...)",
+        "keywords": ["prescription", "délai", "contravention", "délit", "crime", "1", "6", "20", "occulte", "dissimulée", "constat", "butoir", "12", "30"],
+        "correctAnswerFr": "Les délais de prescription réformés sont de 1 an pour les contraventions, 6 ans pour les délits et 20 ans pour les crimes. Pour les infractions occultes, la prescription court du jour du constat (butoir de 12 ans pour les délits, 30 ans pour les crimes).",
+        "correctAnswerAr": "مدد تقادم الدعوى العمومية هي سنة للمخالفات، 6 سنوات للجنح، و20 سنة للجنايات. وفي الجرائم المستترة يبدأ سريان التقادم من يوم كشفها، بحد أقصى 12 سنة للجنح و30 سنة للجنايات."
       },
       {
-        "title": "Sous-leçon 7.2 — Le tribunal correctionnel et ses procédures rapides",
-        "text": "Le tribunal correctionnel juge les délits. Il siège en formation collégiale de trois magistrats ou à juge unique depuis la loi du 10 août 2007.\n\nLes débats sont publics, sauf décision motivée de huis clos dans l'intérêt de l'ordre public ou lorsque la publicité serait dangereuse. Le président mène l'interrogatoire du prévenu. Les témoins sont entendus sous serment. Le ministère public prend ses réquisitions. La partie civile expose ses demandes. La défense présente ses observations. Le prévenu a toujours le dernier mot en application de l'article 346 du CPP. Le jugement est rendu après délibéré et doit être motivé.\n\nLes procédures rapides permettent de juger rapidement certaines affaires. La comparution immédiate concerne les délits punis d'au moins deux ans d'emprisonnement, ou six mois en cas de flagrance. Le prévenu est présenté le jour même au tribunal après avoir été informé de ses droits. Il peut demander un délai pour préparer sa défense. La détention provisoire peut être ordonnée en attendant le jugement.\n\nLa comparution sur reconnaissance préalable de culpabilité, ou CRPC, dite plaider-coupable, permet au procureur de proposer une peine au prévenu qui reconnaît les faits. L'accord est soumis à l'homologation du juge du siège lors d'une audience publique. Si le juge refuse d'homologuer, le procureur peut engager d'autres poursuites. La CRPC ne s'applique pas aux mineurs ni à certains délits comme les crimes ou les délits d'atteintes volontaires à la vie.\n\nL'ordonnance pénale est une procédure sans audience pour les contraventions et certains délits. Le juge statue sur le seul vu de la procédure écrite et fixe une amende. Le prévenu peut former opposition.",
-        "questions": [
-          {
-            "q": "Qu'est-ce que le « dernier mot » au prévenu ?",
-            "hint": "droit de s'exprimer en dernier avant le jugement (art. 346 CPP)"
-          },
-          {
-            "q": "Comment se déroule la CRPC ?",
-            "hint": "proposition du procureur, accord du prévenu, homologation par le juge du siège"
-          },
-          {
-            "q": "À quels délits la CRPC ne s'applique-t-elle pas ?",
-            "hint": "mineurs, crimes, délits d'atteintes volontaires à la vie"
-          }
-        ]
+        "id": "L7_Q2",
+        "questionFr": "Distinguez l'action publique de l'action civile quant à leurs buts respectifs et leurs acteurs.",
+        "questionAr": "ميز بين الدعوى العمومية والدعوى المدنية من حيث هدفهما والخصوم القائمين بها.",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'action publique répare le trouble social et l'action civile répare le préjudice privé...)",
+        "keywords": ["action", "publique", "civile", "procureur", "société", "victime", "réparation"],
+        "correctAnswerFr": "L'action publique répare le trouble social par l'application d'une peine (menée par le procureur). L'action civile répare le dommage privé de la victime (menée par celle-ci).",
+        "correctAnswerAr": "تهدف الدعوى العمومية لإنزال العقاب بالفاعل وجبر خلل المجتمع (النيابة)، والمدنية تهدف لتعويض المتضرر (الضحية)."
       },
       {
-        "title": "Sous-leçon 7.3 — Le tribunal de police",
-        "text": "Le tribunal de police est compétent pour juger les contraventions des cinq classes. Il statue à juge unique et applique une procédure simplifiée.\n\nLa procédure ordinaire devant le tribunal de police est régie par les articles 523 et suivants du Code de procédure pénale. L'audience est publique. Le prévenu comparaît, assisté le cas échéant de son avocat. Les témoins sont entendus si nécessaire. La décision est rendue sous forme de jugement. Le ministère public est représenté par le procureur de la République ou un officier du ministère public.\n\nL'ordonnance pénale est une procédure sans audience applicable aux contraventions des quatre premières classes. Le juge statue sur le seul vu de la procédure écrite et fixe une amende. Si le juge estime qu'une peine autre qu'une amende est nécessaire ou que la contravention est de la 5e classe, il transmet le dossier au ministère public pour citation. L'ordonnance pénale est notifiée au prévenu qui peut former opposition dans un délai de trente jours. L'opposition fait rejuger l'affaire lors d'une audience publique contradictoire.\n\nL'amende forfaitaire s'applique à certaines contraventions, notamment au Code de la route. Elle permet de payer une amende d'un montant fixe sans intervention du juge. Le contrevenant peut contester l'amende forfaitaire dans un délai déterminé, ce qui déclenche alors une procédure classique.\n\nLes décisions du tribunal de police sont susceptibles d'appel devant la chambre des appels correctionnels de la cour d'appel. L'appel est suspensif et permet un réexamen complet de l'affaire.",
-        "questions": [
-          {
-            "q": "Quelle est la compétence du tribunal de police ?",
-            "hint": "contraventions des 5 classes, juge unique, procédure simplifiée"
-          },
-          {
-            "q": "Qu'est-ce que l'ordonnance pénale devant le tribunal de police ?",
-            "hint": "procédure sans audience, amende fixée par ordonnance, opposition possible dans les 30 jours"
-          },
-          {
-            "q": "Qu'est-ce que l'amende forfaitaire ?",
-            "hint": "amende fixe sans intervention du juge, notamment Code de la route, contestation possible"
-          }
-        ]
+        "id": "L7_Q3",
+        "questionFr": "Qu'est-ce qu'une infraction occulte et quel est l'intérêt du délai butoir dans sa prescription ?",
+        "questionAr": "ما هي الجريمة المستترة وما هي فائدة تحديد سقف زمني (ديليه بوتوار) لتقادمها؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Une infraction cachée par nature, avec un butoir pour la sécurité juridique...)",
+        "keywords": ["occulte", "dissimulée", "constat", "butoir", "sécurité", "juridique", "12", "30"],
+        "correctAnswerFr": "Une infraction occulte est une infraction par nature cachée. Le délai de prescription ne court qu'à partir du jour du constat, avec un délai butoir (12 ans pour les délits, 30 ans pour les crimes) pour garantir la sécurité juridique.",
+        "correctAnswerAr": "الجريمة المستترة هي المخفية بطبيعتها، ويبدأ تقادمها من يوم اكتشافها بشرط سقف أقصى ضماناً للإستقرار القانوني للمراكز."
       }
     ]
   },
   {
-    "title": "Leçon 8 — Les voies de recours et l'autorité de la chose jugée",
-    "sub_lessons": [
+    "id": "L8",
+    "titleFr": "L'Instruction Préparatoire",
+    "titleAr": "التحقيق الإعدادي ومحكمة الاتهام",
+    "category": "Procédure",
+    "descriptionFr": "L'instruction menée par le juge d'instruction, la règle du in rem, le témoin assisté et rôle du JLD.",
+    "descriptionAr": "التحقيق القضائي بواسطة قاضي التحقيق، ومبدأ عينية الدعوى، والشاهد المساعد ودور قاضي الحريات.",
+    "audioTextFr": "Cours de procédure pénale. L'instruction par le juge d'instruction. Première partie : Le rôle et la saisine du juge d'instruction. L'instruction préparatoire est obligatoire en matière de crime. Elle est en menace par le juge d'instruction, indépendant, à charge et à décharge. Il est saisi in rem : il ne peut enquêter que sur les faits visés par le réquisitoire. Deuxième partie : Les statuts des personnes visées. Le juge peut placer une personne sous le statut de témoin assisté. Il ne peut prononcer une mise en examen que s'il existe des indices graves ou concordants. Troisième partie : La détention provisoire et le contrôle judiciaire. La liberté est le principe, la détention l'exception. C'est le Juge des Libertés et de la Détention (JLD) qui peut prononcer la détention provisoire si le contrôle judiciaire est insuffisant. La détention provisoire doit être strictement motivée.",
+    "audioTextAr": "درس الإجراءات الجنائية. التحقيق الذي يجريه قاضي التحقيق. الجزء الأول: دور وإحالة القضايا لقاضي التحقيق. يعد التحقيق الإعدادي إلزامياً في الجنايات ومستقلاً في الحكم. ويبحث عن الحقيقة بجمع أدلة الاتهام والنفي. وتكون إحالته عينية عينية، أي لا يحق له التحقيق إلا في الوقائع المحددة بطلب النيابة العامة. الجزء الثاني: الوضع القانوني للأشخاص المعنيين. يمكن وضع الشخص في صفة شاهد مساعد بوجود قرائن بسيطة. ولا يمكن وضع الشخص تحت الاتهام إلا بوجود قرائن قوية أو متوافقة.  الجزء الثالث: الحبس الاحتياطي والرقابة القضائية. الحرية هي الأصل والاعتقال هو الاستثناء. وصار قاضي الحريات والاعتقال (JLD) هو المختص بإصدار قرار الحبس الاحتياطي إذا كانت الرقابة القضائية غير كافية.",
+    "quizQuestionFr": "Que signifie la règle de la saisine « in rem » du juge d'instruction et quel magistrat est compétent pour décider de la détention provisoire ?",
+    "quizQuestionAr": "ماذا يعني مبدأ عينية التحقيق (saisine in rem) لقاضي التحقيق ومن هو القاضي المختص بقرار الحبس الاحتياطي؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: Le juge d'instruction ne peut enquêter que sur les faits visés par le réquisitoire. C'est le Juge des libertés et de la détention (JLD) qui ordonne la détention...)",
+    "keywords": ["in rem", "faits", "réquisitoire", "charge", "décharge", "indices", "JLD", "détention", "provisoire", "liberté", "sûreté", "juge"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "La saisine « in rem » signifie que le juge d'instruction ne peut enquêter que sur les faits visés par le réquisitoire. Le magistrat compétent pour ordonner la détention provisoire est le JLD.",
+    "correctAnswerAr": "يعني التحقيق العيني (saisine in rem) أن قاضي التحقيق لا يحق له التحقيق إلا في الوقائع المحددة بطلب النيابة. والجهة المختصة بالحبس الاحتياطي هو قاضي الحريات والاعتقال (JLD).",
+    "quizzes": [
       {
-        "title": "Sous-leçon 8.1 — L'opposition et l'appel",
-        "text": "Les voies de recours ordinaires comprennent l'opposition et l'appel.\n\nL'opposition est une voie de rétractation ouverte à la personne jugée par défaut, c'est-à-dire sans avoir été informée de la date de l'audience ou sans avoir comparu sans excuse valable. Le condamné par défaut demande au même tribunal de rejuger l'affaire. Le délai d'opposition est de dix jours à compter de la signification du jugement. L'opposition a pour effet d'anéantir le jugement par défaut et de faire rejuger l'affaire sur le fond. Le tribunal peut alors confirmer, infirmer ou modifier sa précédente décision.\n\nL'appel est une voie de réformation qui soumet l'affaire à une juridiction supérieure. Le délai d'appel est de dix jours pour les parties et d'un mois pour le procureur général. L'appel a un effet suspensif, ce qui signifie que la décision n'est pas exécutée pendant le délai d'appel. Il a aussi un effet dévolutif, c'est-à-dire qu'il transfère l'affaire à la juridiction d'appel qui rejuge entièrement l'affaire. Le principe de la prohibition de la reformatio in pejus interdit d'aggraver le sort de l'appelant s'il est seul à faire appel : la peine ne peut pas être alourdie.\n\nEn matière correctionnelle, l'appel est porté devant la chambre des appels correctionnels de la cour d'appel. En matière criminelle, l'appel est porté devant une Cour d'assises d'appel composée de trois magistrats professionnels et de neuf jurés. En matière de police, l'appel est également porté devant la chambre des appels correctionnels.",
-        "questions": [
-          {
-            "q": "Quelle est la différence entre l'opposition et l'appel ?",
-            "hint": "opposition : rétractation par le même tribunal ; appel : réformation par une juridiction supérieure"
-          },
-          {
-            "q": "Qu'est-ce que la prohibition de la reformatio in pejus ?",
-            "hint": "interdiction d'aggraver la peine de l'appelant seul"
-          },
-          {
-            "q": "Quels sont les effets de l'appel ?",
-            "hint": "effet suspensif (pas d'exécution) et dévolutif (transfert à la juridiction d'appel)"
-          }
-        ]
+        "id": "L8_Q1",
+        "questionFr": "Que signifie la règle de la saisine « in rem » du juge d'instruction et quel magistrat est compétent pour décider de la détention provisoire ?",
+        "questionAr": "ماذا يعني مبدأ عينية التحقيق (saisine in rem) لقاضي التحقيق ومن هو القاضي المختص بقرار الحبس الاحتياطي؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le juge d'instruction ne peut enquêter que sur les faits visés par le réquisitoire. C'est le Juge des libertés et de la détention (JLD) qui ordonne la détention...)",
+        "keywords": ["in rem", "faits", "réquisitoire", "charge", "décharge", "indices", "JLD", "détention", "provisoire", "liberté", "sûreté", "juge"],
+        "correctAnswerFr": "La saisine « in rem » signifie que le juge d'instruction ne peut enquêter que sur les faits visés par le réquisitoire. Le magistrat compétent pour ordonner la détention provisoire is le JLD.",
+        "correctAnswerAr": "يعني التحقيق العيني (saisine in rem) أن قاضي التحقيق لا يحق له التحقيق إلا في الوقائع المحددة بطلب النيابة. والجهة المختصة بالحبس الاحتياطي هو قاضي الحريات والاعتقال (JLD)."
       },
       {
-        "title": "Sous-leçon 8.2 — Le pourvoi en cassation et la révision",
-        "text": "Les voies de recours extraordinaires comprennent le pourvoi en cassation et les demandes en révision et réexamen.\n\nLe pourvoi en cassation est jugé par la chambre criminelle de la Cour de cassation. La Cour de cassation est juge du droit et non du fait : elle ne rejuge pas l'affaire mais contrôle l'exacte application de la loi par les juges du fond. Le délai de pourvoi est de cinq jours francs pour les parties et d'un mois pour le procureur général. Le pourvoi n'a pas d'effet suspensif, sauf exceptions. Si la Cour de cassation casse la décision, elle renvoie l'affaire devant une juridiction de même nature mais différemment composée. Le pourvoi dans l'intérêt de la loi est une procédure particulière qui permet au procureur général près la Cour de cassation de déférer un arrêt contraire à la loi, même si le délai de pourvoi est expiré, sans remettre en cause la situation des parties.\n\nLes demandes en révision et en réexamen ont été réformées par la loi du 20 juin 2014. La révision permet de demander un nouveau jugement lorsqu'après une condamnation pénale définitive, un fait nouveau ou un élément inconnu au jour du procès est de nature à faire naître un doute sur la culpabilité du condamné. La demande est portée devant la Cour de révision et de réexamen au sein de la Cour de cassation. Le réexamen est ouvert lorsqu'une condamnation est intervenue en violation de la Convention européenne des droits de l'homme et que la CEDH a constaté cette violation.",
-        "questions": [
-          {
-            "q": "Le pourvoi en cassation constitue-t-il un troisième degré de juridiction ?",
-            "hint": "non, juge du droit et non du fait, contrôle l'application de la loi sans rejuger les faits"
-          },
-          {
-            "q": "Qu'est-ce que la révision d'une condamnation pénale ?",
-            "hint": "fait nouveau ou élément inconnu créant un doute sur la culpabilité, Cour de révision et de réexamen"
-          },
-          {
-            "q": "Qu'est-ce que le pourvoi dans l'intérêt de la loi ?",
-            "hint": "procédure du procureur général pour faire constater une violation de la loi sans remettre en cause les parties"
-          }
-        ]
+        "id": "L8_Q2",
+        "questionFr": "Pour quelles catégories d'infractions l'instruction préparatoire est-elle légalement obligatoire ?",
+        "questionAr": "في أي طائفة من الجرائم يكون التحقيق الإعدادي إلزامياً وقسرياً بنص القانون؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'instruction est obligatoire pour les crimes et facultative pour les délits...)",
+        "keywords": ["instruction", "obligatoire", "crime", "délit", "contravention", "facultative"],
+        "correctAnswerFr": "L'instruction préparatoire est juridiquement obligatoire pour tous les crimes, facultative pour les délits et exceptionnelle pour les contraventions.",
+        "correctAnswerAr": "التحقيق الإعدادي وجوبي وإلزامي قانوناً في الجنايات، وجوازي في الجنح، ونادر جداً في المخالفات."
       },
       {
-        "title": "Sous-leçon 8.3 — L'autorité de la chose jugée",
-        "text": "L'autorité de la chose jugée est un principe fondamental qui interdit de remettre en cause une décision de justice devenue définitive.\n\nL'autorité de la chose jugée au criminel sur le criminel repose sur le principe non bis in idem : nul ne peut être jugé deux fois pour les mêmes faits. L'article 368 du Code de procédure pénale prévoit qu'aucune personne acquittée légalement ne peut plus être reprise ou accusée à raison des mêmes faits, même sous une qualification différente. La jurisprudence étend ce principe au-delà de la matière criminelle : un même fait ne peut donner lieu contre le même prévenu à deux actions pénales distinctes, selon un arrêt de la Chambre criminelle du 19 janvier 2005. La Cour européenne des droits de l'homme impose une conception exigeante dans l'arrêt Zolotoukhine c/ Russie : l'article 4 du Protocole no 7 doit être compris comme interdisant de poursuivre ou de juger une personne pour une seconde infraction pour autant que celle-ci a pour origine des faits identiques ou des faits qui sont en substance les mêmes. Les conditions de l'autorité sont l'identité d'objet, l'identité de parties et l'identité de faits.\n\nL'autorité de la chose jugée au criminel sur le civil est un principe admis par la jurisprudence depuis le XIXe siècle. Les constatations opérées par le juge répressif de façon certaine et qui représentent le soutien nécessaire de la décision pénale ont au civil l'autorité de la chose jugée. Cette autorité s'impose à tous, y compris à ceux qui n'avaient pas participé au procès pénal. Après une condamnation pénale, le juge civil ne peut nier l'existence des faits délictueux ou la culpabilité du condamné. Après une relaxe pour inexistence des faits, le juge civil ne peut condamner à réparation.",
-        "questions": [
-          {
-            "q": "Que signifie le principe non bis in idem ?",
-            "hint": "nul ne peut être jugé deux fois pour les mêmes faits"
-          },
-          {
-            "q": "Quelles sont les trois conditions de l'autorité de la chose jugée au criminel ?",
-            "hint": "identité d'objet, de parties, de faits"
-          },
-          {
-            "q": "Quelle est la portée de l'autorité de la chose jugée au criminel sur le civil ?",
-            "hint": "portée erga omnes, le juge civil ne peut contredire les constatations pénales certaines et nécessaires"
-          }
-        ]
+        "id": "L8_Q3",
+        "questionFr": "Quelle est la différence fondamentale entre le rôle du juge d'instruction et celui du JLD concernant la détention ?",
+        "questionAr": "ما هو التباين الحدودي والجوهري بين سلطة قاضي التحقيق وقاضي الحريات والاعتقال (JLD) في شأن الحبس؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le juge d'instruction instruit mais seul le JLD peut ordonner la détention...)",
+        "keywords": ["juge", "instruction", "JLD", "libertés", "détention", "ordonner", "liberté"],
+        "correctAnswerFr": "Le juge d'instruction mène l'enquête à charge et décharge mais ne peut pas ordonner la détention. Seul le Juge des Libertés et de la Détention (JLD) a ce pouvoir exceptionnel.",
+        "correctAnswerAr": "يتحرى قاضي التحقيق ويجمع الأدلة دون سلطة حبس، والجهة الحصرية المانحة لأمر الحبس الاحتياطي هي قاضي الحريات (JLD)."
+      }
+    ]
+  },
+  {
+    "id": "L9",
+    "titleFr": "Les Juridictions de Jugement",
+    "titleAr": "محاكم الموضوع والخصومة القضائية",
+    "category": "Procédure",
+    "descriptionFr": "Les tribunaux de police/correctionnel/assises, les voies rapides et la distinction de l'appel et de la cassation.",
+    "descriptionAr": "محاكم المخالفات والجنح والجنايات، إجراءات الاعتراف بالذنب، والفرق البنيوي بين الاستئناف والنقض.",
+    "audioTextFr": "Cours de procédure pénale. Le procès pénal et les recours. Première partie : Les juridictions de droit commun. Le Tribunal de police statue on les contraventions. Le Tribunal correctionnel juge les délits. La Cour d'assises juge les crimes, composée de trois magistrats et d'un jury populaire. Deuxième partie : Les modes de comparution. Le Parquet peut opter pour la comparution immédiate ou la Comparution sur Reconnaissance Préalable de Culpabilité (CRPC). Troisième partie : Les voies de recours. L'appel est une voie de réformation soumise à la Cour d'appel avec effet suspensif et dévolutif. Le pourvoi en cassation est jugé par la Cour de cassation, qui ne rejuge pas les faits mais contrôle uniquement l'exacte application de la loi.",
+    "audioTextAr": "درس الإجراءات الجنائية. المحاكمة الجنائية وطرق الطعن.  الجزء الأول: محاكم القانون العام. محكمة المخالفات تفصل في المخالفات، المحكمة الجنحية تفصل في الجنح، ومحكمة الجنايات تفصل في الجنايات وتتألف من ثلاثة قضاة محترفين ومحلفين شعبيين. الجزء الثاني: طرق المثول والمحاكمة السريعة. يمكن للنيابة العامة اختيار مسارات متابعة سريعة مثل المثول الفوري أو المثول بعد الاعتراف المسبق بالذنب (CRPC). الجزء الثالث: طرق الطعن. الاستئناف هو طريق طعن يرفع القضية لمحكمة الاستئناف وله تأثير موقف وناقل. أما الطعن بالنقض فتفصل فيه محكمة النقض التي تراقب التطبيق السليم للقانون دون إعادة النظر في الوقائع.",
+    "quizQuestionFr": "Quelle différence fondamentale entre l'appel et le pourvoi en cassation et qu'est-ce que la procédure de CRPC ?",
+    "quizQuestionAr": "ما الفرق الجوهري بين الاستئناف والطعن بالنقض وما هي إجراءات المثول بعد الاعتراف المسبق بالذنب (CRPC)؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: L'appel rejuge le fait et le droit devant la Cour d'appel. La Cour de cassation contrôle uniquement l'application de la loi. La CRPC est le plaider-coupable...)",
+    "keywords": ["appel", "cassation", "faits", "droit", "réformation", "CRPC", "reconnaissance", "culpabilité", "homologation", "police", "correctionnel", "assises"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "L'appel revoit l'affaire en fait et en droit avec effet suspensif. La cassation ne rejuge pas les faits mais contrôle uniquement le droit. La CRPC est le plaider-coupable.",
+    "correctAnswerAr": "الاستئناف يعيد طرح النزاع واقعا وقانونا. والطعن بالنقض يراقب التطبيق السليم للقانون دون الخوض في الوقائع. وإجراء CRPC هو المثول بالإقرار المسبق بالذنب.",
+    "quizzes": [
+      {
+        "id": "L9_Q1",
+        "questionFr": "Quelle différence fondamentale entre l'appel et le pourvoi en cassation et qu'est-ce que la procédure de CRPC ?",
+        "questionAr": "ما الفرق الجوهري بين الاستئناف والطعن بالنقض وما هي إجراءات المثول بعد الاعتراف المسبق بالذنب (CRPC)؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'appel rejuge le fait et le droit devant la Cour d'appel. La Cour de cassation contrôle uniquement l'application de la loi. La CRPC est le plaider-coupable...)",
+        "keywords": ["appel", "cassation", "faits", "droit", "réformation", "CRPC", "reconnaissance", "culpabilité", "homologation", "police", "correctionnel", "assises"],
+        "correctAnswerFr": "L'appel revoit l'affaire en fait et en droit avec effet suspensif. La cassation ne rejuge pas les faits mais contrôle uniquement le droit. La CRPC est le plaider-coupable.",
+        "correctAnswerAr": "الاستئناف يعيد طرح النزاع واقعا وقانونا. والطعن بالنقض يراقب التطبيق السليم للقانون دون الخوض في الوقائع. وإجراء CRPC هو المثول بالإقرار المسبق بالذنب."
+      },
+      {
+        "id": "L9_Q2",
+        "questionFr": "Présentez brièvement la compétence respective du tribunal de police, du tribunal correctionnel et de la cour d'assises.",
+        "questionAr": "وضح باختصار الإختصاص القضائي لكل من محكمة المخالفات، المحكمة الجنحية، ومحكمة الجنايات.",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le tribunal de police juge les contraventions, correctionnel les délits, et assises les crimes...)",
+        "keywords": ["police", "correctionnel", "assises", "contraventions", "délits", "crimes"],
+        "correctAnswerFr": "Le Tribunal de police juge les contraventions, le Tribunal correctionnel les délits, et la Cour d'assises juge les crimes les plus graves avec l'aide d'un jury citoyen.",
+        "correctAnswerAr": "تفصل محكمة المخالفات في المخالفات، والمحكمة الجنحية في الجنح، ومحكمة الجنايات في الجرائم الأشد جسامة وجناية."
+      },
+      {
+        "id": "L9_Q3",
+        "questionFr": "Qu'est-ce que la mesure de comparution sur reconnaissance préalable de culpabilité (CRPC) et son utilité ?",
+        "questionAr": "ما هو نظام المثول بناءً على الإقرار المسبق بالذنب (CRPC) وما هي الجدوى القضائية منه؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: C'est le plaider-coupable français qui évite un procès classique...)",
+        "keywords": ["CRPC", "reconnaissance", "culpabilité", "accord", "homologation", "procureur", "plaider-coupable"],
+        "correctAnswerFr": "La CRPC est le plaider-coupable français. Elle permet à un suspect de reconnaître ses torts pour accepter une peine réduite proposée par le procureur et validée by un juge, évitant ainsi un procès long.",
+        "correctAnswerAr": "نظام CRPC هو اعتراف مسبق بالذنب لتسريع التقاضي بالحكم بعقوبة مخففة يرتضيها المتهم ويصادق عليها القاضي لتفادي الجلسات العادية."
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "titleFr": "La Classification des Infractions et la Légalité Pénale",
+    "titleAr": "التصنيف الثلاثي للجرائم ومبدأ الشرعية الجنائية الدستوري",
+    "category": "Droit Pénal",
+    "descriptionFr": "Analyse de la classification tripartite (crimes, délits, contraventions) et du principe constitutionnel de légalité des délits et des peines (nullum crimen, nulla poena sine lege).",
+    "descriptionAr": "تحليل معمق ومفصل للتصنيف الثلاثي للجرائم (جنايات، جنح، ومخالفات) مع دراسة مبدأ الشرعية الجنائية الدستوري كأحد ركائز دولة القانون.",
+    "audioTextFr": "Le droit pénal général est la discipline qui définit l'exercice par la société du pouvoir de punir. Comme l'explique Xavier Pin, la législation pénale française classe historiquement les infractions selon leur gravité en trois catégories distinctes, énoncées à l'article 111-1 du Code pénal : les crimes, les délits, et les contraventions. Les crimes, infractions les plus graves (homicide, viol), relèvent de la Cour d'assises et sont punis de peines criminelles (réclusion ou détention). Les délits, de gravité moyenne (vol, escroquerie), sont jugés par le Tribunal correctionnel et passibles d'emprisonnement ou d'amendes de 3750 euros au moins. Les contraventions, infractions légères d'indiscipline (infractions routières), relèvent du Tribunal de police et entraînent de simples amendes. Cette classification détermine la répartition constitutionnelle entre le domaine de la loi (compétence du Parlement pour les crimes et délits) et celui du règlement (compétence du pouvoir exécutif pour les contraventions). Au cœur de cette matière repose le principe de légalité (article 111-3 du Code pénal), formulé par Cesare Beccaria : 'Nullum crimen, nulla poena sine lege'. Il exige un texte clair, accessible et prévisible pour incriminer et punir, ce qui interdit au juge d'étendre la loi par analogie défavorable et lui impose une interprétation stricte (article 111-4 du Code pénal).",
+    "audioTextAr": "يعرّف القانون الجنائي العام، كما يوضح البروفيسور كزافييه بان، القواعد الموضوعية التي تنظم ممارسة المجتمع لحق العقاب. ويقسم القانون الفرنسي الجرائم بشكل كلاسيكي وتاريخي تبعا لمدى جسامتها إلى ثلاث طوائف أساسية وفقا للمادة 111-1 من قانون العقوبات: الجنايات (Crimes)، الجنح (Délits)، والمخالفات (Contraventions). الجنايات هي الأشد جسامة كالقتل العمد والاغتصاب وتفصل فيها محكمة الجنايات، وتكون عقوبتها جنائية كالسجن المؤبد أو المؤقت. والجنح هي جرائم متوسطة الخطورة كالسرقة والنصب وتختص بها المحكمة الجنحية، وتكون عقوبتها الحبس أو الغرامة التي لا تقل عن 3750 يورو. أما المخالفات فهي بسيطة وتتعلق بخلل في الانضباط أو القواعد الإدارية والمرور، وتفصل فيها محكمة المخالفات بعقوبة الغرامة المالية فقط. ويحدد هذا التقسيم حدود الاختصاص الدستوري بين سلطة التشريع البرلمانية (المختصة بالجرائم والجنح) والسلطة اللائحية التنفيذية (المختصة بالمخالفات). ويترسخ في قلب هذه المادة مبدأ الشرعية الجنائية التاريخي (المادة 111-3) المستوحى من الفقيه بيكاريا: 'لا جريمة ولا عقوبة إلا بنص قانوني سابق'. يفرض هذا المبدأ وجود نص تشريعي واضح، يسير الولوج إليه، ومتوقع النتائج، كشرط للتجريم والعقاب. ومن أهم نتائجه المباشرة حظر التوسع القياسي الأشد بالمتهم من طرف القاضي، والزامه بالتفسير الضيق للنصوص الجزائية (المادة 111-4 من قانون العقوبات).",
+    "quizQuestionFr": "Expliquez la classification tripartite des infractions selon l'article 111-1 du Code pénal et citez les corollaires du principe de légalité.",
+    "quizQuestionAr": "اشرح التصنيف الثلاثي للجرائم طبقاً للمادة 111-1 من قانون العقوبات واذكر النتائج والضمانات المترتبة على مبدأ الشرعية الجنائية.",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: Les infractions sont classées en crimes, délits et contraventions. La légalité implique l'interprétation stricte et la non-rétroactivité...)",
+    "keywords": ["légalité", "infractions", "gravité", "tripartite", "crime", "délit", "contravention", "interprétation stricte", "Beccaria", "peine"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "La classification tripartite divise les infractions en crimes (très graves, Cour d'assises), délits (moyens, Tribunal correctionnel) et contraventions (légères, Tribunal de police). Le principe de légalité interdit de punir sans texte écrit préalable, imposant ainsi l'interprétation stricte de la loi par le juge et excluant l'analogie défavorable.",
+    "correctAnswerAr": "ينقسم التصنيف الثلاثي للجرائم إلى جنايات (الأشد خطورة، محكمة الجنايات)، جنح (متوسطة، المحكمة الجنحية)، ومخالفات (بسيطة، محكمة المخالفات). ويقضي مبدأ الشرعية بأنه لا يجوز العقاب إلا بنص تشريعي مكتوب وسابق على الفعل، مما يوجب التفسير الضيق للنصوص الجنائية من قبل القاضي ويمنع القياس ضد مصلحة المتهم.",
+    "quizzes": [
+      {
+        "id": "L10_Q1",
+        "questionFr": "Sur quel critère repose la distinction entre les trois classes d'infractions et quelles juridictions sont compétentes pour les juger ?",
+        "questionAr": "ما هو المعيار القانوني والواقعي الذي يستند إليه التمييز بين الطوائف الثلاث للجرائم، وما هي المحاكم المختصة بنظر كل منها؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Le critère est le taux et la nature de la peine. Les crimes vont aux assises, les délits au correctionnel...)",
+        "keywords": ["critère", "peine", "gravité", "assises", "correctionnel", "police", "compétence", "tripartite"],
+        "correctAnswerFr": "La distinction repose sur la gravité de l'infraction déterminée par la nature et le taux de la peine encourue. Les crimes relèvent de la Cour d'assises, les délits du Tribunal correctionnel et les contraventions du Tribunal de police.",
+        "correctAnswerAr": "يستند التمييز أساساً إلى جسامة الجريمة مقاساً بنوع ومقدار العقوبة المقررة لها قانوناً. وتختص محكمة الجنايات بنظر الجنايات، والمحكمة الجنحية بنظر الجنح، ومحكمة المخالفات بنظر المخالفات البسيطة."
+      },
+      {
+        "id": "L10_Q2",
+        "questionFr": "Quelle est la portée politique et constitutionnelle du principe de légalité criminelle formulé par Cesare Beccaria ?",
+        "questionAr": "ما هي الأبعاد السياسية والدستورية لمبدأ شرعية الجرائم والعقوبات كما صاغه الفقيه بيكاريا في الفلسفة الجنائية الحديثة؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Ce principe garantit la sécurité juridique, protège les libertés contre l'arbitraire et limite le pouvoir du juge...)",
+        "keywords": ["légalité", "Beccaria", "arbitraire", "Constitution", "garantie", "sécurité", "textes", "peines"],
+        "correctAnswerFr": "Le principe de légalité garantit la sécurité juridique des citoyens en les protégeant contre l'arbitraire du pouvoir. Sur le plan constitutionnel, il limite le pouvoir créateur du juge et garantit que seul le législateur, représentant de la volonté nationale, peut créer des incriminations.",
+        "correctAnswerAr": "يضمن مبدأ الشرعية الجنائية الأمن القانوني للأفراد بحمايتهم من تحكم السلطة واستبدادها. ودستورياً، يحد المبدأ من السلطة التقديرية التوسيعية للقاضي، مقرراً أن المشرع وحده - ممثلاً للإرادة العامة - يملك صلاحية التجريم والعقاب."
+      },
+      {
+        "id": "L10_Q3",
+        "questionFr": "En quoi consiste la règle de l'interprétation stricte de la loi pénale prévue à l'article 111-4 du Code pénal ?",
+        "questionAr": "ماذا تعني قاعدة التفسير الضيق للقانون الجنائي المنصوص عليها في المادة 111-4 من قانون العقوبات؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'interprétation stricte interdit au juge d'étendre la loi à des cas non prévus par analogie...)",
+        "keywords": ["interprétation", "stricte", "analogie", "juge", "interdit", "111-4", "exégèse"],
+        "correctAnswerFr": "L'interprétation stricte impose au juge d'appliquer la loi selon sa lettre et sa ratio legis, sans étendre son application à des cas non visés par le législateur. Elle interdit formellement le raisonnement par analogie pour créer ou aggraver une incrimination.",
+        "correctAnswerAr": "تلزم قاعدة التفسير الضيق القاضي بتطبيق النص الجنائي وفقاً لحرفه وروح التشريع دون تجاوز حدوده ليشمل حالات لم يقصدها المشرع. وهي تحظر صراحة القياس لخلق جرائم جديدة أو تشديد العقوبات القائمة."
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "titleFr": "L'Application de la Loi Pénale dans le Temps et l'Espace",
+    "titleAr": "تطبيق القانون الجنائي من حيث الزمان والمكان",
+    "category": "Droit Pénal",
+    "descriptionFr": "Étude détaillée des conflits de lois dans le temps (non-rétroactivité, rétroactivité in mitius) et dans l'espace (territorialité, personnalité active/passive).",
+    "descriptionAr": "دراسة تفصيلية لتنازع القوانين في الزمان (عدم الرجعية، والأثر الرجعي للقانون الأصلح للمتهم) وفي المكان (مبادئ الإقليمية والشخصية الإيجابية والسلبية).",
+    "audioTextFr": "L'application de la loi pénale est soumise à des principes rigoureux afin de préserver la liberté et la sécurité juridique des justiciables. Concernant l'application dans le temps, deux règles majeures régissent les conflits de lois de fond, conformément à l'article 112-1 du Code pénal. En premier lieu, la non-rétroactivité des lois pénales plus sévères : une loi nouvelle qui crée une incrimination ou aggrave une peine ne peut s'appliquer à des faits commis avant son entrée en vigueur. En second lieu, la rétroactivité in mitius : une loi nouvelle plus douce (qui supprime une incrimination ou réduit une peine) s'applique immédiatement aux infractions commises avant son entrée en vigueur et non encore jugées par une décision passée en force de chose jugée. Pour les lois de forme (procédure, prescription), le principe est l'application immédiate aux procédures en cours. Concernant l'application dans l'espace, le principe directeur est celui de la territorialité (article 113-2) : la loi pénale française s'applique à toute infraction dès lors qu'un de ses faits constitutifs a été commis sur le territoire de la République, y compris son espace maritime et aérien. Par exception, la loi française s'applique aux faits commis hors du territoire selon le principe de personnalité active (auteur français au moment de l'infraction) ou de personnalité passive (victime française au moment de l'infraction).",
+    "audioTextAr": "يخضع تطبيق القوانين الجنائية لضوابط صارمة تهدف لحماية الحرية الشخصية والاستقرار القانوني للمراكز. فمن حيث التطبيق في الزمان، تحكم القواعد الموضوعية قاعدتان رئيسيتان وفقاً للمادة 112-1 من قانون العقوبات الفرنسي: أولاً، عدم رجعية القوانين الجنائية الأشد عقوبة (Non-rétroactivité)، فلا يسري قانون تجريمي جديد أو يشدد العقاب على أفعال ارتكبت قبل نفاذه. ثانياً، الأثر الرجعي للقانون الأصلح للمتهم (Rétroactivité in mitius): فالقانون الجديد الأكثر رأفة بالمتهم (الذي يبيح فعلاً مجرماً أو يخفض عقوبة) يطبق فوراً وبأثر رجعي على الجرائم المرتكبة قبل نفاذه ما دام لم يصدر فيها حكم بات حاز قوة الأمر المقضي به. أما قوانين الشكل والإجراءات والتقادم، فالأصل فيها هو الأثر الفوري المباشر على الإجراءات الجارية. ومن حيث التطبيق في المكان، فإن المبدأ الحاكم هو إقليمية القوانين الجنائية (المادة 113-2): حيث يسري قانون العقوبات الفرنسي على كل جريمة ارتكبت فوق إقليم الجمهورية أو الفضاء البحري والجوي التابع لها، ويكفي لذلك أن يقع أحد العناصر المكونة للجريمة (Fait constitutif) فوق هذا الإقليم. وبصفة استثنائية، يمتد سلطان القانون الفرنسي خارج الحدود تبعا لمبدأ الشخصية الإيجابية (إذا كان الجاني فرنسي الجنسية وقت ارتكاب الجريمة) أو مبدأ الشخصية السلبية (إذا كانت الضحية فرنسية الجنسية وقت الفعل).",
+    "quizQuestionFr": "Quelle est la différence entre le principe de non-rétroactivité des lois pénales plus sévères et le principe de rétroactivité in mitius, et comment s'applique le principe de territorialité ?",
+    "quizQuestionAr": "ما الفرق بين مبدأ عدم رجعية القوانين الجنائية الأشد ومبدأ الأثر الرجعي للقانون الأصلح للمتهم (In mitius)، وكيف يطبق مبدأ الإقليمية في المكان؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: La loi plus sévère ne rétroagit pas, mais la loi plus douce s'applique immédiatement aux procès en cours. La territorialité vise les faits commis en France...)",
+    "keywords": ["rétroactivité", "in mitius", "temps", "espace", "territorialité", "personnalité", "loi douce", "prescription", "112-1", "113-2"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "La loi pénale plus sévère ne s'applique que pour l'avenir (non-rétroactivité), tandis que la loi plus douce s'applique immédiatement aux infractions non encore jugées définitivement (rétroactivité in mitius). Le principe de territorialité rend la loi française compétente dès qu'un fait constitutif de l'infraction s'est produit sur le territoire national.",
+    "correctAnswerAr": "لا يمتد أثر القانون الجنائي الأشد إلى الماضي بل يسري على المستقبل فقط، بينما يطبق القانون الجديد الأخف فوراً وبأثر رجعي على القضايا غير المحكومة بحكم بات. ويقضي مبدأ الإقليمية باختصاص القانون الفرنسي بمجرد وقوع أي عنصر أو فعل مادي مكون للجريمة داخل الإقليم الوطني الفرنسي.",
+    "quizzes": [
+      {
+        "id": "L11_Q1",
+        "questionFr": "Expliquez le fonctionnement de la rétroactivité in mitius et précisez sa limite temporelle absolue.",
+        "questionAr": "اشرح آلية عمل الأثر الرجعي للقانون الأصلح للمتهم وحدد السقف الزمني الحتمي الذي يقف عنده سريان هذا الأثر.",
+        "placeholderFr": "Saisissez votre réponse... (ex: La loi plus douce s'applique immédiatement, sauf si une condamnation définitive est déjà intervenue...)",
+        "keywords": ["in mitius", "douce", "limite", "condamnation", "définitive", "force", "chose jugée"],
+        "correctAnswerFr": "La rétroactivité in mitius implique l'application immédiate de la loi nouvelle moins sévère. Sa limite absolue est l'existence d'une condamnation définitive passée en force de chose jugée avant l'entrée en vigueur de la loi nouvelle, sauf si la loi nouvelle décriminalise totalement le comportement.",
+        "correctAnswerAr": "يقضي الأثر الرجعي للقانون الأصلح بتطبيق القانون الأخف فوراً على الجرائم السابقة. والحد المطلق لسريانه هو صدور حكم جنائي بات حاز قوة الشيء المحكوم فيه قبل نفاذ القانون الجديد، إلا إذا ألغى القانون الجديد صفة التجريم تماماً عن الفعل."
+      },
+      {
+        "id": "L11_Q2",
+        "questionFr": "Quelle est la règle d'application dans le temps pour les lois pénales de forme (procédure et prescription) ?",
+        "questionAr": "ما هي القاعدة القانونية الحاكمة لتطبيق القوانين الجنائية الشكلية (قوانين الإجراءات ومدد التقادم) من حيث الزمان؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: Les lois de forme sont d'application immédiate aux procédures non encore achevées...)",
+        "keywords": ["forme", "procédure", "prescription", "immédiat", "en cours", "instance"],
+        "correctAnswerFr": "Les lois pénales de forme (organisation judiciaire, procédure, prescription) sont régies par le principe de l'application immédiate. Elles s'appliquent aux instances en cours sans remettre en cause la validité des actes régulièrement accomplis sous l'empire de la loi ancienne.",
+        "correctAnswerAr": "تخضع القوانين الجنائية الشكلية (كتنظيم القضاء، الإجراءات، وآجال التقادم) لمبدأ الأثر الفوري المباشر. فتسري فوراً على الدعاوى الجارية دون أن يؤثر ذلك على صحة الإجراءات والقرارات التي تم اتخاذها بشكل صحيح في ظل القانون القديم."
+      },
+      {
+        "id": "L11_Q3",
+        "questionFr": "Comment la jurisprudence caractérise-t-elle un 'fait constitutif' d'une infraction pour retenir la compétence territoriale de la loi française ?",
+        "questionAr": "كيف تحدد وتحلل الأحكام القضائية مفهوم 'العنصر أو الفعل المكون للجريمة' لتقرير الاختصاص الإقليمي للقانون الجنائي الفرنسي؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: La jurisprudence considère qu'un fait constitutif est établi dès qu'un acte matériel ou la remise de la chose a lieu en France...)",
+        "keywords": ["fait constitutif", "jurisprudence", "remise", "matériel", "compétence", "France", "territoire"],
+        "correctAnswerFr": "La jurisprudence apprécie largement la notion de 'fait constitutif' : il suffit qu'un acte matériel de l'infraction (comme les manœuvres frauduleuses, la remise des fonds, ou l'acte de complicité) soit localisé en France pour justifier la compétence territoriale de la loi française.",
+        "correctAnswerAr": "يأخذ القضاء بمفهوم واسع 'للفعل المكون للجريمة': إذ يكفي أن يقع أي جزء من الركن المادي للجريمة (كالتحريض، أو التدليس، أو تسليم الشيء المستولى عليه، أو أفعال الاشتراك) داخل فرنسا لينعقد الاختصاص الإقليمي للقضاء الجنائي الفرنسي."
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "titleFr": "Les Éléments de l'Infraction et l'Imputation",
+    "titleAr": "الأركان التكوينية للجريمة وآلية الإسناد العقابي",
+    "category": "Droit Pénal",
+    "descriptionFr": "Étude systématique de l'élément matériel (actus reus), de l'élément moral (mens rea) et des conditions subjectives d'imputation (discernement, libre arbitre).",
+    "descriptionAr": "دراسة منهجية مفصلة للركن المادي (السلوك والنتيجة) والركن المعنوي (القصد أو الخطأ الجنائي) مع شروط الإسناد والمسؤولية الشخصية (الإدراك وحرية الاختيار).",
+    "audioTextFr": "Pour qu'un comportement constitue une infraction pénale, il doit présenter plusieurs éléments constitutifs indissociables. L'élément matériel (actus reus) suppose un comportement extérieur d'action (infraction de commission comme le vol) ou d'abstention (infraction d'omission comme la non-assistance à personne en danger). Les infractions matérielles exigent un résultat physique et un lien de causalité direct et certain entre le comportement et ce résultat. À cela s'ajoute la tentative (article 121-5), punissable si elle se manifeste par un commencement d'exécution et n'a été suspendue qu'en raison de circonstances indépendantes de la volonté de l'auteur. L'élément moral (mens rea) exige une faute (article 121-3). En matière de crimes et délits, la règle est l'intention, c'est-à-dire le dol général, caractérisé par la conscience du caractère illicite de l'acte et la volonté d'atteindre le résultat prohibé, indépendamment des mobiles de l'auteur. Les fautes non intentionnelles (imprudence, négligence, manquement) n'existent que pour certains délits et les contraventions. Enfin, pour déclarer une personne pénalement responsable, le fait typique et illicite doit lui être imputé. L'imputation exige d'une part le discernement (capacité de comprendre la portée de son acte, exclue en cas de minorité absolue ou de trouble mental abolissant le contrôle des actes selon l'article 122-1), et d'autre part le libre arbitre (capacité de vouloir, exclue en cas de contrainte irrésistible ou d'erreur de droit invincible).",
+    "audioTextAr": "لكي يوصف سلوك بشري بأنه جريمة معاقب عليها جنائياً، يجب أن تتوافر فيه أركان تكوينية متلازمة. يفترض الركن المادي (Actus reus) سلوكاً مادياً خارجياً مجسداً، إما إيجابياً بالقيام بفعل محظور كسرقة مال الغير، أو سلبياً بالامتناع عن القيام بواجب يفرضه القانون كامتناع شخص عن إغاثة غيره في حالة خطر. وتتطلب الجرائم المادية حدوث نتيجة ملموسة وقيام رابطة سببية مباشرة وأكيدة بين السلوك والنتيجة. وتندرج تحت هذا الركن أيضاً محاولة ارتكاب الجريمة أو الشروع (المادة 121-5)، ويكون الشروع معاقباً عليه إذا ثبت البدء في تنفيذ الفعل المادي ولم يوقَف أثره أو يخب إلا لظروف أجنبية لا دخل لإرادة الجاني فيها. أما الركن المعنوي (Mens rea) فيتطلب وجود خطأ أو قصد جنائي (المادة 121-3). فالأصل في الجنايات والجنح هو توافر القصد الجنائي (أو القصد العام) المتمثل في اتجاه إرادة الجاني إلى ارتكاب الفعل مع علمه بكافة أركانه التي يتطلبها القانون وبأنه محظور، بغض النظر عن البواعث أو الدوافع الشخصية. أما الأخطاء غير العمدية كالإهمال وعدم الاحتراز والتقصير فلا يعاقب عليها إلا بنص خاص في بعض الجنح والمخالفات. وفي النهاية، لتأسيس المسؤولية الجنائية الفردية، لا يكفي قيام الركنين المادي والمعنوي بل يجب إسناد الجريمة (Imputation) إلى فاعلها شخصياً. ويتطلب الإسناد توافر الإدراك أو التمييز (أي القدرة على فهم طبيعة الفعل ونتائجه، وينتفي في حالات الصغر غير المميز أو الجنون والعاهة العقلية المانعة للمسؤولية وفقاً للمادة 122-1)، وتوافر حرية الاختيار والتوجه (وينتفي في حالات الإكراه القاهر المادي أو المعنوي، أو الغلط غير المغتفر في القانون).",
+    "quizQuestionFr": "Quels sont les éléments constitutifs de l'infraction pénale et quelles sont les deux conditions essentielles de l'imputation ?",
+    "quizQuestionAr": "ما هي الأركان التكوينية للجريمة الجنائية وما هما الشرطان الأساسيان لقيام الإسناد الجنائي وتحميل المسؤولية الشخصية؟",
+    "quizPlaceholderFr": "Saisissez votre réponse... (ex: L'élément matériel (comportement, résultat, causalité) et moral (intention ou imprudence). L'imputation exige le discernement et la liberté de volonté...)",
+    "keywords": ["élément matériel", "élément moral", "imputation", "causalité", "tentative", "dol", "discernement", "contrainte", "121-3", "122-1"],
+    "durationMinutes": 15,
+    "correctAnswerFr": "Les éléments constitutifs de l'infraction sont l'élément matériel (comportement positif ou d'abstention, résultat, lien de causalité) et l'élément moral (dol général ou faute d'imprudence). L'imputation d'une infraction exige le discernement (intelligence de l'acte) et le libre arbitre (volonté libre d'agir).",
+    "correctAnswerAr": "الأركان التكوينية للجريمة هي الركن المادي (سلوك إيجابي أو سلبي، نتيجة، علاقة سببية) والركن المعنوي (القصد الجنائي العام أو الخطأ غير العمدي). ويتطلب الإسناد الجنائي توافر التمييز والإدراك (القدرة العقلية على فهم الفعل) وحرية الاختيار (سلامة الإرادة من الإكراه).",
+    "quizzes": [
+      {
+        "id": "L12_Q1",
+        "questionFr": "Quelle est la différence entre une infraction matérielle, une infraction formelle et une infraction obstacle ?",
+        "questionAr": "ما هو التمييز الدقيق بين الجريمة المادية (Infraction matérielle)، والجريمة الشكلية (Infraction formelle)، وجريمة الخطر أو العقبة (Infraction obstacle)؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'infraction matérielle exige un résultat, la formelle punit le procédé sans résultat, et l'obstacle prévient le péril...)",
+        "keywords": ["matérielle", "formelle", "obstacle", "résultat", "empoisonnement", "péril", "consommation"],
+        "correctAnswerFr": "L'infraction matérielle exige la survenance d'un résultat physique (ex: la mort dans le meurtre). L'infraction formelle punit un procédé indépendamment du résultat (ex: l'empoisonnement, consommé dès l'administration du poison). L'infraction obstacle incrimine un comportement dangereux très en amont pour prévenir un péril (ex: la conduite en état d'ivresse).",
+        "correctAnswerAr": "تتطلب الجريمة المادية حدوث نتيجة مادية ملموسة (كالوفاة في القتل). بينما تعاقب الجريمة الشكلية على سلوك معين بقطع النظر عن النتيجة (كالإعطاء العمدي للمواد السامة، الذي يكتمل بمجرد الإعطاء دون انتظار الموت). أما جريمة العقبة فتقوم على سلوك خطر لمنع حدوث ضرر أكبر (كالقيادة تحت تأثير السكر)."
+      },
+      {
+        "id": "L12_Q2",
+        "questionFr": "Quelles conditions cumulatives doivent être réunies pour caractériser une tentative punissable selon l'article 121-5 du Code pénal ?",
+        "questionAr": "ما هي الشروط المتلازمة والمجتمعة التي يجب توافرها قانوناً لقيام الشروع المعاقب عليه وفقاً للمادة 121-5 من قانون العقوبات؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: La tentative exige un commencement d'exécution et l'absence de désistement volontaire...)",
+        "keywords": ["tentative", "commencement d'exécution", "désistement", "volontaire", "121-5", "interruption"],
+        "correctAnswerFr": "Pour caractériser une tentative punissable, deux conditions cumulatives doivent être réunies : d'une part, un commencement d'exécution (acte tendant directement à l'infraction avec l'intention de la commettre), et d'autre part, l'absence de désistement volontaire (l'interruption doit résulter de circonstances indépendantes de la volonté de l'auteur).",
+        "correctAnswerAr": "لقيام الشروع المعاقب عليه، يجب توافر شرطين متلازمين: أولاً، البدء في التنفيذ (وهو كل فعل مادي يؤدي مباشرة إلى الجريمة مع قصد ارتكابها)، وثانياً، عدم العدول الاختياري (بحيث يكون انقطاع الفعل أو خيبة أثره راجعاً لظروف خارجة عن إرادة الجاني)."
+      },
+      {
+        "id": "L12_Q3",
+        "questionFr": "Comment l'article 122-1 du Code pénal traite-t-il la distinction entre l'abolition et l'altération du discernement ?",
+        "questionAr": "كيف عالجت المادة 122-1 من قانون العقوبات التفرقة بين انعدام التمييز (Abolition) وضعفه أو نقصانه (Altération) عند ارتكاب الجريمة؟",
+        "placeholderFr": "Saisissez votre réponse... (ex: L'abolition entraîne l'irresponsabilité pénale, alors que l'altération réduit la peine mais maintient la punissabilité...)",
+        "keywords": ["122-1", "trouble mental", "abolition", "altération", "discernement", "responsabilité", "peine"],
+        "correctAnswerFr": "L'article 122-1 distingue l'abolition du discernement (alinéa 1), qui exclut totalement la responsabilité pénale de la personne atteinte d'un trouble mental au moment des faits, de l'altération du discernement (alinéa 2), qui maintient la responsabilité pénale mais oblige le juge à prononcer une peine réduite d'un tiers.",
+        "correctAnswerAr": "تفرق المادة 122-1 بين انعدام أو زوال التمييز (الفقرة الأولى)، والذي يؤدي إلى امتناع المسؤولية الجنائية تماماً للشخص المصاب باضطراب عقلي وقت الفعل، وبين ضعف أو نقص التمييز (الفقرة الثانية)، حيث تظل المسؤولية الجنائية قائمة مع إلزام القاضي بتخفيض العقوبة المقررة بمقدار الثلث."
       }
     ]
   }
