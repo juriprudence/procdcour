@@ -692,11 +692,11 @@ function setLang(lang) {
   state.audioLang = lang;
   document.querySelectorAll('#langChips .chip').forEach(c => c.classList.toggle('active', c.dataset.lang === lang));
   updateTranscript();
-  audioElement = null;
-  audioUrl = null;
   if (state.isPlaying) {
-    pauseAudio();
+    destroyAudio();
     playAudio();
+  } else {
+    destroyAudio();
   }
 }
 
@@ -888,7 +888,7 @@ function showResult(data) {
       <div class="verdict">${passed ? 'RÉUSSI' : 'ÉCHEC'}</div>
     </div>
     <div class="result-title">${passed ? 'Validation de leçon réussie ! 🎉' : 'Notions insuffisantes - Réécoute obligatoire ❌'}</div>
-    <div class="warning-card ${data.keywordsMatched && data.keywordsMatched.length === 0 ? 'show' : ''}">
+    <div class="warning-card ${!data.aiUsed ? 'show' : ''}">
       <div class="warn-title">⚠️ Évaluation basée sur les mots-clés</div>
       <div class="warn-text">Le serveur d'évaluation IA est temporairement inaccessible. Votre note s'appuie sur la détection offline de nos mots-clés.</div>
     </div>

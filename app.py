@@ -291,6 +291,8 @@ def api_evaluate():
     except Exception:
         ai_result, feedback = 3, "Évaluation automatique effectuée."
 
+    ai_used = not feedback.startswith("(Sans IA")
+
     ai_score = min(ai_result, 5)
     final_score = round(keyword_score + ai_score)
     final_score = max(0, min(final_score, 10))
@@ -319,6 +321,7 @@ def api_evaluate():
         "keywordsTotal": keywords,
         "correctAnswerFr": quiz_data.get("correctAnswerFr", lesson.get("correctAnswerFr", "")),
         "correctAnswerAr": quiz_data.get("correctAnswerAr", lesson.get("correctAnswerAr", "")),
+        "aiUsed": ai_used,
     })
 
 

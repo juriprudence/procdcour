@@ -249,7 +249,9 @@ def _admin_read(path: str) -> dict:
 
 
 def _admin_read_query(path: str, order_by: str, limit: int) -> list:
-    """Query using Admin SDK if available, else REST API."""
+    """Query using Admin SDK if available, else REST API.
+    Falls back to reading all data and sorting locally if query fails.
+    """
     if _admin_db:
         try:
             ref = _admin_db.reference(path)
@@ -261,7 +263,16 @@ def _admin_read_query(path: str, order_by: str, limit: int) -> list:
                 return results if isinstance(results, list) else []
         except Exception:
             pass
-    return _try_read_query(path, order_by, limit)
+    results = _try_read_query(path, order_by, limit)
+    if results:
+        return results
+    # Fallback: read all data and sort locally (handles missing index)
+    all_data = _try_read(path)
+    if isinstance(all_data, dict):
+        return list(all_data.values())
+    if isinstance(all_data, list):
+        return all_data
+    return []
 
 
 # ---- Public API (mirrors Android FirebaseManager logic) ----
